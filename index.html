@@ -11,17 +11,49 @@
   <link href="css/mystyles.css" rel="stylesheet" media="screen">
 </head>
 <body>
-  <!-- top left links (parents & alumni) -->
-  <nav>
-  	
-  </nav>
-  <!-- <!-- main navigationz -->
-  <nav>
-
-  </nav>
+  <!-- top right links (parents & alumni) -->
+  <div class="container">
+    <nav>
+  	  <ul class="nav navbar-nav navbar-right"> <!--  but I only want it this way in wide screen... -->
+        <li><a href="#">Parents</a></li>
+        <li><a href="#">Alumni</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- <!-- main navigation-->
+  <div class="container"> 
+  	  <nav>
+  	    <ul class="nav navbar-nav navbar-inverse navbar-fixed-top">
+	  	    <li><a href="#">News</a></li>
+	  	    <li><a href="#">Calendar</a></li>
+	  	    <li><a href="#">Admissions</a></li>
+	  	    <li><a href="#">Academics</a></li>
+	  	    <li><a href="#">Student Life</a></li>
+	  	    <li><a href="#">Support</a></li>
+	  	</ul>
+	  </nav>
+  </div>
 
   <!-- jumbotron with carousel images -->
-  <div></div>
+  <div id="cathedralCarousel" class="carousel slide jumbotron">
+  	<div class="container">
+  	  <ol class="carousel-indicators">
+  	  	<li class="active" data-target="#cathedralCarousel" data-slide-to="0" class="active"></li>
+  	  	<li class="active" data-target="#cathedralCarousel" data-slide-to="1"></li>
+  	  	<li class="active" data-target="#cathedralCarousel" data-slide-to="2"></li>
+  	  	<li class="active" data-target="#cathedralCarousel" data-slide-to="3"></li>
+  	  </ol>
+  	<div class="carousel-inner">  
+	  <div class="item active">
+	    <img src="img/carousel/kidsCross.jpg" alt="kids with cross">	
+	  </div>
+	  <div class="item">
+	  	<img src="img/carousel/kidsEngineering.jpg" alt="kids engineering">	
+	  </div>
+	</div>
+
+  	</div>
+  </div>
 
   <!-- rows & columns (some nested) 	 -->
   <div class="container">
