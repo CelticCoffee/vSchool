@@ -16,3 +16,21 @@ body {
 	padding-top: 70px;
 }
 
+.media {
+	background-color: lightBlue;
+}
+
+footer .container li {
+	display: inline-block;
+	padding: 1em;
+	
+}
+
+footer .container ul {
+	list-style: none;
+	text-align: center;
+}
+
+footer h3 {
+	text-align: center;
+}
