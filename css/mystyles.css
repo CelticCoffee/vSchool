@@ -16,9 +16,18 @@ body {
 	padding-top: 70px;
 }
 
-.media {
-	background-color: lightBlue;
+#responsiveCal {
+/*	position: relative;
+*/	padding-bottom: 25%;
+	padding-top: 30px;
+	text-align: center;
+	/*padding-right:  35%;
+	padding-left: 35%;*/
+	height: 0;
+
 }
+
+
 
 footer .container li {
 	display: inline-block;
