@@ -1,19 +1,25 @@
-.logo  img {
-	max-width: 25%;
-	padding: 0;
-	margin: 0;
-}
-
 .carousel-inner img {
 	margin: auto;
 }
+.navbar-fixed-top .nav {
+	padding: 0 25px 0 25px;
+}
 
 .navbar-brand {
-	font-size: 1.50em;
+	font-size: 1.70em;
+	position: relative;
 } 
 
+#quickLinks {
+	position: relative;
+	padding: 25px;
+}
+
+
+
 body {
-	padding-top: 70px;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 #responsiveCal {
@@ -26,6 +32,7 @@ body {
 	height: 0;
 
 }
+
 
 
 
