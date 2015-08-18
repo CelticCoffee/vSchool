@@ -50,3 +50,11 @@ footer .container ul {
 footer h3 {
 	text-align: center;
 }
+
+footer .row {
+	text-align: center;
+}
+
+footer #address {
+	font-size: 1.0em;
+}
