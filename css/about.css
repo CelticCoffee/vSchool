@@ -23,3 +23,23 @@
 	background-color: lightGray;
 	padding: 1em 2em;
 }
+
+#ourHistory {
+	padding: 0 3em;
+}
+
+#ourHistory img {
+	margin-bottom: 2em;
+}
+
+#staff {
+	padding: 0 3em;
+}
+
+#staff table {
+	padding: 3em;
+} 
+
+#staff h3 {
+	text-align: left;
+}
