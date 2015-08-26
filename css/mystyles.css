@@ -36,13 +36,29 @@ body {
 
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
 
+a {
+	text-decoration: none;
+}
 
-
-footer .container li {
+@media screen and (min-width: 1000px){
+.clear {
+	clear: both;
+}
+footer ul {
 	display: inline-block;
 	padding: 1em;
-	
+	list-style: none;
+
+}
+
+footer ul li {
+	display: inline-block;
+	padding: 2em;
 }
 
 footer .container ul {
@@ -58,12 +74,55 @@ footer .row {
 	text-align: center;
 }
 
-footer #address {
-	font-size: 1.0em;
+footer .social  {
+	padding: 0 2em;
+	text-align: center;
 }
 
-footer {
+footer .copyright {
+	text-align: center;
 
 }
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+	.links, .social, .copyright {
+		float: none;
+		text-align: center;
+	}
+	.social {
+		position: relative;
+		margin: 10px 0;
+	}
+	.links li {
+		display: inline-block;
+		float: none;
+	}
+	.bar {
+		position: relative;
+	}
+	.bar-wrap {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	footer> ul li {
+		float; none;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.links li {
+		margin-right:;
+	}
+}
+
+
+
 
 @media screen and (max-height: \)
