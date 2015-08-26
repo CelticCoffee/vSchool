@@ -47,3 +47,38 @@
 #appleSchool {
 	padding: 0 3em;
 }
+
+@media screen and (max-width: 1000px) {
+	.links, .social, .copyright {
+		float: none;
+		text-align: center;
+	}
+	.social {
+		position: relative;
+		margin: 10px 0;
+	}
+	.links li {
+		display: inline-block;
+		float: none;
+	}
+	.bar {
+		position: relative;
+	}
+	.bar-wrap {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	footer> ul li {
+		float; none;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.links li {
+		margin-right:;
+	}
+}
+
