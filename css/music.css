@@ -1,9 +1,28 @@
 .activityImages {
-	margin-top: 5em;
+	margin-top: 2em;
 }
 
 .thumbnail {
 	overflow: auto;
-	height: 600px;
+	height: 650px;
 
+}
+
+.intro {
+	margin-top: 3em;
+}
+
+ul {
+	list-style: none;
+}
+
+.peMore {
+	display: none;
+
+}
+
+.peLess {
+	
+	
+	
 }
