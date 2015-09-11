@@ -4,7 +4,7 @@
 
 .thumbnail {
 	overflow: auto;
-	height: 650px;
+	height: auto;
 
 }
 
@@ -16,13 +16,42 @@ ul {
 	list-style: none;
 }
 
-.peMore {
-	display: none;
-
+#musicButton {
+	margin-right: 1em;
 }
 
-.peLess {
-	
-	
-	
+#peButton {
+	margin-right: 1em;
+}
+
+#musicText  {
+	display: none;
+}
+
+#musicEnsembles {
+	display: none;
+}
+
+#peText {
+	display: none;
+}
+
+#peUniform {
+	display: none;
+}
+
+#artText {
+	display: none;
+}
+
+#artShowText {
+	display: none;
+}
+
+#artButton {
+	margin-right: 1em;
+}
+
+#libraryText {
+	display: none;
 }
