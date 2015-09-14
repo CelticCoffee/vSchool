@@ -13,12 +13,9 @@
 	position: relative;
 } 
 
-#quickLinks {
-	position: relative;
-	padding: 25px;
+#cathedralTitle {
+	font-size: 1.75em;
 }
-
-
 
 body {
 	padding-top: 10%;
@@ -85,8 +82,11 @@ footer .copyright {
 }
 }
 
-
-
+@media screen and (min-width: 759px) {
+	#smallTitle {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 1000px) {
 	.links, .social, .copyright {
