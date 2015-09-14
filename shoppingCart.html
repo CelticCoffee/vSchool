@@ -15,50 +15,29 @@
 </head>
 <body>
   <!-- <!-- main navigation-->
-  	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   	    <div class="container">
   	      <!-- this is the hamburger collapse menu -->
   	      <div class="navbar-header">
+
   	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
   	        	<span class="sr-only">Toggle navigation</span>
   	        	<span class="icon-bar"></span>
   	        	<span class="icon-bar"></span>
   	        	<span class="icon-bar"></span>
   	        </button>
-  	        <!-- <div class="" -->
-  	        <a class="navbar-brand" href="index.html">Cathedral School</a>
- 			
+  	        <a class="navbar-brand" id="smallTitle" href="index.html">Cathedral School</a>
+
+ 		</div>
 		</div>
-		</div>
+   
+
 		  	<div class="navbar-collapse collapse">
-		  		<ul class="nav navbar-nav navbar-center">    
-		  	    	<li><a href="index.html">Home</a></li>
+		  		<ul class="nav navbar-nav navbar-left"> 
+		  	    	<li id="cathedralTitle"><a href="index.html">Cathedral School</a></li>
 		  	    	<li><a href="about.html">About</a></li>
-		  	    	<li><a href="#">Parents</a></li>	
-		  	    	<li><a href="#">News</a></li>
-		  	    	<li><a href="#">Calendar</a></li>
 		  	    	<li class="dropdown">
-		  	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
-		  	    		<ul class="dropdown-menu">	
-			  	    		<li><a href="#">Why Support</a></li>
-			  	    		<li><a href="#">Annual Auction</a></li>
-			  	    		<li><a href="#">Run For Cathedral</a></li>
-			  	    		<li><a href="#">Make a Gift</a></li>
-			  	    	</ul>
-		  	    	</li>
-		  	    	
-		  	    	<li class="dropdown">
-		  	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions <span class="caret"></span></a>
-		  	    		<ul class="dropdown-menu">	
-			  	    		<li><a href="#">Overview</a></li>
-			  	    		<li><a href="#">Admission Policy</a></li>
-			  	    		<li><a href="#">Tuition</a></li>
-			  	    		<li><a href="#">Financial Aide</a></li>
-			  	    		<li><a href="#">Apply Now</a></li>
-			  	    	</ul>
-		  	    	</li>
-		  	    	<li class="dropdown">
-		  	    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <span class="caret"></span></a>
+		  	    	<a href="academics.html" class="dropdown-toggle" data-toggle="dropdown">Academics <span class="caret"></span></a>
 		  	    		<ul class="dropdown-menu">	
 			  	    		<li><a href="#">Pre-Kindergarten</a></li>
 			  	    		<li><a href="#">Kindergarten</a></li>
@@ -71,22 +50,34 @@
 			  	    	</ul>
 		  	    	</li>
 		  	    	<li class="dropdown">
-		  	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Program <span class="caret"></span></a>
+		  	    		<a href="admissions.html" class="dropdown-toggle" data-toggle="dropdown">Admissions <span class="caret"></span></a>
 		  	    		<ul class="dropdown-menu">	
-			  	    		<li><a href="#">Music</a></li>
-			  	    		<li><a href="#">Art</a></li>
-			  	    		<li><a href="#">Library</a></li>
-			  	    		<li><a href="#">Technology</a></li>
-			  	    		<li><a href="#">Spanish</a></li>
-			  	    		<li><a href="#">Physical Education</a></li>
-			  	    		<li><a href="#">Spiritual Life</a></li>
-			  	    		<li><a href="#">Community Service</a></li>
-			  	    		<li><a href="#">Sports</a></li>
-			  	    		<li><a href="#">Activities</a></li>
-			  	    		<li><a href="#">Extended Care</a></li>
-			  	    		<li><a href="#">Peer Leadership</a></li>
+			  	    		<li><a href="admissions.html">Overview</a></li>
+			  	    		<li><a href="#">Admission Policy</a></li>
+			  	    		<li><a href="#">Tuition</a></li>
+			  	    		<li><a href="#">Financial Aide</a></li>
+			  	    		<li><a href="#">Apply Now</a></li>
 			  	    	</ul>
 		  	    	</li>
+		  	    	<li class="dropdown"> <a href="ourProgram.html" class="dropdown-toggle" data-toggle="dropdown">Our Program <span class="caret"></span></a>
+		  	    		<ul class="dropdown-menu">	
+			  	    		<li><a href="ourProgram.html#overView">Explore</a></li>
+			  	    		<li><a href="ourProgram.html#musicImage">Music</a></li>
+			  	    		<li><a href="ourProgram.html#pePic">Physical Education</a></li>
+			  	    		<li><a href="ourProgram.html#artImage">Art</a></li>
+			  	    		<li><a href="ourProgram.html#libraryImage">Library and Tech</a></li>
+			  	    		<li><a href="ourProgram.html#spanishImage">Spanish</a></li>
+			  	    		<li><a href="ourProgram.html#activcityImage">Activities</a></li>
+			  	    		<li><a href="ourProgram.html#extendedCareImage">Extended Care</a></li>
+			  	    	</ul>
+		  	    	</li>
+
+		  	    	<li><a href="#">News</a></li>
+		  	    	<li><a href="calendar.html">Calendar</a></li>
+		  	    	
+		  	    			  	    	
+		  	    	<li><a href="#">Parents</a></li>
+		  	    	
 		  	    	<li><a href="#">Alumni</a></li>
 		  	    	<!-- may want to make this a button eslewhere. -->
 		  	    	<li class="dropdown">
@@ -98,11 +89,11 @@
 			  	    		<li><a href="#">Directions</a></li>
 			  	    	</ul>
 		  	    	</li>
+		  	    	<li><a href="support.html">Support</a></li>
 		  	    	<li class="active"><a href="shoppingCart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 		  	    </ul>
 		  	</div>
-		  	</div>
-
+		</div>
 	<div class="container">
 		<div class="paymentForm">
 		<div class="col-xs-12 col-md-6">
