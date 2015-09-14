@@ -35,6 +35,23 @@ $(document).ready(function() {
 		console.log('boat');
 	});
 
-	
+	 $('#spanishButton').click(function(event) {
+		$('#spanishText').toggle('slow');
+		console.log('snow');
+	});
 
+	  $('#techButton').click(function(event) {
+		$('#techText').toggle('slow');
+		console.log('pig');
+	});
+
+	$('#activitiesButton').click(function(event) {
+		$('#cyoText').toggle('slow');
+		console.log('snow');
+	});
+
+	$('#extendedCareButton').click(function(event) {
+		$('#afterCareText').toggle('slow');
+		console.log('snow');
+	});
 });
