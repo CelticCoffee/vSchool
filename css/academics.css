@@ -17,14 +17,17 @@
   display: block;
 }
 
-.showText {
-  display: block;
-  font-size: 1.5em;
+.noShowText  {
+  display: none;
+
 }
 
-.noShowText {
-  display: hidden;
+.showText {
+  display: block;
+  font-size: 1.1em;
 }
+
+
 
 
 /*/// Going the CSS ROUTE ///*/
