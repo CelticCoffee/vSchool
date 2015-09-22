@@ -4,9 +4,13 @@
 }
 
 #openMenuLook {
+  margin-top: 2em;
+  padding-top: 4em;
   background-color: black;
 
 }
+
+
 
 #academicTextBox {
   padding: 4em;
@@ -48,6 +52,7 @@
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
     max-height: none;
+
   }
   .sidebar-nav .navbar ul {
     float: none;
@@ -63,4 +68,12 @@
     padding-top: 12px;
     padding-bottom: 12px;
   }
+}
+
+@media (max-width: 768px) {
+  #openMenuLook {
+  margin-top: 1em;
+  padding-top: 1em;
+
+}
 }
