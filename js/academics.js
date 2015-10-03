@@ -1,4 +1,5 @@
-//eventually I'd like to put this into a constructor//
+
+// //eventually I'd like to put this into a constructor//
 $(document).ready(function() {
 	$('#welcomeLink').click(function() {
 		$('#welcomeLink').addClass('active').siblings().removeClass('active');

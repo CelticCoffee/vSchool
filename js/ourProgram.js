@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	$('#musicButton').click(function(event) {
 		$('#musicText').toggle('slow');
-		console.log('snowman');
 	});
 
 	 $('#ensembleButton').click(function(event) {
