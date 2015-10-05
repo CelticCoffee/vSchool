@@ -55,5 +55,9 @@ $(document).ready(function() {
 		$('#middleSchool').addClass('showText').siblings().removeClass('showText');
 		$('#welcome').addClass('noShowText');
 	});
+
+
+
+
 });
 
