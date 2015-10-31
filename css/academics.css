@@ -26,11 +26,19 @@
   font-size: 1.1em;
 }
 
+#welcome img {
+  padding: 1em 0em 0em 0em;
+}
+
+#welcome #firstP {
+  padding: 1em;
+}
+
 #faculty .row {
   margin-top: 5%;
   margin-right: -15%;
   margin-left: -10%;
-  
+
 }
 
 /* entire container, keeps perspective */
@@ -154,7 +162,7 @@
 }
 
 
-/* make sidebar nav vertical */ 
+/* make sidebar nav vertical */
 @media (min-width: 768px) {
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
