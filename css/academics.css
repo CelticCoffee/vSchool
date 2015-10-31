@@ -12,7 +12,7 @@
 
 /*General Visual Look*/
 #academicTextBox {
-  padding: 4.5em;
+  padding: 3.5em;
   background-color: lightBlue;
 }
 
@@ -50,10 +50,6 @@
 }
 
 
-/*my additions to the flip animations*/
-#flipPadding {
-  margin-top: 2em;
-}
 
 /* entire container, keeps perspective */
 /*adapted from David Walsh blog with adjustments dealing with Safari*/
@@ -212,4 +208,5 @@
   margin-top: 1em;
   padding-top: 1em;
 }
+
 }
