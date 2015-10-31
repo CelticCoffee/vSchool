@@ -45,16 +45,18 @@
   padding-left: 2em;
 }
 
-#faculty .row {
-  margin-top: 5%;
-  margin-right: -15%;
-  margin-left: -10%;
+.gradeTitle {
+  padding-left: .5em;
+}
 
+
+/*my additions to the flip animations*/
+#flipPadding {
+  margin-top: 2em;
 }
 
 /* entire container, keeps perspective */
 /*adapted from David Walsh blog with adjustments dealing with Safari*/
-
 .flip-container {
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
@@ -149,18 +151,27 @@
 
 /*custom styling of flip*/
 .boxed {
-  margin-top: -25px;
+  margin-top: 1em;
   width: 230px;
-  height: 450px;
+  height: 375px;
   padding: 1em;
   background-color: black;
 }
 
-.boxed ul {
+.boxed2 {
+  margin-top: 0em;
+  width: 230px;
+  height: 375px;
+  padding: 1em;
+  background-color: black;
+}
+
+
+.boxed, .boxed2, ul {
   list-style: none;
 }
 
-.front, .boxed, h4, h5, .photoText{
+.front, .boxed, .boxed2, h4, h5, .photoText{
   color: white;
   font-weight: 200;
   padding-bottom: .25em;
