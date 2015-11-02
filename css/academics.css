@@ -45,8 +45,26 @@
   padding-left: 2em;
 }
 
+.midTeacherImages {
+  padding: .1em;
+}
+
+.midTeacherImages li{
+  display: inline-block;
+}
+
+.specialistSchedule h3 {
+  color: white;
+
+}
+
 .gradeTitle {
   padding-left: .5em;
+}
+
+.specialistSchedule {
+  background-color: black;
+  margin-top: 1em;
 }
 
 .blackBack {
