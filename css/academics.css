@@ -45,6 +45,11 @@
   padding-left: 2em;
 }
 
+#faculty #staff h5 {
+  color: black;
+  font-weight: bold;
+}
+
 .midTeacherImages {
   padding: .1em;
 }
