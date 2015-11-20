@@ -1,4 +1,6 @@
-
+#navImage {
+	width: 120px;
+}
 
 .carousel-inner img {
 	margin: auto;
@@ -15,7 +17,7 @@
 .navbar-brand {
 	font-size: 1.75em;
 	position: relative;
-} 
+}
 
 #cathedralTitle {
 	font-size: 1.25em;
@@ -139,8 +141,3 @@ footer .copyright {
 	}
 
 }
-
-
-
-
-

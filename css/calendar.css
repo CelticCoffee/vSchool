@@ -1,3 +1,12 @@
+#navImage {
+	width: 120px;
+}
+
+
+
+
+
+
 @media screen and (min-width: 1000px) {
 		.tabletCalendar {
 			display: none;
@@ -37,7 +46,7 @@
 		.smartCalendar {
 			margin-top: 5em;
 			display: block;
-			
+
 		}
 
 }
