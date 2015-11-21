@@ -115,12 +115,12 @@
       <p>The search for the right school is an exciting and challenging prospect for parents. Out goal is to help you learn about our community, academic programs, and staff, providing everything you need to inform your decision. Explore our website, and contact us to arrange for a tour of the school. The best way for you to get a sense of our core values, students, staff, and vibrant school life is to come and visit.</p>
 			<h4>Enrollment Ages</h4>
 			<p>Students applying for pre-kindergarten must be four years old on or before September 1st. Students applying for kindergarten must be five years old on or before September 1st. Applications may be submitted beginning September 1st of the year prior to entrance.</p>
-			 <p><a class="btn btn-default btn-lg" id="backButton" href="#" role="button">Back</a><button class="btn btn-primary btn-lg" id="requestInfoButton" data-toggle="modal" data-target="#admissionsModal">Request Information</button></p>
+			<p><a class="btn btn-default btn-lg" id="backButton" href="#" role="button">Back</a><button class="btn btn-primary btn-lg" id="requestInfoButton" data-toggle="modal" data-target="#admissionsModal">Request Information</button></p>
       <div class="modal fade" id="admissionsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <!-- Header-->
-            <div class="modal-header">
+             <div class="modal-header">
             	<button type="button" class="close" data-dismiss="modal">
             		<span aria-hidden="true">&times;</span>
             		<span class="sr-only">Close</span>
@@ -128,56 +128,57 @@
             	<h4 class="modal-title" id="myModalLabel">Request Information</h4>
             </div>
             <!-- Body -->
-            <div class="modal-body">
-                 Lorem ipsum ...
-                 <p id="formGreeting">Thank you for your interest in Cathedral School!  Please share a few details about your family so that we can provide you with helpful information about our school.
+             <div class="modal-body">
+                <form id="interestForm" action="" method="post">
+                <div class="form-group">
+                 <p id="formGreeting">Thank you for your interest in Cathedral School!  Please share a few details about your family so that we can provide you with helpful information about our school.</p>
+               </div>
          				<div class="form-group">
-             				<label for="children">Child's Name</label>
-             				<input type="text" class="form-control" id="childName" placeholder="Child&rsquo;s Name">
+             				<label for="childFirstName">Child's First Name</label>
+             				<input type="text" id="childFirstName" class="form-control" placeholder="Child&rsquo;s First Name" required="" name="childFirstName">
            				</div>
-
+                <div class="form-group">
+                  <label for="childLasttName">Child's Last Name</label>
+                  <input type="text" id="childLastName" class="form-control" placeholder="Child&rsquo;s Last Name" required="" name="childLastName">
+                </div>
            				<div class="form-group">
            					<label for="childAge">Child's Age</label>
-           					<input type="data" class="form-control" id="childAge" placeholder="Child&rsquo;s Age">
-           				</div>
+                    <input type="number" id="childAge" class="form-control" size="6" name="age" min="1" max="16" value="5"><br>
            				<div class="form-group">
-             				<label for="name">Your Name</label>
-             				<input type="text" class="form-control" id="inputFirstName" placeholder="Name">
+             				<label for="parentName">Your Name</label>
+             				<input type="text" id="parentName" class="form-control" placeholder="Your Name" required="" name="parentName">
            				</div>
-
+                  <div class="form-group"><label for "phoneNumber" >Phone Number: </label><input type="text" id="phoneNumber" required="" placeHolder="5555555555" pattern="[0-9]{10}">
            				<div class="form-group">
-             				<label for="exampleInputEmail1">Email address</label>
-             				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-           				</div>
-           				<div class="form-group">
-             				<label for="phoneNumber">Phone Number</label>
-             				<input type="(ddd) ddd-dddd" class="form-control" id="phoneNumber" placeholder="Phone Number"<span class="bfh-phone" data-number="15555555555"></span>
+             				<label for="email">email address</label>
+             				<input type="email" id="email" class="form-control" placeholder="email" required=""Enter a valid email address"" name="email">
            				</div>
 		              <div>
            				<p>How did you hear about Cathedral School</p>
            				</div>
            				<div class="checkbox">
              				<label>
-               				<input type="checkbox"> Cathedral Parent <br>
-               				<input type="checkbox"> Family Member <br>
-               				<input type="checkbox"> Friend <br>
-               				<input type="checkbox"> Advertisement <br>
-               				<input type="checkbox"> Website <br>
-               				<input type="checkbox"> Staff Member <br>
+               				<input type="checkbox" id="currFamily"> Current Cathedral Family <br>
+               				<input type="checkbox" id="stMarys"> St. Mary&rsquo;s Cathedral <br>
+               				<input type="checkbox" id="advertisement"> Advertisement <br>
+               				<input type="checkbox" id="website"> Website <br>
+               				<input type="checkbox" id="staffMember"> Staff Member <br>
+                      <input type="checkbox" id="other"> Other <br>
              				</label>
              			</div>
          			</form>
             </div>
             <!-- Footer -->
-            <div class="modal-footer">
+          <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            	<button type="button" class="btn btn-primary">Submit</button>
+            	<button type="submit" value="submit" class="btn btn-primary">Submit</button>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
 			</div>
+    </div>
 			<img src="img/img_admissions/admissionsKids.jpg" class="img-responsive img-rounded" alt="kids singing">
 
 <!-- <p><a href="#musicImage" class="btn btn-primary" id="musicButton" role="button">Cathedral Music</a><a href="#musicImage" class="btn btn-default" id="ensembleButton" role="button">Ensembles</a></p> -->

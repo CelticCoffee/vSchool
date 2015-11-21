@@ -5,7 +5,7 @@ $(document).ready(function() {
 		$('.jumbotron').toggle();
 	});
 
-	$("#backButton").click(function() {	
+	$("#backButton").click(function() {
 		$('.jumbotron').toggle();
 	});
 	$
@@ -14,9 +14,6 @@ $(document).ready(function() {
 		$('form').toggle();
 	});
 
-
-
-
-
-
-});
+/******************************************/
+/*************Inquiry Form ***************/
+/*****************************************/
