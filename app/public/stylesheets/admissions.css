@@ -1,0 +1,90 @@
+#navImage {
+	width: 120px;
+}
+
+input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}
+
+
+li {
+	list-style: none;
+
+}
+
+img {
+	padding-top: .5em;
+}
+
+.jumbotron {
+	padding-top: 5em;
+}
+
+.jumbotron p {
+	font-size: 1.25em;
+}
+
+#moreJumbo {
+	display: none;
+}
+
+form {
+	display: none;
+}
+
+/*********************************
+**********Form Style**************
+**********************************/
+label {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.form-group {
+	max-width: 250px;
+	margin: .5em auto;
+	background-color: white;
+}
+
+#formGreeting {
+	max-width: 400px;
+		margin: .5em auto;
+		font-size: 1em;
+}
+
+#childAge {
+	width: 100px;
+}
+
+.modal-body p {
+	font-size: 1em;
+}
+
+input:required {
+	background-color: lightyellow;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+		.jumbotron {
+			font-size: 1.2em;
+		}
+}
+
+
+@media screen and (max-width: 999px) {
+		.jumbotron {
+			font-size: 1em;
+			padding: 1em;
+		}
+
+}
+
+@media screen and (max-width: 600px) {
+		.jumbotron {
+			font-size: .85em;
+		}
+
+}

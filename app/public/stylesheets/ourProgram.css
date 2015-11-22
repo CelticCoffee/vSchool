@@ -1,0 +1,90 @@
+#navImage {
+	width: 120px;
+}
+
+.activityImages {
+	margin-top: 2em;
+}
+
+.thumbnail {
+	overflow: auto;
+	height: auto;
+
+}
+
+#wrap {
+	padding-top: 1.15em;
+    background: #eee;
+   /* margin: 2%;*/
+    /*width: 300px;*/
+    /*height: 310px;*/
+    display: block;
+   /* padding: 1em 5em;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 1px 0 #c7c7c7;
+    -moz-box-shadow: inset 0 1px 1px 0 #c7c7c7;
+    box-shadow: inset 0 1px 1px 0 #c7c7c7;
+}
+
+
+ul {
+	list-style: none;
+}
+
+#musicButton {
+	margin-right: 1em;
+}
+
+#peButton {
+	margin-right: 1em;
+}
+
+#musicText  {
+	display: none;
+}
+
+#musicEnsembles {
+	display: none;
+}
+
+#peText {
+	display: none;
+}
+
+#peUniform {
+	display: none;
+}
+
+#artText {
+	display: none;
+}
+
+#artShowText {
+	display: none;
+}
+
+#artButton {
+	margin-right: 1em;
+}
+
+#libraryText {
+	display: none;
+}
+
+#spanishText {
+	display: none;
+}
+
+#techText {
+	display: none;
+}
+
+#cyoText {
+	display: none;
+}
+
+#afterCareText {
+	display: none;
+}
