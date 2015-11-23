@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 // global.jQuery = $;
 // var Bootstrap = require('bootstrap');
 var routes = require('./routes/index');
-var users = require('./routes/users');
+// var users = require('./routes/users');
 
 var app = express();
 
@@ -28,9 +28,9 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
+// app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
 //
-app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
+// app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 
 app.use('/', routes);
 // app.use('/users', users);
