@@ -1,0 +1,28 @@
+/*******************/
+/****leftcolumn****/
+/********************/
+h3 {
+  text-align: center;
+}
+
+
+/*******************/
+/****rightcolumn****/
+/********************/
+
+.list-group-item  {
+  font-size: .9em;
+  font-weight: 250;
+}
+
+h4 {
+  text-align: center;
+}
+
+/*******************/
+/****middleColumn****/
+/********************/
+
+#parentRequirements {
+  display: none;
+}

@@ -34,6 +34,16 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist')
 
 app.use('/', routes);
 // app.use('/users', users);
+//
+// app.use(express.basicAuth(function(user, pass) {
+//   return user === 'currentFamily' && pass === 'followChrist';
+// }));
+//
+// app.get('/parents', auth, function(req, res) {
+//   res.render('parents');
+// });
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -65,6 +75,15 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+/********************************/
+/******Passport Authentication***/
+/********************************/
+
+
+
+
+
 
 
 module.exports = app;

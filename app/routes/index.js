@@ -37,9 +37,22 @@ router.get('/calendar', function(req, res){
   res.render('calendar');
 });
 
+router.get('/parents', function(req, res){
+  res.render('parents');
+});
+
 router.get('/contact', function(req, res){
   console.log('about the carrot');
   res.render('contact');
 });
+
+
+
+
+
+/*****************************/
+/*******Parent Login**********/
+/*****************************/
+
 
 module.exports = router;
