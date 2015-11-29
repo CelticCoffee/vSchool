@@ -1,0 +1,152 @@
+#navImage {
+	width: 120px;
+}
+
+#innerPageMenu {
+  background-color: black;
+  font-color: white;
+}
+
+#openMenuLook {
+  margin-top: 2em;
+  padding-top: 4em;
+  background-color: black;
+}
+
+/*General Visual Look*/
+#academicTextBox {
+  padding: 3.5em;
+  background-color: lightBlue;
+}
+
+.noShowText  {
+  display: none;
+
+}
+
+.showText {
+  display: block;
+  font-size: 1.1em;
+}
+
+#welcome img {
+  padding: 1em 0em 0em 0em;
+  border-radius: 15px 50px;
+}
+
+#welcome #firstP {
+  padding: .5em;
+}
+
+#appleList {
+  list-style: circle;
+}
+
+#signature {
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 2em;
+}
+
+#faculty #staff h5 {
+  color: black;
+  font-weight: bold;
+}
+
+.midTeacherImages {
+  padding: .1em;
+}
+
+.midTeacherImages li{
+  display: inline-block;
+}
+
+.specialistSchedule h3 {
+  color: white;
+
+}
+
+.gradeTitle {
+  padding-left: .5em;
+}
+
+.specialistSchedule {
+  background-color: black;
+  margin-top: 1em;
+}
+
+.blackBack {
+  margin-top: 1em;
+  width: 230px;
+  height: 375px;
+  padding: 1em;
+  background-color: black;
+  position: inherit;
+}
+
+.boxed2 {
+  margin-top: 0em;
+  width: 230px;
+  height: 375px;
+  padding: 1em;
+  background-color: black;
+}
+
+
+.boxed, .boxed2, ul {
+  list-style: none;
+}
+
+.front, .boxed, .boxed2, h4, h5, .photoText{
+  color: white;
+  font-weight: 200;
+  padding-bottom: .25em;
+}
+
+.back, .photoText {
+  color: GhostWhite;
+  font-weight: 200;
+  font-size: 1em;
+}
+
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .gradeTitle {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #openMenuLook {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.container {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+}

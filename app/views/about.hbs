@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cathedral School</title>
+  <link rel="icon" type="image/png" href="images/favicon.io"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <meta name="description" content="Located in Portland, Oregon, Cathedral School is a premier, comprehensive accredited Catholic School
+  	with strong emphasis on faith, knowledge, service and community for students grade preK through grade 8.">
+  <meta name="keywords" content="Catholic School, Portland, Oregon, accredited, lower school, middle school, kindergarten, elementary school, Apple distinguished school">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"   integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" media="screen">
+  <link href="stylesheets/mystyles.css" rel="stylesheet" media="screen">
+  <link href="stylesheets/about.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" id="topNav" role="navigation">
+  	<!-- this is the hamburger collapse menu -->
+  	<div class="navbar-header">
+  	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  	    <span class="sr-only">Toggle navigation</span>
+  	    <span class="icon-bar"></span>
+  	    <span class="icon-bar"></span>
+  	    <span class="icon-bar"></span>
+  	  </button>
+  	  <a class="navbar-brand" id="smallTitle" href="/">Cathedral School</a>
+ 	  </div>
+	  <div class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav navbar-left">
+		  	<li><img src="images/cathedralLogoBlack.jpg" class="img" id="navImage" alt="CathedralLogo">
+		  	<li id="cathedralTitle"><a href="/" >Cathedral School</a></li>
+		  	<li class="active"><a href="/about">About</a></li>
+		  	<li><a href="/academics">Academics</a></li>
+		    <li><a href="/admissions">Admissions</a></li>
+		  	<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Program <span class="caret"></span></a>
+		  	    	<ul class="dropdown-menu">
+			  	    	<li><a href="/ourProgram#overView">Explore</a></li>
+			  	    	<li><a href="/ourProgram#musicImage">Music</a></li>
+			  	    	<li><a href="/ourProgram#pePic">Physical Education</a></li>
+			  	    	<li><a href="/ourProgram#artImage">Art</a></li>
+			  	    	<li><a href="/library">Library</a></li>
+			  	    	<li><a href="/ourProgram#spanishImage">Spanish</a></li>
+			  	    	<li><a href="/ourProgram#activityImage">Activities</a></li>
+			  	    	<li><a href="/ourProgram#serviceImage">Service</a></li>
+			  	    	<li><a href="/ourProgram#extendedCareImage">Extended Care</a></li>
+			  	    </ul>
+		  	</li>
+		  	    <li><a href="https://cathedralschoolpdx.wordpress.com">News</a></li>
+		  	    <li><a href="/calendar">Calendar</a></li>
+	          <li><a href="/parents">Parents</a></li>
+	  	    	<li><a href="/alumni">Alumni</a></li>
+	  	    	<li class="dropdown">
+	  	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+		  	    	<ul class="dropdown-menu">
+			  	  		<li><a href="tel:(503) 275 9370">Phone (503) 275-9370</a></li>
+			  	  		<li><a href="mailto:shatley@cathedral-or.org">email</a></li>
+			  	  		<li><a href="fax">Fax (503) 275-9378</a></li>
+			  	  		<li><a href="#">Directions</a></li>
+			      	</ul>
+		      	</li>
+			    	<li class= "dropdown">
+	  	    		<a href="/support" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+	  	    		<ul class="dropdown-menu">
+		  	    		<li><a href="#">Donate Now</a></li>
+		  	    		<li><a href="#">Run 4 Cathedral</a></li>
+		  	    		<li><a href="#">Auction</a></li>
+		  	    		<li><a href="#">Leave a Legacy</a></li>
+		  	    	</ul>
+	  	    	</li>
+			    </ul>
+		  	</div>
+  </div>
+  <div class="container-fluid">
+      <div class="row">
+  		    <div class="col-xs-12 col-lg-2 list-group " id=aboutNav>
+            <a href="#aboutContent" class="list-group-item">Our Vision</a>
+            <a href="#learningExpectations" class="list-group-item">Learning Expectations</a>
+            <a href="#appleAnchor" class="list-group-item">Apple Distinguished School</a>
+            <a href="#ourHistory" class="list-group-item">Our History</a>
+  		    </div>
+        	<div class = "col-xs-12 col-lg-6">
+            	<img src="images/img_about/kidsChapel.jpg" class="img-responsive img-rounded aboutPicStyle"  alt="kids in chapel">
+              <div class="centerColumnStyle">
+        			<h4>Our Vision</h4>
+        			<p>Cathedral School is a premier comprehensive Catholic School with strong emphasis on faith, knowledge, service and community.	</p>
+        			<h4>Mission</h4>
+        			<p>The mission of Cathedral School is to provide an excellent academic education grounded in Catholic religious principles and values, thereby creating a life-long love for learning and respect for each person and all creation as gifts of God.</p>
+        			<h4>Cathedral School will:</h4>
+        			<p>Create a faith community wherein Catholic truths become the foundation for daily living in a global community.</p>
+        			<p>Design and implement curricula that provide for the education of the whole person.</p>
+      			<p>Provide a learning environment in which all children may grow toward their fullest God- given potential.</p>
+      			<p>Foster the physical, emotional, and social well being of each individual.  Complement and support parents in their role as the primary educators of their children.</p>
+
+      			<p id="learningExpectations"> Students are taught to assimilate academic and life skills, as well as social attitudes, which will assist them to internalize Catholic values in their discovery of truth. They are guided toward excellence as contributing and effective members of society.</p>
+      			<p>The school is a living encounter with cultural and Catholic heritage. While honoring our parents as primary educators of their children, Cathedral School seeks to nurture the formation of the individual student. As facilitators of learning, teachers encourage the development of critically thinking students who are responsible and self-disciplined and who take pride in being part of Cathedral and the global community.</p>
+        		</div>
+
+            <div class="centerColumnStyle">
+        			<h3>A Cathedral Student Strives to</h3>
+        			<h4>Be Christ-like</h4>
+        			<ul id="studentCreed">
+        				<li>I follow Jesus' teachings while making decisions</li>
+        				<li>I am reverent and pray in many forms</li>
+        				<li>I am committed to serving others</li>
+        				<li>I share my faith with others</li>
+        			</ul>
+        			<h4>Be a Life-long Learner</h4>
+        			<ul id="appleAnchor">
+        				<li>I exhibit curiosity and enthusiasm for learning</li>
+        				<li>I speak and write clearly</li>
+        				<li>I use resources and my critical thinking skills to solve problems</li>
+        				<li>I try my best</li>
+        			</ul>
+        			<h4>Be a Good Citizen</h4>
+        			<ul>
+        				<li>I am respectful, responsible and safe</li>
+        				<li>I am an effective communicator</li>
+        				<li>I care for myself and the world around me</li>
+        				<li>I use my talents and gifts to help all God's creations</li>
+        			</ul>
+            </div>
+
+
+			<h3>Cathedral School: an Apple Distinguished School</h3>
+			<a href="http://www.apple.com/education/apple-distinguished-schools/"><img src="images/img_about/appleSchool.jpg" class="img-responsive" alt="apple Logo"></a>
+
+			<p>Cathedral School joins less than 140 schools that Apple is recognizing nationwide as exemplary learning environments and centers of innovation, leadership, and educational excellence. The Apple Distinguished School designation is reserved for schools that have demonstrated Apple's highest vision of a successful 21st century learning environment. The selection of Cathedral School as an Apple Distinguished School highlights our successes in enhancing and extending teaching and learning with thoughtful and innovative implementations of technology.</p>
+			<p>Schools nominated by Apple for designation as an Apple Distinguished School must demonstrate Apple's highest vision of a successful 21st century learning environment, a strong relationship with Apple, and a willingness to do outreach activities. The specific manifestations of these qualities include: </p>
+			<ul id="ourHistory">
+				<li>Visionary leadership  </li>
+				<li>Infrastructure that supports an Apple learning environment </li>
+				<li>Engaging teaching and learning methods that capitalize on the qualities of 		today's students who are mobile, collaborative, and creative </li>
+				<li>One-to-one access to Apple portable computers and/or mobile devices for all
+      				students, teachers, and administrators</li>
+				<li>Ongoing professional development</li>
+				<li>Systems to routinely collect quantitative evidence highlighting the success 	and sustainability of their academic programs. </li>
+			</ul>
+		<div >
+			<h3>Cathedral School History</h3>
+			<img src="images/img_about/stainedGlass.jpeg" class="img-responsive img-rounded aboutPicStyle" alt="stained glass window">
+			<p>Cathedral School has served the Portland area for over 100 years. Archbishop William Gross established Cathedral School, originally known as St. Mary's Parochial School, in 1896. In 1900 the school was named St. Mary's Academy Annex. It was operated by the Sisters of the Holy Names at N.W. 16th and Everett.</p>
+			<p>At the time, there were 15 students enrolled in grades K-4. Beginning with the 1910-11 school year, it became known as Cathedral School. Four years later, Cathedral Parish pastor, Father Edwin O'Hara approved the building of what is now the Cathedral complex along N.W. 17th Street. This building was the site of Cathedral School for 48 years.</p>
+			<p>The school's location did not change until 1961 when the Dunne family donated their home property to Cathedral Parish for construction of the present Cathedral School. From as far back as 1910, enrollment was 179 students and reached an all-time high of 295 students in 1964. Enrollment then declined due to the changing nature of the neighborhood. This led to changes in acceptance policy during the 1970s that encouraged broader geographic and ethnic representation of students.</p>
+			<p>Since its founding, Cathedral School has evolved from a parish school to a school that draws students from the Portland tri-county area as well as Clark County in Washington. While many changes have taken place, the school's values of diversity, respect, reverence for others and belief in God have remained constant through its "Century of Excellence in Education."</p>
+		</div>
+		</div>
+
+
+		<!-- <div id="staff">
+		<div class = "row">
+		<h3> Faculty and Staff</h3>
+			  <table class="table table-condensed">
+			    <tbody>
+			      <tr>
+			        <td><h5>Msgr Patrick Brennan</h5></td>
+			        <td><h5>Pastor</h5></td>
+			      </tr>
+			      <tr>
+			        <td><h5>Rev. Peter Nhat Hoang</h5></td>
+			        <td><h5>Parochial Vicar</h5></td>
+			      </tr>
+			      <tr>
+			        <td><h5>Mrs. Amy Biggs</h5></td>
+			        <td><h5>Principal</h5></td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Molly Mannenbach</td>
+			        <td>Pre-Kindergarten</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Kate Gobel</td>
+			        <td>Kindergarten</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Stephanie McCoy</td>
+			        <td>1st Grade a.m. / Assistant Principal p.m.</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Gabi Kilkenny</td>
+			        <td>1st Grade p.m.</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Kate Gobel</td>
+			        <td>Kindergarten</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Andrea McMahon</td>
+			        <td>2nd Grade</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Ingrid Trachtenbarg</td>
+			        <td>3rd Grade</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Sophia Penkala</td>
+			        <td>4th Grade</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Alexandra Hart</td>
+			        <td>5th Grade</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Megan Aguon</td>
+			        <td>6th Grade, Middle School Social Science</td>
+			      </tr>
+			      <tr>
+			        <td>Mr. David Exley</td>
+			        <td>7th Grade, Middle School Language Arts</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Liane Rae</td>
+			        <td>8th Grade, Middle School Science</td>
+			      </tr>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Sarah Wellnitz</td>
+			        <td>Middle School Math</td>
+			      </tr>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Shelby Walker</td>
+			        <td>Spanish Specialist</td>
+			      </tr>
+			      </tr>
+			      <tr>
+			        <td>Mr. Joe Nadalsky</td>
+			        <td>P.E. and Health Specialist</td>
+			      </tr>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Barb English</td>
+			        <td>Music Specialist and Religion Liasion</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Cindy Glenn</td>
+			        <td>Media Specialist</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Cynthia Trevino</td>
+			        <td>Art Specialist, Oregon College of Art and Craft</td>
+			      </tr>
+			      <tr>
+			        <td>Ms. Stacy Murphy</td>
+			        <td>Pre-K Assistant, Extended Care Director</td>
+			      </tr>
+			      <tr>
+			        <td>Ms. Sara Strong</td>
+			        <td>Kindergarten Assistant, a.m. Extended Care</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Rosanne Peterson</td>
+			        <td>1st Grade Assistant, a.m. Extended Care</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Katie Odiorne</td>
+			        <td>2nd Grade Assistant, p.m. Extended Care</td>
+			      </tr>
+			      <tr>
+			        <td>Mr. Mark Hernandez</td>
+			        <td>3rd Grade Assistant, p.m. Extended Care</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Tracy Niedermeyer</td>
+			        <td>4th and 5th Grade Assistant, Auction Coordinator</td>
+			      </tr>
+			       <tr>
+			        <td>Mrs. Jennifer Overbay</td>
+			        <td>Business Manager</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Susan Hatley</td>
+			        <td>Administrative Assistant</td>
+			      </tr>
+			      <tr>
+			        <td>Mrs. Fernanda De Clercq</td>
+			        <td>Receptionist</td>
+			      </tr>
+			      <tr>
+			        <td>Mr. Jim Russell</td>
+			        <td>Maintenance</td>
+			      </tr>
+			    </tbody>
+			  </table>
+		</div>
+		</div> -->
+
+
+
+
+  		<div class="col-xs-12 col-md-3 col-lg-3">
+		<div id="frequentQuestions">
+			<a href="http://www.westwcea.org/"><img src="images/img_about/WCEA2013LogoCopy.jpg" class="img-responsive" alt="WCEA logo"></a>
+			<h4>Frequently Asked Questions</h4>
+			<h5>Is Cathedral an accredited institution?</h5>
+				<p>Cathedral School is an accredited Catholic School by the Western Catholic Education Association.</p>
+			<h5>How many students per class?  What area do you serve?</h5>
+				<p>Cathedral School has one classroom per grade level, pre-kindergarten through eighth grade. Class size averages 26 students per class, kindergarten through fifth grade, 20 students in pre-kindergarten, and 28 students in sixth through eighth grades. Due to our downtown location our community of families come from throughout the Portland Metropolitan area.</p>
+			<h5>Where do your students go to high school?</h5>
+				<p>One hundred percent of our students that apply to Catholic College Preparatory High Schools are accepted. Ninety-five to one hundred  percent of our students attend College Preparatory High Schools.</p>
+			<h5>Do you have a Technology Program</h5>
+				<p>Technology is integrated into classroom instruction pre-kindergarten through eighth grade. We are one-to-one with iPads, as well as have portable class sets of MacBook Airs that are regularly used in all classes.</p>
+			<h5>What are the school hours?</h5>
+				<p>The school hours are 8:00am to 3:10pm with the exception of Tuesdays, when we dismiss at 2:15pm.</p>
+			<h5>Do you offer extended care?</h5>
+				<p>Cathedral School has an extended care program on-site. Morning care begins at 7:00 am and aftercare is open until 6:00 pm.  </p>
+			<h5>Is extended care open when school is closed?</h5>
+				<p>Generally, extended care is open on early dismissal days and teacher professional development and in-service days. Extended care is closed on all holidays as well as Christmas, Spring, and Summer breaks.</p>
+			<h5>Do you offer foreign language?  What other specialists?</h5>
+				<p>All students, PK-8, receive instruction from a specialist in Spanish, Physical Education, Art, Library, and Music. Technology is integrated into classroom instruction.  </p>
+			<h5>Do the students attend Mass together?</h5>
+				<p>Cathedral students attend Mass as a school in the Cathedral on Wednesdays, at least twice per month. On the alternate Wednesdays students gather in the gym for POW (Prayer on Wednesday). Mass and POW services are planned by students. Mass begins at 8:30, while POW begins at 8:20.</p>
+			<h5>Do you have a school lunch Program?</h5>
+				<p>Cathedral School offers lunch to students on Mondays and Fridays. Monday lunches are typically purchased from outside vendors (Pizza Hut, Subway, etc.). Friday lunches are prepared by a rotating group of parent chefs. All lunches are $3.50 and are served by parent volunteers. In addition, parents have the opportunity to order lunches Tuesday through Thursday through an outside vendor.</p>
+			<h5>Do parents participate in the classrooms?</h5>
+				<p>Parents are active partners in the education of Cathedral students. Our parents participate in a variety of activities throughout the school. </p>
+			<h5>What other ways may parents participate in the school?</h5>
+				<p>Our Parents' Association sponsors a number of events throughout the year. Some are community building in nature; these include our Back-to-School BBQ, Special Friends' Breakfast, and Spaghetti Dinner and Art Show.  </p>
+			<h5>What else should we know about Cathedral school?</h5>
+				<p>Cathedral students are taught to be good citizens through service. Among our most important service projects are a fall food drive, stuffing socks with toiletries and snacks for distribution at the Potluck in the Park Christmas dinner, and raising funds for our sister school, St. Vincent de Paul in Salem, Oregon.</p>
+				<p>In addition to celebrating Mass with the school, our parish priests visit in our classrooms as their schedules allow. Maintaining a strong school-parish bond is achieved through these visits and other events and activities.</p>
+				<p>All students at Cathedral are paired with a "buddy" from another grade. They sit together at Mass, have joint classroom activities, and occasionally attend field trips together. These friendships are important to both students and long-lasting. Buddy grades are paired as follows: PK & 4th, K & 8th, 1st & 5th, 2nd & 6th, and 3rd & 7th.</p>
+		</div>
+  		</div>
+  		</div>
+	<footer>
+		<div class = "bar">
+        <div class="social">
+        	<h4>Connect With Us </h4>
+        	<a href="http://www.westwcea.org/"><img src="images/wceBadge2.jpg" alt="Western Catholic Badge"></a>
+        	<a href="https://www.facebook.com/pages/Cathedral-School/472568026167913"><img src="images/facebookIcon.png" alt="facebook icon"></a>
+        	<a href="https://twitter.com/CathedralPDXOR?lang=en"><img src="images/twitterIcon.png" alt="twitter icon"></a>
+        	<a href="http://www.apple.com/education/apple-distinguished-schools/"><img src ="images/appleLogo.jpg" alt="apple distinguished school icon"></a>
+        </div>
+        <div class="clear"></div>
+        <div class="copyright">&copy; 2015 All Rights Reserved</div>
+        </div>
+  </footer>
+
+<!-- <a href="http://glyphicons.com" alt="glyphicons link">www.glyphicons.com</a> -->
+  <!-- <script src="http://code.jquery.com/jquery.js"></script> -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
