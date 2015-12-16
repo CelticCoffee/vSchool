@@ -8,32 +8,26 @@ var router = express.Router();
 
 //displays our homepage
 router.get('/', function(req, res){
-  console.log('testing the path');
   res.render('index');
 });
 
 router.get('/about', function(req, res){
-  console.log('about the banana');
   res.render('about');
 });
 
 router.get('/admissions', function(req, res){
-  console.log('about the orange');
   res.render('admissions');
 });
 
 router.get('/academics', function(req, res){
-  console.log('about the turnip');
   res.render('academics');
 });
 
 router.get('/ourProgram', function(req, res){
-  console.log('about the cauliflower');
   res.render('ourProgram');
 });
 
 router.get('/calendar', function(req, res){
-  console.log('about the squid');
   res.render('calendar');
 });
 
