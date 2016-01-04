@@ -40,13 +40,4 @@ router.get('/contact', function(req, res){
   res.render('contact');
 });
 
-
-
-
-
-/*****************************/
-/*******Parent Login**********/
-/*****************************/
-
-
 module.exports = router;

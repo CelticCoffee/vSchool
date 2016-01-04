@@ -30,21 +30,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', routes);
-// app.use('/users', users);
-//
-// app.use(express.basicAuth(function(user, pass) {
-//   return user === 'currentFamily' && pass === 'followChrist';
-// }));
-//
-// app.get('/parents', auth, function(req, res) {
-//   res.render('parents');
-// });
-
 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  var err = new Error('sorry cannot find that');
   err.status = 404;
   next(err);
 });
@@ -72,14 +62,6 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
-/********************************/
-/******Passport Authentication***/
-/********************************/
-
-
-
-
 
 
 
