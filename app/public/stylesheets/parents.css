@@ -9,6 +9,8 @@ h3 {
   margin-right: 1em;
 }
 
+
+
 /*******************/
 /****rightcolumn****/
 /********************/
@@ -26,6 +28,64 @@ h4 {
 /****middleColumn****/
 /********************/
 
+.noShowText {
+  display: none;
+}
+
 #parentRequirements {
   display: none;
 }
+
+#advisoryCouncilBox {
+  display: none;
+  background-color: #66cc99;
+}
+
+.advisoryList {
+  margin-left: 1em;
+}
+
+#councilMembers {
+  list-style: none;
+}
+
+#councilMembers{
+  display: none;
+}
+
+#options {
+  margin-left: 1em;
+}
+
+.parentCategoryRow {
+  padding-bottom: .5em;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: lightGray;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.parentCategoryRow h5 {
+  color: red;
+}
+
+.parentReqRow {
+  padding-top: .5em;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: lightGray;
+}
+
+.parDates {
+  list-style: none;
+  margin-left: 1em;
+}
+
+#assocDocuments {
+  margin-left: 1em;
+}
+
+/*******************/
+/*Parent Event Images**/
+/*******************/

@@ -88,87 +88,404 @@
 		  	    </ul>
 		  	</div>
 		</div>
-    <!-- content for parents -->
+
     <div class="container">
+      <!-- Left Column -->
       <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="row">
+            <div class="col-sm-12">
           <div class="thumbnail">
             <img src="images/img_parents/families.jpg" class= "img-rounded" alt="...">
-            <div class="caption">
+            <div class="caption" id="clickList">
               <h3>Committees &#38; Events</h3>
               <div class="list-group">
-                  <a href="#" class="list-group-item">Advisory Council</a>
-                  <a href="#" class="list-group-item">Parents Association</a>
-                  <a href="#" class="list-group-item">Run 4 Cathedral</a>
-                  <a href="#" class="list-group-item">Auction</a>
+                  <a href="#" class="list-group-item" id="parentClick">Volunteer Requirements</a>
+                  <a href="#" class="list-group-item" id="advisoryClick">Advisory Council</a>
+                  <a href="#" class="list-group-item"id="parAssocClick">Parents Association</a>
+                  <a href="#" class="list-group-item"id="run4CathClick">Run 4 Cathedral</a>
+                  <a href="#" class="list-group-item"id="auctionClick">Auction</a>
                 </div>
             </div>
           </div>
         </div>
-        <div class="row">
-        <div class="thumbnail">
-          <img src="images/img_parents/toolbox.png" alt="...">
-          <div class="caption">
-            <h3>Hot Lunch Program</h3>
-            <p>Lunch is available for purchase directly from Cathedral School on Mondays and Fridays. Milk is included with the purchase of hot lunch and is also available five days a week with the purchase of a milk card. Use the button below to prepay or visit the school office.<br>
-
-            Lunches are also available Tuesday, Wednesday, and Thursday through an outside vendor, My Lunchbox. The vendor sets the pricing and available menus. The Cathedral School menu is password protected. Contact the school office for the password.
-            <p><a href="#" class="btn btn-md btn-primary" id="lunchOrder" role="button">Cathedral Hot Lunch</a><a href="http://www.my-lunchbox.net/" target="_blank" class="btn btn-md btn-success" id="myLunchbox" role="button">My LunchBox Vendor Site</a></p>
-
-          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="thumbnail">
+              <img src="images/img_parents/toolbox.png" alt="...">
+              <div class="caption">
+                <h3>Hot Lunch Program</h3>
+                <p>Lunch is available for purchase directly from Cathedral School on Mondays and Fridays. Milk is included with the purchase of hot lunch and is also available five days a week with the purchase of a milk card. Use the button below to prepay or visit the school office.<br>
+
+                Lunches are also available Tuesday, Wednesday, and Thursday through an outside vendor, My Lunchbox. The vendor sets the pricing and available menus. The Cathedral School menu is password protected. Contact the school office for the password.
+                <p><a href="#" class="btn btn-md btn-primary" id="lunchOrder" role="button">Cathedral Hot Lunch</a><a href="http://www.my-lunchbox.net/" target="_blank" class="btn btn-md btn-success" id="myLunchbox" role="button">My LunchBox Vendor Site</a></p>
+              </div>
+            </div>
+          </div>
       </div>
-      </div>
-        <div class="col-sm-12 col-md-6">
+    </div>
+    <div class="col-sm-12 col-md-5">
+      <div class="row">
+        <div class="col-sm-12">
           <div class="thumbnail">
-            <img src="images/img_parents/volunteerParents.jpg" class= "img-rounded" alt="...">
-            <div class="caption">
+            <img src="images/img_parents/volunteerParents.jpg" class= "img-rounded" alt="parents serving lunch">
+
+            <div class="caption" id="parentBox">
               <h3>Partnering With You</h3>
               <p>Part of a commitment to and understanding of Cathedral School is the development of a partnership with the parents of all students. Parents at all levels are encouraged to be involved in the academic, social, and spiritual development of their children. Many volunteer opportunities exist to help parents be directly and indirectly involved with their children and their children&rsquo;s friends.  A parent may volunteer to be a room parent, library aid, and hot lunch--just to name a few opportunities.</p>
-              <p><a href="#" class="btn btn-lg btn-success" id="pReq" role="button">Service Requirements</a></p>
-              <p id="parentRequirements">
-                Cathedral School recognizes parents as the primary educators of their children. We are committed to work in partnership with parents to engage students, develop in faith, knowledge, service, and community. <br>
-                <br>
-                There are many easy ways for parents to get involved at Cathedral. We train, no experience required.  We need your talents in both big and little ways. We ask parents to commit to serve throughout the year at specific events and in ways that work best for each family. We require each family to donate a minimum of 10 hours per student or 20 hours per family in service to the school. In addition we also require each family to perform 8 hours of service for the Cathedral School Auction.<br>
-                <br>
-                The table below provides information about specific events and opportunities available for parents to serve. We assign classes to events to create community, continuity, and fun!  Volunteering at Cathedral School is an expression of commitment to your children, your school, and your Christian faith. When a parent donates time at school, our children see the image of an adult as a giver, and they see the demonstration of one of the most poignant lessons from the Bible – humbly serving others.
-              </p>
+              <p><a href="#" class="btn btn-md btn-success" id="pReq" role="button">Service Requirements</a><a href="#" class="btn btn-md btn-info" id="options" data-toggle="modal" data-target="#volunteerModal">Events by Class</a></p>
+              <div class="modal fade" id="volunteerModal" role="dialog">
+               <div class="modal-dialog">
+                 <!-- Modal content-->
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">Volunteer Details</h4>
+                   </div>
+                   <div class="modal-body">
+                     <div class="row parentCategoryRow">
+                       <div class="col-xs-4">
+                         <h5>Responsible</h5>
+                       </div>
+                       <div class="col-xs-4">
+                         <h5>Events</h5>
+                     </div>
+                       <div class="col-xs-4">
+                         <h5>Date</h5>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Pre-Kindergarten Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p>Art Show Set-Up Art Show &#38; Spaghetti Dinner </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> May 5, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Kindergarten Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p>Wreath Sale </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> November, 2015</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 1 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Spaghetti Dinner -Dining Art Show &#38; Spaghetti Dinner </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> May 5, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 2 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Special Friend&rsquo;s Breakfast </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> February, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 3 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Back to School BBQ <br> First Communion Reception </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> September 11, 2015 <br> May 1, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 4 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                        <p>Art Show Set-Up <br> Art Show &#38; Spaghetti Dinner </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> May 5, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 5 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                        <p>Art Show-Kitchen <br> Art Show &#38; Spaghetti Dinner </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> May 5, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 6 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Special Friend&rsquo;s Breakfast </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> February, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 7 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Back to School BBQ <br> 8th Grade Graduation Reception </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p>September 11, 2015 <br>June 13th, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 8 Parents </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Wreath Sale <br> 8th Grade Luncheon </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> November, 2015 <br>June 13th, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> All Families </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Work one 2-hour shift at Cathedral School Book Fair </p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> October, 2015</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> All Families </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Raise &#36;100 per student through pledges Run 4 Cathedral</p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> October 2nd, 2015</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> All Families </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> Procure or donate &#36;400 and complete 8 hours of service for Cathedral School Auction</p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> March 5th, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 7 Students </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> 7th grade students serve at the Spaghetti Dinner</p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> May 5th, 2016</p>
+                     </div>
+                     </div>
+                     <div class="row parentReqRow">
+                       <div class="col-xs-4">
+                         <p> Grade 8 Students </p>
+                       </div>
+                       <div class="col-xs-4">
+                       <p> 8th grade students serve at the Special Friends Breakfast</p>
+                     </div>
+                       <div class="col-xs-4">
+                       <p> February, 2016</p>
+                     </div>
+                     </div>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                   </div>
+                 </div>
+
+               </div>
+             </div>
+              <p class="parentRequirements noShowText">Cathedral School recognizes parents as the primary educators of their children. We are committed to work in partnership with parents to engage students, develop in faith, knowledge, service, and community. <br>There are many easy ways for parents to get involved at Cathedral. We train, no experience required.  We need your talents in both big and little ways. We ask parents to commit to serve throughout the year at specific events and in ways that work best for each family. We require each family to donate a minimum of 10 hours per student or 20 hours per family in service to the school. In addition we also require each family to perform 8 hours of service for the Cathedral School Auction.<br><br>Click the Options Button above to see a table with information about specific events and opportunities available for parents to serve. We assign classes to events to create community, continuity, and fun!  Volunteering at Cathedral School is an expression of commitment to your children, your school, and your Christian faith. When a parent donates time at school, our children see the image of an adult as a giver, and they see the demonstration of one of the most poignant lessons from the Bible – humbly serving others.</p>
+            </div>
+            <div class="caption midBox noShowText" id="advisoryBox">
+              <h3 id="advisoryTitle">Advisory Council</h3>
+              <p id="advisoryText">The Cathedral School Advisory Council is the chief consultative body to the principal on matters of administration and policy.  It fulfills an important role by recommending policy to the principal and supporting the mission of the school.<br> Council members can be either elected or appointed and serve a three-year term in which they are expected to attend all meetings and sit on one of the following committees:<br>
+              <ul class="advisoryList">
+                <li>Finance</li>
+                <li>Marketing and Development</li>
+                <li>Special Projects</li>
+              </ul></p>
+              <p><a href="#" class="btn btn-lg btn-info" id="councilButton" role="button">Council Members</a></p>
+              <ul id="councilMembers">
+                <h3>2015-2015 Council Members</h3>
+                <li><strong>Msgr. Pat Brennan</strong></li>
+                <li><strong>Principal Amy Biggs</strong></li>
+                <li>Mrs. Kristine Bachand</li>
+                <li>Mrs. Nancy Bartow</li>
+                <li>Mrs. Annie Carnese</li>
+                <li>Ms. Shaunmarie Gutbezahl</li>
+                <li>Mrs. Erin Herrick, Secretary</li>
+                <li>Mrs. Susie Holman</li>
+                <li>Mrs. Janet Jacobs</li>
+                <li>Mr. David Jess</li>
+                <li><strong>Mr. Marcus Parker, Chair</strong></li>
+                <li>Mrs. Christy Ragan</li>
+                <li><strong>Mrs. Melissa Rawlinson, Assistant Chair</strong></li>
+                <li>Mr. Alan Sanchez</li>
+              </ul>
+            </div>
+            <div class="caption midBox noShowText" id="parAssocBox">
+              <h3 id="">Parents Association</h3>
+              <p id="">The Parents' Association (PA) promotes and stimulates interest in activities that ultimately benefit the students and staff of Cathedral School. Our Mission is to create community through the events we sponsor as well as encourage and organize volunteerism through various volunteer programs. All parents and school staff are members of the PA.<br>All Cathedral School parents are members of the PA and invited to join the PA board at our meetings. Mettings take place at 8:15 a.m. in the school courtyard. Meetings during the 2015-2016 school year will be held September 17th, November 19th, January 21st, April 21st, and June 2nd.<br>The Parent&rsquo;s Association sponsors several events and supports school-sponsored events throughout the school year.  Click the Schedule button to explore.</p>
+              <p><a href="#" class="btn btn-md btn-success" id="parentAssocMore" role="button">Schedule</a><a href="#" class="btn btn-md btn-info" id="assocDocuments" role="button">Association Documents</a></p>
+              </div>
+              <div class="pAssocMore noShowText">
+                <ul class="parDates">
+                  <li><strong>September</strong></li>
+                  <li>Back to School BBQ</li>
+                  <li>Run 4 Cathedral</li>
+                  <li>Staff Hospitality- Welcome Teachers and Staff</li>
+                  <li><strong>October</strong></li>
+                  <li>Book Fair</li>
+                  <li><strong>November</strong></li>
+                  <li>Wreath Sale</li>
+                  <li>Staff Hospitality-Conferences</li>
+                  <li><strong>February</strong></li>
+                  <li>Special Friend&rsquo;s Breakfast</li>
+                  <li><strong>May</strong></li>
+                  <li>First Thursday Art Show &#38; Spaghetti Dinner </li>
+                </ul>
+              </div>
+              <div class="list group pAssocDoc noShowText">
+                <a href="documents/parents/2015_2016PABoard.pdf" class="list-group-item" target="_blank">2015-2016 PA Board</a>
+                <a href="documents/parents/roomParents.pdf" class="list-group-item" target="_blank">2015-2016 Room Parents</a>
+                <a href="documents/parents/parentsAssociationBylaws.pdf" class="list-group-item" target="_blank">PA Constitution and Bylaws</a>
+                <a href="documents/parents/donationProcedures.pdf" class="list-group-item" target="_blank">PA Policy and Procedures for Request for Donations</a>
+                <a href="documents/parents/parentAssociationDonationForm.pdf" class="list-group-item" target="_blank">PA Donation Form</a>
+
+              </div>
+
+
+            <div class="caption noShowText" id="run4Box">
+              <h3 id="">Run 4 Cathedral</h3>
+              <p id="">  Run 4 Cathedral, our 2nd largest fundraiser, is an annual jog-a-thon in which Cathedral School students participate to raise funds for enhancements to the school curriculum that would not be able to be funded through the school’s operating budget. A major portion of the proceeds raised provides the funding for the school’s 20 hour per week art program, in partnership with the Oregon College of Art and Craft. In addition, Run 4 Cathedral provides a portion of the funds for students to participate in Outdoor School and the Oregon Trail Overnight, and fully funds all field trips, in-class presentations, assemblies, student retreats, as well as other curriculum enhancements. </p>
+            </div>
+            <div class="caption midBox noShowText" id="auctionBox">
+              <h3 id="">Cathedral Auction</h3>
+              <p id="">The Auction is Cathedral School&rsquo;s largest fundraiser of the year. Every Cathedral auction aims to enhance our students&rsuquo; educational experience by funding essential programs and opportunities that will benefit them, over and above those covered by the school’s operating budget. Previous auctions have funded such programs as upgrades to technology such as laptop computers and iPads in every classroom; remodel of certain areas in the building; and most recently a new Art Room.<br>
+              The auction night consists of the Super Silent, Silent Auction and the Live Auction. An example of Silent Auction offerings: wine, gift certificates for services, baskets full of goodies. After the Silent Auction closes, everyone moves into the main dinning room where the Dinner is served and the Live Auction commences. The Live Auction items are typically bigger items and projects created by each class. This is a traditional auction, with real auctioneers taking bids. If you want to bid on an item in the Live Auction, hold up your bidder paddle so your bidder number is visible and make sure the auctioneer and crew notices you. </p>
+              <p><a href="#" class="btn btn-lg btn-success" id="auctionButton" role="button">More</a></p>
+
+              <h5 class="auctionMore noShowText">Why we changed the venue for the auction</h5>
+              <p class="auctionMore noShowText">
+              After comparing the different venues around Portland, we were able to get the most affordable price at the Multnomah Athletic Club.</p>
+
+              <h5 class="auctionMore noShowText">How do I donate to the auction</h5>
+              <p class="auctionMore noShowText">
+              There are several ways that you can donate to the auction. Just download our procurement form , email your completed form to auction@cathedral-or.org, or mail your form to Cathedral School, Attn: Auction Office, 110 NW 17 th ave Portland OR 97209. You can also stop by the Auction office with your donation.</p>
+
+              <h5 class="auctionMore noShowText">I&rsquo;m not sure what to donate. What kinds of items would you like for the auction?</h5>
+              <p class="auctionMore noShowText">
+              We are looking for everything from amazing vacation getaways to spa packages to dinner parties&#33; Click here for more ideas</p>
+
+              <h5 class="auctionMore noShowText">I&rsquo;m interested in being an Auction Sponsor, what do I do?</h5>
+              <p class="auctionMore noShowText">Click here for our sponsorship opportunities . You can also email the auction office at auction@cathedral-or.org or call 503.275.9370.</p>
+              <h5 class="auctionMore noShowText">
+              I’m interested in advertising in the Auction Catalog, what do I do?</h5>
+              <p class="auctionMore noShowText">Click here for our advertising rates you can also email the auction office at <a href="mailto:auction@cathedral-or.org">auction@cathedral-or.org</a> or call 503.275.9370. </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-2">
+      </div>
+</div>
+        <div class="col-sm-6 col-md-3">
           <div class="row">
-          <div class="thumbnail">
-            <img src="images/img_parents/check.png" alt="...">
-            <div class="caption">
-              <h4>Documents</h4>
-              <div class="list-group">
-                <a href="documents/parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Parent Handbook</a>
-                <a href="documents/student-parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Student Parent Handbook</a>
-                <a href="documents/studentSupplies2015-2016.pdf" target="_blank" class="list-group-item">Student Supplies</a>
-                <a href="documents/medicationForm.pdf" target="_blank" class="list-group-item">Medication Form</a>
-                <a href="documents/driver-insurance-form.pdf" target="_blank" class="list-group-item">Driver Information Form</a>
+            <div class="col-sm-12">
+              <div class="thumbnail">
+                <img src="images/img_parents/check.png" alt="...">
+                <div class="caption">
+                  <h4>Documents</h4>
+                  <div class="list-group">
+                    <a href="documents/parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Parent Handbook</a>
+                    <a href="documents/student-parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Student Parent Handbook</a>
+                    <a href="documents/studentSupplies2015-2016.pdf" target="_blank" class="list-group-item">Student Supplies</a>
+                    <a href="documents/medicationForm.pdf" target="_blank" class="list-group-item">Medication Form</a>
+                    <a href="documents/driver-insurance-form.pdf" target="_blank" class="list-group-item">Driver Information Form</a>
+                    <a href="documents/parents/volunteerTraining.pdf" target="_blank" class="list-group-item">Volunteer Training Requirements</a>
+                    <a href="documents/parents/instructionsForBackgroundCheck.pdf" target="_blank" class="list-group-item">Volunteer Background Check Instructions</a>
+                    <a href="documents/parents/advisoryCouncilBylaws.pdf" target="_blank" class="list-group-item">Advisory Council Bylaws &#38; Constitution</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal with meeting documents -->
+            <!-- Modal -->
+            <div class="modal fade" id="minutesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Meeting Minutes </h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="list-group">
+                      <a href="documents/parents/minutes/adSepMin.pdf "target="_blank" class="list-group-item">Advisory Council September Minutes</a>
+                      <a href="documents/parents/minutes/adOctMin.pdf" target="_blank" class="list-group-item">Advisory Council October Minutes</a>
+                      <a href="documents/parents/minutes/paSepMtg.pdf" target="_blank" class="list-group-item">Parents Association September Minutes</a>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="thumbnail">
+              <img src="images/img_parents/plugin.png" alt="...">
+              <div class="caption">
+                <h4>Links</h4>
+                <div class="list-group">
+                  <a href="http://website.praesidiuminc.com/" class="list-group-item" target="_blank">Called to Protect Online Training</a>
+                  <a href="http://www.my-lunchbox.net/" target="_blank" class="list-group-item">My Lunchbox Vendor Site</a>
+                  <a href="http://www.dennisuniform.com/ONLStore/d-store-home.asp?sc=25208&dis=17623379" target="_blank" class="list-group-item" id="dennisCode">Dennis Uniform</a>
+                  <a href="http://www.landsend.com/" target="_blank" class="list-group-item" id="landsEndCode">Land&rsquo;s End Uniform</a>
+                  <a href="http://www.loyolapress.com/3-minute-retreats-daily-online-prayer.htm" target="_blank" class="list-group-item" id="meditation">3 Minute Retreat</a>
+                  <a href="http://www.cdc.gov/flu/about/season/vaccine-selection.htm" target="_blank" class="list-group-item" id="flu">CDC Flu Information</a>
+                  <a href="http://www.cyocamphoward.org/" target="_blank" class="list-group-item" id="flu">CYO Website</a>
+                  <a href=data-toggle="modal" data-toggle="modal" data-target="#minutesModal" class="list-group-item" id="minutes">Meeting Minutes</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-        <div class="thumbnail">
-          <img src="images/img_parents/plugin.png" alt="...">
-          <div class="caption">
-            <h4>Links</h4>
-            <div class="list-group">
-              <a href="http://website.praesidiuminc.com/" class="list-group-item" target="_blank">Called to Protect Online Training</a>
-              <a href="http://www.my-lunchbox.net/" target="_blank" class="list-group-item">My Lunchbox Vendor Site</a>
-              <a href="http://www.dennisuniform.com/ONLStore/d-store-home.asp?sc=25208&dis=17623379" target="_blank" class="list-group-item" id="dennisCode">Dennis Uniform</a>
-              <a href="http://www.landsend.com/" target="_blank" class="list-group-item" id="landsEndCode">Land&rsquo;s End Uniform</a>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
-
+</div>
 
     <script type="text/javascript" src="javascripts/parents.js"></script>

@@ -1,10 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
 
 //displays our homepage
 router.get('/', function(req, res){
@@ -36,8 +32,8 @@ router.get('/parents', function(req, res){
 });
 
 router.get('/contact', function(req, res){
-  console.log('about the carrot');
   res.render('contact');
 });
+
 
 module.exports = router;

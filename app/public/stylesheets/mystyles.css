@@ -48,6 +48,10 @@ body {
 	padding-bottom: 10%;
 }
 
+.fb-page {
+	max-height: 100%;
+}
+
 #responsiveCal {
 /*	position: relative;
 */	padding-bottom: 25%;
