@@ -86,6 +86,14 @@ h4 {
   margin-left: 1em;
 }
 
+#exCareStaff {
+  margin-left: 1em;
+}
+
+.careStaff {
+  list-style: none;
+  margin-left: 1em;
+}
 /*******************/
 /*Parent Event Images**/
 /*******************/

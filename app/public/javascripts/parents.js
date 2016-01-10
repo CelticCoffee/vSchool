@@ -32,6 +32,9 @@ $('#advisoryClick').click(function(){
 $('#parAssocClick').click(function(){
   $('#parAssocBox').removeClass('noShowText').siblings().addClass('noShowText');
 });
+$('#extendedCareClick').click(function(){
+  $('#extendBox').removeClass('noShowText').siblings().addClass('noShowText');
+});
 
 $('#run4CathClick').click(function(){
   $('#run4Box').removeClass('noShowText').siblings().addClass('noShowText');
@@ -56,12 +59,19 @@ $('#councilButton').click(function(){
 
 $('#parentAssocMore').click(function(){
   $('.pAssocMore').toggle();
-})
+});
 
 $('#assocDocuments').click(function(){
   $('.pAssocDoc').toggle();
+});
+
+$('#exCareButt').click(function(){
+  $('.extendedCareMore').toggle();
 })
 
+$('#exCareStaff').click(function() {
+  $('.extendedStaff').toggle();
+})
 
 
 
