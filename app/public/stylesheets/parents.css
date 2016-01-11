@@ -89,11 +89,18 @@ h4 {
 #exCareStaff {
   margin-left: 1em;
 }
+#exCareCal {
+  margin-left: 1em;
+}
 
 .careStaff {
   list-style: none;
   margin-left: 1em;
 }
+#careBold {
+  font-weight: bold;
+}
+
 /*******************/
 /*Parent Event Images**/
 /*******************/
