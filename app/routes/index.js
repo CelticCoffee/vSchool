@@ -35,5 +35,9 @@ router.get('/contact', function(req, res){
   res.render('contact');
 });
 
+router.get('/support', function(req, res){
+  res.render('support');
+});
+
 
 module.exports = router;
