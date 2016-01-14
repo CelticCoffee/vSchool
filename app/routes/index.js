@@ -39,5 +39,8 @@ router.get('/support', function(req, res){
   res.render('support');
 });
 
+router.get('/alumni', function(req, res){
+  res.render('alumni');
+});
 
 module.exports = router;
