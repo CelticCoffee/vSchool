@@ -43,4 +43,8 @@ router.get('/alumni', function(req, res){
   res.render('alumni');
 });
 
+router.get('/library', function(req, res){
+  res.render('library');
+});
+
 module.exports = router;
