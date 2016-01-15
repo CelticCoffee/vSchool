@@ -8,13 +8,11 @@
 }
 
 .page-header small {
-	color: white;
+	color: green;
 	font-style: italic;
 	font-weight: 150;
 }
-body  {
-	background-color: gray;
-}
+
 
 h3 {
 	padding-top: .3em;
