@@ -1,92 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cathedral School</title>
-  <link rel="icon" type="image/png" href="images/favicon.io"/>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale=1.0">
-  <meta name="description" content="Located in Portland, Oregon, Cathedral School is a premier, comprehensive accredited Catholic School
-  	with strong emphasis on faith, knowledge, service and community for students grade preK through grade 8.">
-  <meta name="keywords" content="Catholic School, Portland, Oregon, accredited, lower school, middle school, kindergarten, elementary school, Apple distinguished school">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"   integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" media="screen">
-  <link href="stylesheets/mystyles.css" rel="stylesheet" media="screen">
-  <link href="stylesheets/parents.css" rel="stylesheet" media="screen">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="images/favicon.io" rel="icon" type="image/png">
+  <meta content="width=device-width, initial scale=1.0" name="viewport">
+  <meta content=
+  "Located in Portland, Oregon, Cathedral School is a premier, comprehensive accredited Catholic School with strong emphasis on faith, knowledge, service and community for students grade preK through grade 8."
+  name="description">
+  <meta content=
+  "Catholic School, Portland, Oregon, accredited, lower school, middle school, kindergarten, elementary school, Apple distinguished school"
+  name="keywords">
+  <title>Cathedral School</title>
+  <!-- Bootstrap -->
+   <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+  <link href="stylesheets/mystyles.css" media="screen" rel="stylesheet">
+  <link href="stylesheets/parents.css" media="screen" rel="stylesheet">
+
 </head>
 <body>
 
-  	<div class="navbar navbar-inverse navbar-fixed-top" id="topNav" role="navigation">
-  	    <div class="container">
-  	      <!-- this is the hamburger collapse menu -->
-  	      <div class="navbar-header">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="topNavigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cathedralMenuToggle" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Cathedral School</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="cathedralMenuToggle">
 
-  	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-  	        	<span class="sr-only">Toggle navigation</span>
-  	        	<span class="icon-bar"></span>
-  	        	<span class="icon-bar"></span>
-  	        	<span class="icon-bar"></span>
-  	        </button>
-  	        <a class="navbar-brand" id="smallTitle" href="index.html">Cathedral School</a>
-  		</div>
-		</div>
-
-
-		  	<div class="navbar-collapse collapse">
-		  		<ul class="nav navbar-nav navbar-left">
-		  			<li><img src="images/cathedralLogoBlack.jpg" class="img-responsive" id="navImage" alt="CathedralLogo">
-		  	    	<li id="cathedralTitle"><a href="/">Cathedral School</a></li>
-
-              <li>
-                <a aria-expanded="true" class="dropdown-toggle" data-toggle=
-                "dropdown" href="/about">About <span class=
-                "caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/about#navImage">Our Vision</a></li>
-                  <li><a href="/about#learningExpectations">Learning Expectations</a></li>
-                  <li><a href="http://www.westwcea.org/" target=_blank>Accreditation</a></li>
-                  <li><a href="/about#appleAnchor">Distinguished by Apple</a></li>
-                  <li><a href="/about#frequentQuestions">Frequently Asked Questions</a></li>
-                  <li><a href="/about#ourHistory">Our History</a></li>
-                </ul>
-              </li>
-              <li><a href="/academics">Academics</a></li>
-              <li><a href="/admissions">Admissions</a></li>
-		  	    	<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Program <span class="caret"></span></a>
-		  	    		<ul class="dropdown-menu">
-			  	    		<li><a href="ourProgram.html#overView">Explore</a></li>
-			  	    		<li><a href="ourProgram.html#musicImage">Music</a></li>
-			  	    		<li><a href="ourProgram.html#pePic">Physical Education</a></li>
-			  	    		<li><a href="ourProgram.html#artImage">Art</a></li>
-			  	    		<li><a href="library.html">Library</a></li>
-			  	    		<li><a href="ourProgram.html#spanishImage">Spanish</a></li>
-			  	    		<li><a href="ourProgram.html#activityImage">Activities</a></li>
-			  	    		<li><a href="ourProgram.html#serviceImage">Service</a></li>
-			  	    		<li><a href="ourProgram.html#extendedCareImage">Extended Care</a></li>
-			  	    	</ul>
-		  	    	</li>
-		  	    	<li><a href="https://cathedralschoolpdx.wordpress.com">News</a></li>
-		  	    	<li><a href="/calendar">Calendar</a></li>
-		  	    	<li><a href="/parents">Parents</a></li>
-		  	    	<li><a href="/alumni">Alumni</a></li>
-              <li><a href="/support">Support</a></li>
-		  	    	<li class="dropdown">
-		  	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
-		  	    		<ul class="dropdown-menu">
-			  	    		<li><a href="tel:(503) 275 9370">Phone (503) 275-9370</a></li>
-			  	    		<li><a href="mailto:shatley@cathedral-or.org">email</a></li>
-			  	    		<li><a href="fax">Fax (503) 275-9378</a></li>
-			  	    		<li><a href="#">Directions</a></li>
-			  	    	</ul>
-		  	    	</li>
-		  	    </ul>
-		  	</div>
-		</div>
-
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/about#navImage">Our Vision</a></li>
+            <li><a href="/about#learningExpectations">Learning Expectations</a></li>
+            <li><a href="http://www.westwcea.org/" target=_blank>Accreditation</a></li>
+            <li><a href="/about#appleAnchor">Distinguished by Apple</a></li>
+            <li><a href="/about#frequentQuestions">Frequently Asked Questions</a></li>
+            <li><a href="/about#ourHistory">Our History</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/academics">Academics</a>
+        </li>
+        <li>
+          <a href="/admissions">Admissions</a>
+        </li>
+        <li>
+          <a aria-expanded="true" class="dropdown-toggle" data-toggle=
+          "dropdown" href="/ourProgram">Our Program <span class=
+          "caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/ourProgram#overView">Explore</a></li>
+            <li><a href="/ourProgram#musicImage">Music</a></li>
+            <li><a href="/ourProgram#pePic">Physical Education</a></li>
+            <li><a href="/ourProgram#artImage">Art</a></li>
+            <li><a href="/library">Library</a></li>
+            <li><a href="/ourProgram#spanishImage">Spanish</a></li>
+            <li><a href="/ourProgram#activityImage">Activities</a></li>
+            <li><a href="/ourProgram#serviceImage">Service</a></li>
+            <li><a href="/ourProgram#extendedCareImage">Extended Care</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://cathedralschoolpdx.wordpress.com">News</a>
+        </li>
+        <li>
+          <a href="/calendar">Calendar</a>
+        </li>
+        <li>
+          <a aria-expanded="true" class="dropdown-toggle" data-toggle=
+          "dropdown" href="/parents">Parents <span class=
+          "caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/parents">Parent Main</a></li>
+            <li><a href="documents/2015_2016Tuition.pdf" target="_blank">Parent Handbook</a></li>
+            <li><a href="#" target="_blank">Hot Lunch</a></li>
+            <li><a href="/documents/parents/extendedCare/afterCareReg.pdf" target="_blank">Extended Care Registration</a></li>
+            <li><a href="/documents/parents/instructionsForBackgroundCheck.pdf" target="_blank">Get Setup to Volunteer</a></li>
+            <li><a href="http://website.praesidiuminc.com/" target="_blank">Called To Protect Training</a></li>
+            <li><a href="https://online.factsmgt.com/signin/3GKRY" target="_blank">FACTS Login</a></li>
+            <li><a href="http://www.loyolapress.com/3-minute-retreats-daily-online-prayer.htm" target="_blank">3 Minute Retreat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/alumni">Alumni</a>
+        </li>
+        <li>
+          <a href="/support">Support</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="tel:(503) 275 9370">Phone (503) 275-9370</a></li>
+            <li><a href="mailto:shatley@cathedral-or.org">email</a></li>
+            <li><a href="fax">Fax (503) 275-9378</a></li>
+            <li><a href="https://www.google.com/maps/place/Cathedral+School/@45.5249058,-122.6903293,17.66z/data=!4m2!3m1!1s0x54950a02a6419fe9:0xf5812e73081f01ea" target="_blank">Find Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
     <div class="container">
       <!-- Left Column -->
       <div class="row">
@@ -94,7 +122,7 @@
           <div class="row">
             <div class="col-sm-12">
           <div class="thumbnail">
-            <img src="images/img_parents/families.jpg" class= "img-rounded" alt="...">
+            <img src="images/img_parents/families.jpg" class= "img-rounded" alt="Parent Volunteers">
             <div class="caption" id="clickList">
               <h3>Committees &#38; Resources</h3>
               <div class="list-group">
@@ -591,5 +619,9 @@
  </div> -->
 </footer>
 </html>
-
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="javascripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascripts/parents.js"></script>
+</body>

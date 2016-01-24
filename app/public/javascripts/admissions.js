@@ -2,15 +2,15 @@ $(document).ready(function() {
 	console.log('hello Cathedral');
 
 	$("#admissionsButton").click(function() {
-		$('.jumbotron').toggle();
+		$('.jumbo1').hide();
+		$('#moreJumbo').show();
 	});
 
 	$("#backButton").click(function() {
-		$('.jumbotron').toggle();
+		$('.jumbo1').show();
+		$('#moreJumbo').hide();
 	});
-	$
 
-	$('#requestInfoButton').click(function() {
-		$('form').toggle();
-	});
+
+
 });

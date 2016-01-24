@@ -17,7 +17,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   <link href="stylesheets/mystyles.css" rel="stylesheet" media="screen">
   <link href="stylesheets/admissions.css" rel="stylesheet" media="screen">
-
 </head>
 <body>
 
@@ -50,7 +49,19 @@
             </ul>
           </li>
   		  	<li><a href="/academics">Academics</a></li>
-  		    <li class="active"><a href="/admissions">Admissions</a></li>
+          <li class="active">
+            <a aria-expanded="true" class="dropdown-toggle" data-toggle=
+            "dropdown" href="/about">Admissions <span class=
+            "caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/admissions#jumbo1">Introductions</a></li>
+              <li><a href="documents/admissionsPolicy.pdf" target="_blank">Admissions Policy</li>
+              <li><a href="documents/2015_2016Tuition.pdf" target="_blank">2015&#45;2016 Tuition</a></li>
+              <li><a href="/documents/2016_17NewStudentApplication.pdf" target="_blank">2016&#45;2017 New Student Application</a></li>
+              <li><a href="/about#frequentQuestions">Frequently Asked Questions</a></li>
+              <li><a href="/about#ourHistory">Our History</a></li>
+            </ul>
+          </li>
   		  	<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Program <span class="caret"></span></a>
   		  	    	<ul class="dropdown-menu">
   			  	    	<li><a href="/ourProgram#overView">Explore</a></li>
@@ -66,17 +77,31 @@
   		  	</li>
   		  	    <li><a href="https://cathedralschoolpdx.wordpress.com">News</a></li>
   		  	    <li><a href="/calendar">Calendar</a></li>
-  	          <li><a href="/parents">Parents</a></li>
+              <li>
+                <a aria-expanded="true" class="dropdown-toggle" data-toggle=
+                "dropdown" href="/parents">Parents <span class=
+                "caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/parents">Parent Main</a></li>
+                  <li><a href="documents/2015_2016Tuition.pdf" target="_blank">Parent Handbook</a></li>
+                  <li><a href="#" target="_blank">Hot Lunch</a></li>
+                  <li><a href="/documents/parents/extendedCare/afterCareReg.pdf" target="_blank">Extended Care Registration</a></li>
+                  <li><a href="/documents/parents/instructionsForBackgroundCheck.pdf" target="_blank">Get Setup to Volunteer</a></li>
+                  <li><a href="http://website.praesidiuminc.com/" target="_blank">Called To Protect Training</a></li>
+                  <li><a href="https://online.factsmgt.com/signin/3GKRY" target="_blank">FACTS Login</a></li>
+                  <li><a href="http://www.loyolapress.com/3-minute-retreats-daily-online-prayer.htm" target="_blank">3 Minute Retreat</a></li>
+                </ul>
+              </li>
   	  	    	<li><a href="/alumni">Alumni</a></li>
               <li><a href="/support">Support</a></li>
 
-  	  	    	<li class="dropdown">
+              <li class="dropdown">
   	  	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
   		  	    	<ul class="dropdown-menu">
   			  	  		<li><a href="tel:(503) 275 9370">Phone (503) 275-9370</a></li>
   			  	  		<li><a href="mailto:shatley@cathedral-or.org">email</a></li>
   			  	  		<li><a href="fax">Fax (503) 275-9378</a></li>
-  			  	  		<li><a href="#">Directions</a></li>
+  			  	  		<li><a href="https://www.google.com/maps/place/Cathedral+School/@45.5249058,-122.6903293,17.66z/data=!4m2!3m1!1s0x54950a02a6419fe9:0xf5812e73081f01ea" target="_blank">Find Us</a></li>
   			      	</ul>
   		      	</li>
 
@@ -85,93 +110,32 @@
     </div>
 		  <div class="container-fluid">
 		  <div class="row">
-		  	<div class="col-xs-12 col-md-8">
-		  	<div class="jumbotron">
-			  <h3>We are excited to share our school with you!</h3>
-			  <p>As a ministry of St. Mary&rsquo;s Cathedral parish, Cathedral School provides an excellent education in the Catholic tradition. Students grow in faith through prayer, study, and service. As they develop their academic skills, they learn to think critically, to work collaboratively, and to understand themselves as learners. Students develop the skills and attitudes that will help them become contributing members of society. </p>
-			  <p><a class="btn btn-primary btn-lg" id="admissionsButton" href="#" role="button">Learn more</a></p>
-			</div>
-
-			<div class = "jumbotron" id="moreJumbo">
-      <h4>Beginning The Journey</h4>
-      <p>The search for the right school is an exciting and challenging prospect for parents. Our goal is to help you learn about our community, academic programs, and staff, providing everything you need to inform your decision. Explore our website, and contact us to arrange for a tour of the school. The best way for you to get a sense of our core values, students, staff, and vibrant school life is to come and visit.</p>
-			<h4>Enrollment Ages</h4>
-			<p>Students applying for pre-kindergarten must be four years old on or before September 1st. Students applying for kindergarten must be five years old on or before September 1st. Applications may be submitted beginning September 1st of the year prior to entrance.</p>
-			<p><a class="btn btn-default btn-lg" id="backButton" href="#" role="button">Back</a><button class="btn btn-primary btn-lg" id="requestInfoButton" data-toggle="modal" data-target="#admissionsModal">Request Information</button></p>
-      <div class="modal fade" id="admissionsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Header-->
-             <div class="modal-header">
-            	<button type="button" class="close" data-dismiss="modal">
-            		<span aria-hidden="true">&times;</span>
-            		<span class="sr-only">Close</span>
-            	</button>
-            	<h4 class="modal-title" id="myModalLabel">Request Information</h4>
-            </div>
-            <!-- Body -->
-             <div class="modal-body">
-                <form id="interestForm"  action="mailto: wendygoodwin@mac.com" method="post">
-                <div class="form-group">
-                 <p id="formGreeting">Thank you for your interest in Cathedral School!  Please share a few details about your family so that we can provide you with helpful information about our school.</p>
-               </div>
-         				<div class="form-group">
-             				<label for="childFirstName">Child's First Name</label>
-             				<input type="text" id="childFirstName" class="form-control cleanText" placeholder="Child&rsquo;s First Name" required="" name="childFirstName">
-           				</div>
-                <div class="form-group">
-                  <label for="childLasttName">Child's Last Name</label>
-                  <input type="text" id="childLastName" class="form-control cleanText" placeholder="Child&rsquo;s Last Name" required="" name="childLastName">
-                </div>
-           				<div class="form-group">
-           					<label for="childAge">Child's Age</label>
-                    <input type="number" id="childAge" class="form-control" size="6" name="age" min="1" max="16" value="5"><br>
-           				<div class="form-group">
-             				<label for="parentName">Your Name</label>
-             				<input type="text" id="parentName" class="form-control cleanText" placeholder="Your Name" required="" name="parentName">
-           				</div>
-                  <div class="form-group"><label for "phoneNumber" >Phone Number: </label><input type="text" id="phoneNumber" required="" placeHolder="5555555555" pattern="[0-9]{10}">
-           				<div class="form-group">
-             				<label for="email">email address</label>
-             				<input type="email" id="email" class="form-control cleanText" placeholder="email" required=""Enter a valid email address"" name="email">
-           				</div>
-		              <div>
-           				<p>How did you hear about Cathedral School</p>
-           				</div>
-           				<div class="checkbox">
-             				<label>
-               				<input type="checkbox" id="currFamily"> Current Cathedral Family <br>
-               				<input type="checkbox" id="stMarys"> St. Mary&rsquo;s Cathedral <br>
-               				<input type="checkbox" id="advertisement"> Advertisement <br>
-               				<input type="checkbox" id="website"> Website <br>
-               				<input type="checkbox" id="staffMember"> Staff Member <br>
-                      <input type="checkbox" id="other"> Other <br>
-             				</label>
-             			</div>
-         			</form>
-            </div>
-            <!-- Footer -->
-          <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            	<button type="submit" action: "submit" class="btn btn-primary">Submit</button>
-            </div>
+		  	<div class="col-xs-12 col-md-8 jumbotron">
+  		  	<div class="jumbo1">
+  			  <h3>We are excited to share our school with you!</h3>
+  			  <p>As a ministry of St. Mary&rsquo;s Cathedral parish, Cathedral School provides an excellent education in the Catholic tradition. Students grow in faith through prayer, study, and service. As they develop their academic skills, they learn to think critically, to work collaboratively, and to understand themselves as learners. Students develop the skills and attitudes that will help them become contributing members of society. </p>
+  			  <p><a class="btn btn-primary btn-lg" id="admissionsButton" href="#" role="button">Learn more</a></p>
+        </div>
+        <div id="moreJumbo">
+          <h4>Beginning The Journey</h4>
+          <p>The search for the right school is an exciting and challenging prospect for parents. Our goal is to help you learn about our community, academic programs, and staff, providing everything you need to inform your decision. Explore our website, and contact us to arrange for a tour of the school. The best way for you to get a sense of our core values, students, staff, and vibrant school life is to come and visit.</p>
+    			<h4>Enrollment Ages</h4>
+    			<p>Students applying for pre-kindergarten must be four years old on or before September 1st. Students applying for kindergarten must be five years old on or before September 1st. Applications may be submitted beginning September 1st of the year prior to entrance.</p>
+    			<p><a class="btn btn-default btn-lg" id="backButton" href="#" role="button">Back</a><a class="btn btn-default btn-lg" id="interestForm" href="https://portlandcathedralschool.wufoo.com/forms/s1u6rjre1f6aw59/" role="button">Request Information</a></p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="images/img_admissions/admissionsKids.jpg" class="img-responsive img-rounded" alt="kids singing">
           </div>
         </div>
       </div>
-    </div>
-			</div>
-    </div>
-			<img src="images/img_admissions/admissionsKids.jpg" class="img-responsive img-rounded" alt="kids singing">
-
-<!-- <p><a href="#musicImage" class="btn btn-primary" id="musicButton" role="button">Cathedral Music</a><a href="#musicImage" class="btn btn-default" id="ensembleButton" role="button">Ensembles</a></p> -->
-			</div>
 			<div class="col-xs-12 col-md-4">
 					<div class="list-group">
-					  <a href="documents/admissionsPolicy.pdf"<button type="button" class="list-group-item">Admissions Policy</a></button>
+					  <a href="documents/admissionsPolicy.pdf" target="_blank"<button type="button" class="list-group-item">Admissions Policy</a></button>
 					  <a href="documents/2015_2016Tuition.pdf"<button type="button" class="list-group-item">2015-2016 Tuition Rates</a></button>
-					  <a href="documents/newStudentApplication.pdf"<button type="button" class="list-group-item">2015-2016 New Student Application</button>
-					  <a href="documents/2016_17NewStudentApplication.pdf"<button type="button" class="list-group-item">2016-2017 New Student Application</a></button>
-					  <a href="https://online.factsmgt.com/signin/3GKRY"<button type="button" class="list-group-item">FACTS</a></button>
+					  <a href="documents/newStudentApplication.pdf" target="_blank" <button type="button" class="list-group-item">2015-2016 New Student Application</button>
+					  <a href="documents/2016_17NewStudentApplication.pdf" target="_blank"<button type="button" class="list-group-item">2016-2017 New Student Application</a></button>
+					  <a href="https://online.factsmgt.com/signin/3GKRY" target="_blank"<button type="button" class="list-group-item">FACTS</a></button>
 					  <li><img src="images/img_admissions/closeupK.jpg" class="img-responsive img-rounded" alt="kids singing"></li>
 					</div>
 			</div>
@@ -179,7 +143,7 @@
 				<div class="col-xs-12 col-md-4">
 					<div id="map">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3154182899416!2d-122.68788409999998!3d45.52385790000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a02a6419fe9%3A0xf5812e73081f01ea!2sCathedral+School!5e0!3m2!1sen!2sus!4v1441829184349" width="375" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<div class="well well-lg">
+					<div class="well well-lg" id="ourLocation">
 						<h3>Our Location</h3>
 						<p>110 NW 17th Avenue</p>
 						<p>Portland, Oregon 97209</p>
