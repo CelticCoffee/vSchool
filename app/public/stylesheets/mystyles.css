@@ -98,10 +98,20 @@ footer .copyright {
 }
 }
 
+@media screen and (max-width: 1199px) {
+	.navbar-right {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+}
+
+
 @media screen and (max-width: 1024px) {
 	#cathedralCarousel {
 			padding: auto;
 		}
+}
 
 
 @media screen and (max-width: 1280px) {
