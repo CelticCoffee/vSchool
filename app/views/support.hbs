@@ -115,18 +115,29 @@
       </ul>
     </div>
   </nav>
-    <div class="container">
+    <div class="container supportContent">
     <div class="row">
-      <div class="col-sm-2 media">
-        <ul class="supportMenu">
+      <div class="col-xs-12" id="supportTabs">
+        <ul class="nav nav-tabs aboutNavigation" id="supportTab" role="tablist">
+          <li role="presentation"><a href="#cathAucHero" id="aucTab">Cathedral Auction</a></li>
+          <li role="presentation"><a href="#run4CathedralHero" id="run4Tab">Run 4 Cathedral</a></li>
+          <li role="presentation"><a href="#legacy" id="legacyTab">Leave a Legacy</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-0 col-md-3 media" id="iconMenu">
+        <ul class="supportMenuLarge">
+          <li><h4>Ways To Support</h4></li>
           <li><img class="media-object leftImage" id="leaveLegacySm" src="images/img_support/leaveALegacy2.jpg" alt="..."></li>
           <li><img class="media-object leftImage" id="run4Small" src="images/img_support/run4CathedralSm.png" alt="..."></li>
           <li><img class="media-object leftImage" id="auctionSmall" src="images/img_support/auctionPromoSm.jpg" alt="..."></li>
+        </ul>
 
-      </ul>
       </div>
-      <div class="col-sm-8 col-lg-10">
-        <div class="leaveALegacyHero noShowText">
+      <div class="col-sm-12 col-md-9">
+        <div class="leaveALegacyHero noShowText" id="legacy">
         <div class="thumbnail">
           <img src="images/img_support/leaveALegacy2Big.jpg" alt="...">
           <div class="caption supportImage">
@@ -149,7 +160,7 @@
           </div>
         </div>
       </div>
-        <div class="cathedralAuctionHero">
+        <div class="cathedralAuctionHero" id="cathAucHero">
         <div class="thumbnail">
           <img src="images/img_support/auctionPromo.jpg" alt="...">
           <div class="caption supportImage">
