@@ -1,11 +1,15 @@
-#navImage {
-	width: 120px;
+/***************************/
+/*******top image and nav*****/
+/***************************/
+.admissionsContent {
+	margin-top: 25px;
 }
 
-input:required {
-    background:hsl(180, 50%, 90%);
-    border:1px solid #999;
+
+.jumbotron {
+	padding-top: 5em;
 }
+
 
 
 li {
@@ -17,9 +21,7 @@ img {
 	padding-top: .5em;
 }
 
-.jumbotron {
-	padding-top: 5em;
-}
+
 
 .jumbotron p {
 	font-size: 1.25em;
@@ -33,37 +35,6 @@ form {
 	display: none;
 }
 
-/*********************************
-**********Form Style**************
-**********************************/
-label {
-	font-weight: normal;
-	font-size: 1em;
-}
-
-.form-group {
-	max-width: 250px;
-	margin: .5em auto;
-	background-color: white;
-}
-
-#formGreeting {
-	max-width: 400px;
-		margin: .5em auto;
-		font-size: 1em;
-}
-
-#childAge {
-	width: 100px;
-}
-
-.modal-body p {
-	font-size: 1em;
-}
-
-input:required {
-	background-color: lightyellow;
-}
 
 
 
