@@ -1,10 +1,23 @@
-.supportMenu {
-  list-style: none;
+.supportContent {
+  margin-top: 50px;
 }
 
-.supportMenu li {
+
+
+.supportMenuLarge {
+  list-style: none;
+
+}
+
+.supportMenuLarge li {
   margin-bottom: 1em;
 }
+
+h4 {
+  text-transform: uppercase;
+  color: #4e5d74;
+}
+
 
 
 .media-object img {
