@@ -9,4 +9,6 @@ $(document).ready(function() {
     console.log('banana pie');
     $('.mobileSwap').remove();
   }
+
+  
 });
