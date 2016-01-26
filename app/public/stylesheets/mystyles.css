@@ -112,6 +112,13 @@ footer .copyright {
 			padding: auto;
 		}
 }
+@media screen and (max-width: 1440px) {
+	.navbar-right {
+		font-size: 1em;
+	}
+	.navbar-brand {
+		font-size: 1.5em;
+	}
 
 
 @media screen and (max-width: 1280px) {
