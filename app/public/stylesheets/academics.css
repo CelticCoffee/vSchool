@@ -1,22 +1,69 @@
-#navImage {
-	width: 120px;
+
+
+/*.academicText {
+	margin-top: 50px;
+}*/
+
+.navContainer {
+	margin-top: 90px;
 }
 
-#innerPageMenu {
-  background-color: black;
-  font-color: white;
+/*******************/
+/*gray Box content**/
+/*******************/
+.academicTextBox {
+  padding: 1.5em;
+  background-color: lightGray;
 }
 
-#openMenuLook {
-  margin-top: 2em;
-  padding-top: 4em;
-  background-color: black;
+.pictureBorder {
+	border: solid 1px #CCC;
+		-moz-border-shadow: 5px 5px 5px #999;
+		-webkit-box-shadow: 5px 5px 5px #999;
+		box-shadow: 5px 5px 5px #999;
 }
 
-/*General Visual Look*/
-#academicTextBox {
-  padding: 3.5em;
-  background-color: lightBlue;
+.pictureCaption {
+	width: 250px;
+	text-align: center;
+	font-weight: 200;
+	color: black;
+
+}
+/*******************/
+/*welcome styles**/
+/*******************/
+
+#appleList {
+  list-style: circle;
+	margin-left: 0;
+}
+
+#signature {
+  font-weight: bold;
+  font-style: italic;
+	padding-left: 1em;
+}
+
+/*******************/
+/*faculty Box styles**/
+/*******************/
+
+.thumbnail {
+	padding: 10px;
+
+}
+
+.staffPics {
+	width:15em;
+}
+
+.caption {
+	text-align: center;
+}
+
+.blueClass {
+	color: #4e5d74;
 }
 
 .noShowText  {
@@ -24,129 +71,48 @@
 
 }
 
-.showText {
-  display: block;
-  font-size: 1.1em;
+
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+	.academicText {
+		margin-top: 60px;
+	}
 }
 
-#welcome img {
-  padding: 1em 0em 0em 0em;
-  border-radius: 15px 50px;
-}
+@media only screen and (max-width: 1199px) {
+	.facultyPortraits {
+		max-width: 250px;
+	}
+	.pictureCaption {
+		text-align: left;
+	}
 
-#welcome #firstP {
-  padding: .5em;
-}
-
-#appleList {
-  list-style: circle;
-}
-
-#signature {
-  font-weight: bold;
-  font-style: italic;
-  padding-left: 2em;
-}
-
-#faculty #staff h5 {
-  color: black;
-  font-weight: bold;
-}
-
-.midTeacherImages {
-  padding: .1em;
-}
-
-.midTeacherImages li{
-  display: inline-block;
-}
-
-.specialistSchedule h3 {
-  color: white;
-
-}
-
-.gradeTitle {
-  padding-left: .5em;
-}
-
-.specialistSchedule {
-  background-color: black;
-  margin-top: 1em;
-}
-
-.blackBack {
-  margin-top: 1em;
-  width: 230px;
-  height: 375px;
-  padding: 1em;
-  background-color: black;
-  position: inherit;
-}
-
-.boxed2 {
-  margin-top: 0em;
-  width: 230px;
-  height: 375px;
-  padding: 1em;
-  background-color: black;
+	@media only screen and (max-width: 1024px) {
+		.academicText {
+			margin-top: 10px;
+		}
 }
 
 
-.boxed, .boxed2, ul {
-  list-style: none;
-}
+@media only screen and (max-width: 768px) {
+	.academicText {
+		margin-top: 10px;
+	}
+	.welcomeText {
+		margin-left: auto;
+		margin-right: 1em;
+		margin-top: 1em;
+	}
 
-.front, .boxed, .boxed2, h4, h5, .photoText{
-  color: white;
-  font-weight: 200;
-  padding-bottom: .25em;
-}
-
-.back, .photoText {
-  color: GhostWhite;
-  font-weight: 200;
-  font-size: 1em;
-}
-
-
-/* make sidebar nav vertical */
-@media (min-width: 768px) {
-  .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
-
-  }
-  .sidebar-nav .navbar ul {
-    float: none;
-  }
-  .sidebar-nav .navbar ul:not {
-    display: block;
-  }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  .gradeTitle {
-    padding: 0;
-  }
-
-}
-
-@media (max-width: 768px) {
-  #openMenuLook {
-  margin-top: 1em;
-  padding-top: 1em;
-}
-
-.container {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-
+	#openMenuLook {
+	margin-top: 1em;
+	padding-top: 1em;
+	}
+	/*.facultyPortraits {
+		width: 200px;
+	}*/
 }
