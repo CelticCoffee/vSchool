@@ -130,6 +130,10 @@ $(document).ready(function() {
 		$('#kilkennyBio').toggle();
 	})
 
+	$('#petersenButton').click(function(){
+		$('#petersenBio').toggle();
+	})
+
 	//2nd Grade Button Text Reveal
 		$('#moreSecondGrade').click(function(){
 			$('#secondGradeMain').toggle();
@@ -151,9 +155,133 @@ $(document).ready(function() {
 			$('#mcMahonBio').toggle();
 		})
 
-		$('#kilkennyButton').click(function(){
-			$('#kilkennyBio').toggle();
+		$('#odiorneButton').click(function(){
+			$('#odiorneBio').toggle();
 		})
+
+		//3rd Grade Button Text Reveal
+			$('#moreThirdGrade').click(function(){
+				$('#thirdGradeMain').toggle();
+				$('#thirdGradeMore').toggle();
+			})
+
+			$('#backToThird').click(function(){
+				$('#thirdGradeMain').toggle();
+				$('#thirdGradeMore').toggle();
+			})
+
+			$('#thirdGradeDocButton').click(function(){
+				$('#thirdGradeMain').toggle();
+				$('#thirdGradeMore').toggle();
+			})
+
+
+			//Third Grade Picture Button Bio Reveal//
+			$('#trachtenbargButton').click(function(){
+				$('#trachtenbargBio').toggle();
+			})
+
+			$('#fryButton').click(function(){
+				$('#fryBio').toggle();
+			})
+
+			//4th Grade Button Text Reveal
+				$('#moreFourthGrade').click(function(){
+					$('#fourthGradeMain').toggle();
+					$('#fourthGradeMore').toggle();
+				})
+
+				$('#backToFourth').click(function(){
+					$('#fourthGradeMain').toggle();
+					$('#fourthGradeMore').toggle();
+				})
+
+				$('#fourthGradeButton').click(function(){
+					$('#fourthGradeMain').toggle();
+					$('#fourthGradeMore').toggle();
+				})
+
+				$('#fourthGradeDocButton').click(function(){
+					$('#fourthGradeMain').toggle();
+					$('#fourthGradeMore').toggle();
+				})
+
+				//Fourth Grade Picture Button Bio Reveal//
+				$('#penkalaButton').click(function(){
+					$('#penkalaBio').toggle();
+				})
+
+				$('#niedermeyerButton').click(function(){
+					$('#niedermeyerBio').toggle();
+				})
+
+				//5th Grade Button Text Reveal
+					$('#moreFifthGrade').click(function(){
+						$('#fifthGradeMain').toggle();
+						$('#fifthGradeMore').toggle();
+					})
+
+					$('#backToFifth').click(function(){
+						$('#fifthGradeMain').toggle();
+						$('#fifthGradeMore').toggle();
+					})
+
+					$('#fifthGradeButton').click(function(){
+						$('#fifthGradeMain').toggle();
+						$('#fifthGradeMore').toggle();
+					})
+
+					$('#fifthGradeDocButton').click(function(){
+						$('#fifthGradeMain').toggle();
+						$('#fifthGradeMore').toggle();
+					})
+
+					//Fifth Grade Picture Button Bio Reveal//
+					$('#hartButton').click(function(){
+						$('#hartBio').toggle();
+					})
+
+					$('#niedermeyerButton2').click(function(){
+						$('#niedermeyerBio2').toggle();
+					})
+
+					//Middle School Button Text Reveal
+						$('#moreMiddleSchool').click(function(){
+							$('#middleSchoolMain').toggle();
+							$('#middleSchoolMore').toggle();
+						})
+
+						$('#backToMiddleSchool').click(function(){
+							$('#middleSchoolMain').toggle();
+							$('#middleSchoolMore').toggle();
+						})
+
+						$('#middleSchoolButton').click(function(){
+							$('#middleSchoolMain').toggle();
+							$('#middleSchoolMore').toggle();
+						})
+
+						$('#middleSchoolDocButton').click(function(){
+							$('#middleSchoolMain').toggle();
+							$('#middleSchoolMore').toggle();
+						})
+
+						//Middle School Picture Button Bio Reveal//
+						$('#aguonButton').click(function(){
+							$('#aguonBio').toggle();
+						})
+
+						$('#exleyButton').click(function(){
+							$('#exleyBio').toggle();
+						})
+
+						$('#raeButton').click(function(){
+							$('#raeBio').toggle();
+						})
+
+						$('#wellnitzButton').click(function(){
+							$('#wellnitzBio').toggle();
+						})
 
 
 

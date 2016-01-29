@@ -23,13 +23,21 @@
 		box-shadow: 5px 5px 5px #999;
 }
 
+#mrsBiggsPic {
+	margin-top:4em;
+}
+
 .pictureCaption {
 	width: 250px;
 	text-align: center;
 	font-weight: 200;
 	color: black;
-
 }
+
+.firstG {
+	height: 600px;
+}
+
 /*******************/
 /*welcome styles**/
 /*******************/
@@ -71,7 +79,23 @@
 
 }
 
+/*******************/
+/*faculty Box styles**/
+/*******************/
+.midTeachers {
+	margin: 0;
+	min-height: 600px;
+}
 
+.midTeachers img {
+	width: 175px;
+	padding:0;
+	/*padding: 10px;*/
+}
+
+.middleSchoolImageRow {
+	padding: 0;
+}
 
 
 
@@ -106,6 +130,9 @@
 		margin-left: auto;
 		margin-right: 1em;
 		margin-top: 1em;
+
+
+
 	}
 
 	#openMenuLook {
