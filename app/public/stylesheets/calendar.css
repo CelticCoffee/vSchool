@@ -1,8 +1,11 @@
-#navImage {
-	width: 120px;
-}
+
+
 
 @media screen and (min-width: 1000px) {
+	.padTop {
+		margin-top:50px;
+	}
+
 		.tabletCalendar {
 			display: none;
 		}
@@ -15,6 +18,10 @@
 
 
 @media screen and (max-width: 999px) {
+
+	.padTop {
+		margin-top:10px;
+	}
 		.desktopCalendar {
 			display: none;
 		}
@@ -30,6 +37,10 @@
 }
 
 @media screen and (max-width: 600px) {
+
+	.padTop {
+		margin-top:5px;
+	}
 		.desktopCalendar {
 			display: none;
 		}
