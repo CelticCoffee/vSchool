@@ -10,6 +10,4 @@ $(document).ready(function() {
     $('#mobileSwap').remove();
     $('#desktopCarousel').show();
   }
-
-
 });
