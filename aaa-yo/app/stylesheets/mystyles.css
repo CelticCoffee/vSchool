@@ -1,0 +1,176 @@
+/***************************/
+/********top navigation*****/
+/***************************/
+body {
+	padding-top: 70px;
+}
+
+#cathedralMenuToggle {
+	font-size: 1em;
+}
+
+#cathedralMenuToggle {
+	padding: 1.05em;
+}
+
+#librarySwap img {
+	width: 100%:
+}
+
+
+/*Cathedral School Left */
+.navbar-brand {
+	font-size: 2em;
+	position: fixed;
+	padding: 1.15em;
+}
+
+
+.navbar-right {
+	padding-left: 15em;
+	padding-right: 15em;
+	font-size: 1em;
+}
+
+/*spacing between the links*/
+.navbar-right li {
+	padding-right: 1em;
+}
+
+
+/*/Top image for mobile*/
+#mobileSwapImage {
+	width: 100%;
+	display: none;
+}
+
+/***************************/
+/********panels*****/
+/***************************/
+#enrollButton {
+	width: 100%;
+	padding: 1em;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	background-color: #ba020e;
+}
+
+#logoHome {
+	display: block;
+	margin: 0 auto;
+	}
+
+.cathCenterHome {
+	padding-top: 1em;
+	text-align: center;
+}
+.missionText {
+	text-align: left;
+	margin: .25em;
+	padding-left: .25em;
+	padding-bottom: 1em;
+}
+
+/***************************/
+/********media queries*****/
+/***************************/
+
+@media only screen
+and (min-width: 1000px) {
+
+footer ul {
+	display: inline-block;
+	padding: 1em;
+	list-style: none;
+
+}
+
+footer ul li {
+	display: inline-block;
+	padding: 2em;
+}
+
+footer .container ul {
+	list-style: none;
+	text-align: center;
+}
+
+footer h4 {
+	text-align: center;
+}
+
+footer .row {
+	text-align: center;
+}
+
+footer .social  {
+	padding: 0 2em;
+	text-align: center;
+}
+
+footer .copyright {
+	text-align: center;
+
+}
+}
+
+@media screen and (max-width: 1199px) {
+	.navbar-right {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+	#cathedralCarousel {
+			padding: auto;
+		}
+}
+@media screen and (max-width: 1440px) {
+	.navbar-right {
+		font-size: 1em;
+	}
+	.navbar-brand {
+		font-size: 1.5em;
+	}
+
+
+@media screen and (max-width: 1280px) {
+	.navbar-brand {
+		padding: 15px 15px;
+	}
+
+	.links, .social, .copyright {
+		float: none;
+		text-align: center;
+	}
+	.social {
+		position: relative;
+		margin: 10px 0;
+	}
+	.links li {
+		display: inline-block;
+		float: none;
+	}
+	.bar {
+		position: relative;
+	}
+	.bar-wrap {
+		margin-bottom: 0;
+	}
+}
+
+
+@media screen and (max-width: 835px) {
+	footer ul li {
+		float; none;
+		width: auto;
+	}
+	.navbar-right {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+}
