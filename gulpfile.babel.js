@@ -1,19 +1,4 @@
 
-var gulp = require('gulp'),
-    useref = require('gulp-useref');
-
-gulp.task('default', function () {
-    return gulp.src('app/*.html')
-        .pipe(useref())
-        .pipe(gulp.dest('dist'));
-});
-
-
-
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
 
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
