@@ -1,5 +1,5 @@
 
-    useref = require('gulp-useref');
+  
 
 gulp.task('default', function () {
     return gulp.src('app/*.html')
