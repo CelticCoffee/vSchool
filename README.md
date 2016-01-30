@@ -19,4 +19,4 @@ It cannot by its nature be the sleek, minimalistic web experience that many of u
 site will vastly improve the current experience and lower the work load of the staff that will maintain it on a day to day basis.
 
 
-The site undergoes constant review from staff and council as they continue to define their desired outcome. Our target release is Christmas 2015.
+The site is complete and I'm vetting different ways to host since currently the site is static but ultimately I want it to scale.
