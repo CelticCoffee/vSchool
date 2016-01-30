@@ -1,6 +1,9 @@
 
 // //eventually I'd like to put this into a constructor//
 $(document).ready(function() {
+	$(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
 	console.log('hello');
 
 
@@ -123,8 +126,19 @@ $(document).ready(function() {
 
 	//First Grade Picture Button Bio Reveal//
 	$('#mcCoyButton').click(function(){
+		$('#mcCoyBack').show();
+		$('#mcCoyPicHide').toggle();
 		$('#mcCoyBio').toggle();
+		$(this).hide();
 	})
+
+	$('#mcCoyBack').click(function(){
+		$('#mcCoyButton').toggle();
+		$('#mcCoyPicHide').toggle();
+		$('#mcCoyBio').toggle();
+		$(this).hide();
+	})
+
 
 	$('#kilkennyButton').click(function(){
 		$('#kilkennyBio').toggle();
