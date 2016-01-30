@@ -1,0 +1,124 @@
+/***************************/
+/*******top image and nav*****/
+/***************************/
+.wrapper img {
+	width: 100%;
+	margin-top: 70px;
+}
+
+.ourProgramTabNav {
+	font-size: 1.15em;
+	text-transform: uppercase;
+}
+
+.ourProgramTabNav li {
+	padding: 1em;
+
+}
+/***************************/
+/*explore program content*****/
+/***************************/
+
+.exploreHero {
+	padding: .5em;
+}
+
+/***************************/
+/*******content box styles*****/
+/***************************/
+.academicTextBox {
+  padding: 1.5em;
+  background-color: lightGray;
+	border-radius: 10px;
+}
+
+.pictureBorder {
+	border: solid 1px #CCC;
+		-moz-border-shadow: 5px 5px 5px #999;
+		-webkit-box-shadow: 5px 5px 5px #999;
+		box-shadow: 5px 5px 5px #999;
+}
+
+.noShowText {
+	display: none;
+}
+
+.specialistBox {
+	padding: 1em;
+	background-color: white;
+	border-radius: 10px;
+}
+
+/***************************/
+/*******music box styles*****/
+/***************************/
+
+#mrsEnglish {
+	padding: .5em;
+	margin-top: 2em;
+}
+
+.teacherBio {
+	padding-top: 2em;
+}
+
+
+
+
+.activityImages {
+	margin-top: 2em;
+}
+
+
+
+
+
+
+
+#artText {
+	display: none;
+}
+
+#artShowText {
+	display: none;
+}
+
+#artButton {
+	margin-right: 1em;
+}
+
+
+#techText {
+	display: none;
+}
+
+#cyoText {
+	display: none;
+}
+
+#afterCareText {
+	display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+	.staffPics {
+		max-width: 250px;
+	}
+	.pictureCaption {
+		padding-left: 1em;
+		text-align: left;
+	}
+	.wrapper img {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.englishBio {
+		padding-left: .25em;
+
+	}
+	.staffPics {
+		max-width: 200px;
+	}
+
+	@media only screen and (max-width: 768px) {
