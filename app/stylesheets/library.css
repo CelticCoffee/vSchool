@@ -1,14 +1,11 @@
+
 .wrapper {
 padding-top: 45px;
 }
 
+
 .wrapper img {
 	width: 100%;
-}
-
-#mobileSwapImage {
-	width: 100%;
-	display: none;
 }
 
 #birthdayBookForm {
@@ -22,7 +19,8 @@ padding-top: 45px;
 
 .page-header small {
 	color: green;
-
+	font-style: italic;
+	font-weight: 150;
 }
 
 
@@ -86,18 +84,21 @@ li {
 
 @media only screen and (max-width: 1820px) {
 	.wrapper {
-		padding-top: 90px;
+
+		padding-top: 80px;
 	}
 }
 
 @media only screen and (max-width: 1200px) {
 	.wrapper {
 		padding-top: 10px;
+
 	}
 }
 
 @media only screen and (max-width: 400px) {
 	.wrapper {
 		padding-top: 0px;
+
 	}
 }
