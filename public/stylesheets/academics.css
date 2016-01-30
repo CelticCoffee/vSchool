@@ -23,8 +23,9 @@
 		box-shadow: 5px 5px 5px #999;
 }
 
-#mrsBiggsPic {
+.mrsBiggsPic {
 	margin-top:4em;
+	width:100%;
 }
 
 .pictureCaption {
