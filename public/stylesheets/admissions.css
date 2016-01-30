@@ -1,6 +1,10 @@
 /***************************/
 /*******top image and nav*****/
 /***************************/
+.container {
+	margin-top: 50px;
+}
+
 .admissionsContent {
 	margin-top: 25px;
 }
@@ -46,6 +50,10 @@ form {
 
 
 @media screen and (max-width: 999px) {
+		.container {
+			margin-top: 10px;
+		}
+
 		.jumbotron {
 			font-size: 1em;
 			padding: 1em;
@@ -54,6 +62,10 @@ form {
 }
 
 @media screen and (max-width: 600px) {
+		.container {
+			margin-top: 0px;
+		}
+
 		.jumbotron {
 			font-size: .85em;
 		}

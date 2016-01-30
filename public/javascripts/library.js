@@ -1,5 +1,18 @@
 $(document).ready(function() {
-	// console.log('JavaScript Connected');
+//mobile image swap
+	if(screen.width < 415) {
+    $('.wrapper').remove();
+    $('#librarySwap').show();
+    console.log('pie');
+  }
+  else if (screen.width >=415) {
+    console.log('banana pie');
+    $('#librarySwap').remove();
+    $('.wrapper').show();
+  }
+
+
+
 
 //BIRTHDYAY BOOKS//
 	$('#birthdayButton').click(function(event) {
@@ -52,7 +65,7 @@ $('#battleBack').click(function(event) {
 	// $('#bookBattle2').addClass('noShowLibText');
 	$('#bookBattleA').toggle();
 	$('#bookBattleB').toggle();
-	});	
+	});
 
 $('#awardBookButton').click(function(){
 	$('#awardBooks2').addClass('showLibText');

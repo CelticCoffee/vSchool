@@ -6,14 +6,23 @@ body {
 }
 
 #cathedralMenuToggle {
+	font-size: 1em;
+}
+
+#cathedralMenuToggle {
 	padding: 1.05em;
 }
+
+#librarySwap img {
+	width: 100%:
+}
+
 
 /*Cathedral School Left */
 .navbar-brand {
 	font-size: 2em;
 	position: fixed;
-	padding: 1.05em;
+	padding: 1.15em;
 }
 
 
@@ -29,25 +38,38 @@ body {
 }
 
 
-/*The size of links in the hamburger menu*/
-.navbar-collapse {
-	font-size: 1.05em;
+/*/Top image for mobile*/
+#mobileSwapImage {
+	width: 100%;
+	display: none;
 }
-
-
 
 /***************************/
 /********panels*****/
 /***************************/
+#enrollButton {
+	width: 100%;
+	padding: 1em;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	background-color: #ba020e;
+}
 
+#logoHome {
+	display: block;
+	margin: 0 auto;
+	}
 
-
-#responsiveCal {
-	padding-bottom: 25%;
-	padding-top: 30px;
+.cathCenterHome {
+	padding-top: 1em;
 	text-align: center;
-	height: 0;
-
+}
+.missionText {
+	text-align: left;
+	margin: .25em;
+	padding-left: .25em;
+	padding-bottom: 1em;
 }
 
 /***************************/
