@@ -8,291 +8,291 @@ $(document).ready(function() {
 		//Navigation on Academics Page//
 
 	$('#welcomeTab').click(function(){
-		$('.welcomeContainer').toggle();
+		$('.welcomeContainer').toggle('slow');
 		$('.welcomeTab').addClass('active').siblings().removeClass('active');
 	});
 
 	$('#facultyTab').click(function(){
 		$('#facultyTab').addClass('active').siblings().removeClass('active');
 		$('#welcomeTab').removeClass('active');
-		$('.facultyContainer').show().siblings('.academicText').hide();
+		$('.facultyContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#preKTab').click(function(){
 		$('#preKTab').addClass('active').siblings().removeClass('active');
 		$('#welcomTab').removeClass('active');
-		$('.preKContainer').show().siblings('.academicText').hide();
+		$('.preKContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#kinderTab').click(function(){
 		$('#kinderTab').addClass('active').siblings().removeClass('active');
-		$('.kinderContainer').show().siblings('.academicText').hide();
+		$('.kinderContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#firstGradeTab').click(function(){
 		$('#firstGradeTab').addClass('active').siblings().removeClass('active');
-		$('.firstGradeContainer').show().siblings('.academicText').hide();
+		$('.firstGradeContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#secondGradeTab').click(function(){
 		$('#secondGradeTab').addClass('active').siblings().removeClass('active');
-		$('.secondGradeContainer').show().siblings('.academicText').hide();
+		$('.secondGradeContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#thirdGradeTab').click(function(){
 		$('#thirdGradeTab').addClass('active').siblings().removeClass('active');
-		$('.thirdGradeContainer').show().siblings('.academicText').hide();
+		$('.thirdGradeContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#fourthGradeTab').click(function(){
 		$('#fourthGradeTab').addClass('active').siblings().removeClass('active');
-		$('.fourthGradeContainer').show().siblings('.academicText').hide();
+		$('.fourthGradeContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#fifthGradeTab').click(function(){
 		$('#fifthGradeTab').addClass('active').siblings().removeClass('active');
-		$('.fifthGradeContainer').show().siblings('.academicText').hide();
+		$('.fifthGradeContainer').show('slow').siblings('.academicText').hide();
 	})
 
 	$('#middleSchoolTab').click(function(){
 		$('#middleSchoolTab').addClass('active').siblings().removeClass('active');
-		$('.middleSchoolContainer').show().siblings('.academicText').hide();
+		$('.middleSchoolContainer').show('slow').siblings('.academicText').hide();
 	})
 
 
 	//PreK Picture Button Bio Reveal//
 	$('#mannenbachButton').click(function(){
-		$('#mannenbachBio').toggle();
+		$('#mannenbachBio').toggle('slow');
 	})
 
 	$('#murphyButton').click(function(){
-		$('#murphyBio').toggle();
+		$('#murphyBio').toggle('slow');
 	})
 
 	//PreKService Text Reveal//
 	$('#morePreK').click(function(){
-		$('#preKMain').toggle();
-		$('#preKMore').toggle();
+		$('#preKMain').toggle('slow');
+		$('#preKMore').toggle('slow');
 	})
 
 	$('#backToPreK').click(function(){
-		$('#preKMain').toggle();
-		$('#preKMore').toggle();
+		$('#preKMain').toggle('slow');
+		$('#preKMore').toggle('slow');
 	})
 
 	//Kinder Picture Button Bio Reveal//
 	$('#gobelButton').click(function(){
-		$('#gobelBio').toggle();
+		$('#gobelBio').toggle('slow');
 	})
 
 	$('#strongButton').click(function(){
-		$('#strongBio').toggle();
+		$('#strongBio').toggle('slow');
 	})
 
 	//kindergarten Text Reveal//
 	$('#moreKinder').click(function(){
-		$('#kinderMain').toggle();
-		$('#kinderMore').toggle();
+		$('#kinderMain').toggle('slow');
+		$('#kinderMore').toggle('slow');
 	})
 
 	$('#backToKinder').click(function(){
-		$('#kinderMain').toggle();
-		$('#kinderMore').toggle();
+		$('#kinderMain').toggle('slow');
+		$('#kinderMore').toggle('slow');
 	})
 
 	$('#kinderDocButton').click(function(){
-		$('#kinderMain').toggle();
-		$('#kinderMore').toggle();
+		$('#kinderMain').toggle('slow');
+		$('#kinderMore').toggle('slow');
 	})
 
 
 //1st Grade Button Text Reveal
 	$('#moreFirstGrade').click(function(){
-		$('#firstGradeMain').toggle();
-		$('#firstGradeMore').toggle();
+		$('#firstGradeMain').toggle('slow');
+		$('#firstGradeMore').toggle('slow');
 	})
 
 	$('#backToFirst').click(function(){
-		$('#firstGradeMain').toggle();
-		$('#firstGradeMore').toggle();
+		$('#firstGradeMain').toggle('slow');
+		$('#firstGradeMore').toggle('slow');
 	})
 
 	$('#firstGradeDocButton').click(function(){
-		$('#firstGradeMain').toggle();
-		$('#firstGradeMore').toggle();
+		$('#firstGradeMain').toggle('slow');
+		$('#firstGradeMore').toggle('slow');
 	})
 
 	//First Grade Picture Button Bio Reveal//
 	$('#mcCoyButton').click(function(){
-		$('#mcCoyBack').show();
-		$('#mcCoyPicHide').toggle();
-		$('#mcCoyBio').toggle();
+		$('#mcCoyBack').show('slow');
+		$('#mcCoyPicHide').toggle('slow');
+		$('#mcCoyBio').toggle('slow');
 		$(this).hide();
 	})
 
 	$('#mcCoyBack').click(function(){
-		$('#mcCoyButton').toggle();
-		$('#mcCoyPicHide').toggle();
-		$('#mcCoyBio').toggle();
+		$('#mcCoyButton').toggle('slow');
+		$('#mcCoyPicHide').toggle('slow');
+		$('#mcCoyBio').toggle('slow');
 		$(this).hide();
 	})
 
 
 	$('#kilkennyButton').click(function(){
-		$('#kilkennyBio').toggle();
+		$('#kilkennyBio').toggle('slow');
 	})
 
 	$('#petersenButton').click(function(){
-		$('#petersenBio').toggle();
+		$('#petersenBio').toggle('slow');
 	})
 
 	//2nd Grade Button Text Reveal
 		$('#moreSecondGrade').click(function(){
-			$('#secondGradeMain').toggle();
-			$('#secondGradeMore').toggle();
+			$('#secondGradeMain').toggle('slow');
+			$('#secondGradeMore').toggle('slow');
 		})
 
 		$('#backToSecond').click(function(){
-			$('#secondGradeMain').toggle();
-			$('#secondGradeMore').toggle();
+			$('#secondGradeMain').toggle('slow');
+			$('#secondGradeMore').toggle('slow');
 		})
 
 		$('#secondGradeDocButton').click(function(){
-			$('#secondGradeMain').toggle();
-			$('#secondGradeMore').toggle();
+			$('#secondGradeMain').toggle('slow');
+			$('#secondGradeMore').toggle('slow');
 		})
 
 		//Second Grade Picture Button Bio Reveal//
 		$('#mcMahonButton').click(function(){
-			$('#mcMahonBio').toggle();
+			$('#mcMahonBio').toggle('slow');
 		})
 
 		$('#odiorneButton').click(function(){
-			$('#odiorneBio').toggle();
+			$('#odiorneBio').toggle('slow');
 		})
 
 		//3rd Grade Button Text Reveal
 			$('#moreThirdGrade').click(function(){
-				$('#thirdGradeMain').toggle();
-				$('#thirdGradeMore').toggle();
+				$('#thirdGradeMain').toggle('slow');
+				$('#thirdGradeMore').toggle('slow');
 			})
 
 			$('#backToThird').click(function(){
-				$('#thirdGradeMain').toggle();
-				$('#thirdGradeMore').toggle();
+				$('#thirdGradeMain').toggle('slow');
+				$('#thirdGradeMore').toggle('slow');
 			})
 
 			$('#thirdGradeDocButton').click(function(){
-				$('#thirdGradeMain').toggle();
-				$('#thirdGradeMore').toggle();
+				$('#thirdGradeMain').toggle('slow');
+				$('#thirdGradeMore').toggle('slow');
 			})
 
 
 			//Third Grade Picture Button Bio Reveal//
 			$('#trachtenbargButton').click(function(){
-				$('#trachtenbargBio').toggle();
+				$('#trachtenbargBio').toggle('slow');
 			})
 
 			$('#fryButton').click(function(){
-				$('#fryBio').toggle();
+				$('#fryBio').toggle('slow');
 			})
 
 			//4th Grade Button Text Reveal
 				$('#moreFourthGrade').click(function(){
-					$('#fourthGradeMain').toggle();
-					$('#fourthGradeMore').toggle();
+					$('#fourthGradeMain').toggle('slow');
+					$('#fourthGradeMore').toggle('slow');
 				})
 
 				$('#backToFourth').click(function(){
-					$('#fourthGradeMain').toggle();
-					$('#fourthGradeMore').toggle();
+					$('#fourthGradeMain').toggle('slow');
+					$('#fourthGradeMore').toggle('slow');
 				})
 
 				$('#fourthGradeButton').click(function(){
-					$('#fourthGradeMain').toggle();
-					$('#fourthGradeMore').toggle();
+					$('#fourthGradeMain').toggle('slow');
+					$('#fourthGradeMore').toggle('slow');
 				})
 
 				$('#fourthGradeDocButton').click(function(){
-					$('#fourthGradeMain').toggle();
-					$('#fourthGradeMore').toggle();
+					$('#fourthGradeMain').toggle('slow');
+					$('#fourthGradeMore').toggle('slow');
 				})
 
 				//Fourth Grade Picture Button Bio Reveal//
 				$('#penkalaButton').click(function(){
-					$('#penkalaBio').toggle();
+					$('#penkalaBio').toggle('slow');
 				})
 
 				$('#niedermeyerButton').click(function(){
-					$('#niedermeyerBio').toggle();
+					$('#niedermeyerBio').toggle('slow');
 				})
 
 				//5th Grade Button Text Reveal
 					$('#moreFifthGrade').click(function(){
-						$('#fifthGradeMain').toggle();
-						$('#fifthGradeMore').toggle();
+						$('#fifthGradeMain').toggle('slow');
+						$('#fifthGradeMore').toggle('slow');
 					})
 
 					$('#backToFifth').click(function(){
-						$('#fifthGradeMain').toggle();
-						$('#fifthGradeMore').toggle();
+						$('#fifthGradeMain').toggle('slow');
+						$('#fifthGradeMore').toggle('slow');
 					})
 
 					$('#fifthGradeButton').click(function(){
-						$('#fifthGradeMain').toggle();
-						$('#fifthGradeMore').toggle();
+						$('#fifthGradeMain').toggle('slow');
+						$('#fifthGradeMore').toggle('slow');
 					})
 
 					$('#fifthGradeDocButton').click(function(){
-						$('#fifthGradeMain').toggle();
-						$('#fifthGradeMore').toggle();
+						$('#fifthGradeMain').toggle('slow');
+						$('#fifthGradeMore').toggle('slow');
 					})
 
 					//Fifth Grade Picture Button Bio Reveal//
 					$('#hartButton').click(function(){
-						$('#hartBio').toggle();
+						$('#hartBio').toggle('slow');
 					})
 
 					$('#niedermeyerButton2').click(function(){
-						$('#niedermeyerBio2').toggle();
+						$('#niedermeyerBio2').toggle('slow');
 					})
 
 					//Middle School Button Text Reveal
 						$('#moreMiddleSchool').click(function(){
-							$('#middleSchoolMain').toggle();
-							$('#middleSchoolMore').toggle();
+							$('#middleSchoolMain').toggle('slow');
+							$('#middleSchoolMore').toggle('slow');
 						})
 
 						$('#backToMiddleSchool').click(function(){
-							$('#middleSchoolMain').toggle();
-							$('#middleSchoolMore').toggle();
+							$('#middleSchoolMain').toggle('slow');
+							$('#middleSchoolMore').toggle('slow');
 						})
 
 						$('#middleSchoolButton').click(function(){
-							$('#middleSchoolMain').toggle();
-							$('#middleSchoolMore').toggle();
+							$('#middleSchoolMain').toggle('slow');
+							$('#middleSchoolMore').toggle('slow');
 						})
 
 						$('#middleSchoolDocButton').click(function(){
-							$('#middleSchoolMain').toggle();
-							$('#middleSchoolMore').toggle();
+							$('#middleSchoolMain').toggle('slow');
+							$('#middleSchoolMore').toggle('slow');
 						})
 
 						//Middle School Picture Button Bio Reveal//
 						$('#aguonButton').click(function(){
-							$('#aguonBio').toggle();
+							$('#aguonBio').toggle('slow');
 						})
 
 						$('#exleyButton').click(function(){
-							$('#exleyBio').toggle();
+							$('#exleyBio').toggle('slow');
 						})
 
 						$('#raeButton').click(function(){
-							$('#raeBio').toggle();
+							$('#raeBio').toggle('slow');
 						})
 
 						$('#wellnitzButton').click(function(){
-							$('#wellnitzBio').toggle();
+							$('#wellnitzBio').toggle('slow');
 						})
 
 
