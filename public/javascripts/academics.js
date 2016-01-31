@@ -1,9 +1,7 @@
 
 // //eventually I'd like to put this into a constructor//
 $(document).ready(function() {
-	$(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-  });
+
 	console.log('hello');
 
 

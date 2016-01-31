@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
-  $(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-  });
+
 /*Alert Buttons for Uniform Vendors*/
   $('#landsEndCode').click(function(){
     alert('Use Cathedral Code 9000-3786-2 for login`');

@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-	$(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-  });
 //mobile image swap
 	if(screen.width < 415) {
     $('.wrapper').remove();

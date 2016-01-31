@@ -26,16 +26,24 @@ body {
 }
 
 
+
+
 .navbar-right {
 	padding-left: 15em;
 	padding-right: 15em;
-	font-size: 1em;
+	font-size: .8em;
 }
 
 /*spacing between the links*/
 .navbar-right li {
-	padding-right: 1em;
+	padding-right: .8em;
+
 }
+
+.dropdown-menu li  {
+	font-size: .9em;
+}
+
 
 
 /*/Top image for mobile*/
