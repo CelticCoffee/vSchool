@@ -2,18 +2,18 @@ $(document).ready(function() {
 
 	// SWITCHING BETWEEN CONTAINERS//
 	$('#programOverview').click(function(){
-		$('.welcomeContainer').show().siblings('.ourProgramBox').hide();
+		$('.welcomeContainer').show('slow').siblings('.ourProgramBox').hide();
 	})
 	$('#music').click(function(){
-		$('.musicContainer').show().siblings('.ourProgramBox').hide();
+		$('.musicContainer').show('slow').siblings('.ourProgramBox').hide();
 	})
 
 	$('#peLink').click(function(){
-		$('.peContainer').show().siblings('.ourProgramBox').hide();
+		$('.peContainer').show('slow').siblings('.ourProgramBox').hide();
 	})
 
 	$('#spanish').click(function(){
-		$('.spanishContainer').show().siblings('.ourProgramBox').hide();
+		$('.spanishContainer').show('slow').siblings('.ourProgramBox').hide();
 	})
 
 	//Music//
@@ -27,46 +27,46 @@ $(document).ready(function() {
 	});
 
 	$('#moreMusic').click(function(){
-		$('#musicMain').toggle();
-		$('#musicMore').toggle();
+		$('#musicMain').toggle('slow');
+		$('#musicMore').toggle('slow');
 	})
 
 	$('#backToMusic').click(function(){
-		$('#musicMain').toggle();
-		$('#musicMore').toggle();
+		$('#musicMain').toggle('slow');
+		$('#musicMore').toggle('slow');
 	})
 
 	$('#musicSchedule').click(function(){
-		$('#musicMain').toggle();
-		$('#musCal').toggle();
+		$('#musicMain').toggle('slow');
+		$('#musCal').toggle('slow');
 	})
 
 	$('#calToMusic').click(function(){
-		$('#musicMain').toggle();
-		$('#musCal').toggle();
+		$('#musicMain').toggle('slow');
+		$('#musCal').toggle('slow');
 	})
 
 //Spanish//
 
 	$('#spanishSchedule').click(function(){
-		$('#spanishMain').toggle();
-		$('#spanishMore').toggle();
+		$('#spanishMain').toggle('slow');
+		$('#spanishMore').toggle('slow');
 	})
 
 	$('#backToSpanish').click(function(){
-		$('#spanishMain').toggle();
-		$('#spanishMore').toggle();
+		$('#spanishMain').toggle('slow');
+		$('#spanishMore').toggle('slow');
 	})
 
 	//PE//
 		$('#peSchedule').click(function(){
-			$('#peMain').toggle();
-			$('#peCal').toggle();
+			$('#peMain').toggle('slow');
+			$('#peCal').toggle('slow');
 		})
 
 		$('#backToPe').click(function(){
-			$('#peMain').toggle();
-			$('#peCal').toggle();
+			$('#peMain').toggle('slow');
+			$('#peCal').toggle('slow');
 		})
 
 	 $('#peButton').click(function(event) {
