@@ -6,6 +6,31 @@ margin-top: 10px;
 	width: 100%;
 }
 
+.academicTextBox {
+  padding: 1.5em;
+  background-color: lightGray;
+	border-radius: 10px;
+}
+
+.pictureBorder {
+	border: solid 1px #CCC;
+		-moz-border-shadow: 5px 5px 5px #999;
+		-webkit-box-shadow: 5px 5px 5px #999;
+		box-shadow: 5px 5px 5px #999;
+}
+
+.noShowText {
+	display: none;
+}
+
+.specialistBox {
+	padding: 1em;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+
 #mobileSwapImage {
 	width: 100%;
 	display: none;
