@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $('#auctionButton').click(function(){
-    $('.auctionMore').toggle();
+    $('.auctionMore').toggle('slow');
   });
 
   $('#run4Small').click(function(){
@@ -17,7 +17,7 @@ $(document).ready(function() {
   })
 
   $('#run4Sponsors').click(function() {
-    $('.run4More').toggle();
+    $('.run4More').toggle('slow');
   });
 
 
@@ -32,17 +32,15 @@ $(document).ready(function() {
   };
 
   $('#legacyTab').click(function() {
-    $('#legacy').show().siblings().addClass('noShowText');
-    console.log('baconEggs');
+    $('.leaveALegacyHero').show('slow').siblings().addClass('noShowText');
   });
 
   $('#aucTab').click(function() {
-    $('#cathAucHero').show().siblings().addClass('noShowText');
-    console.log('tomato');
+    $('.cathedralAuctionHero').show('slow').siblings().addClass('noShowText');
   });
 
   $('#run4Tab').click(function() {
-    $('#run4CathedralHero').show().siblings().addClass('noShowText');
+    $('#run4CathedralHero').show('slow').siblings().addClass('noShowText');
     console.log('snail');
   });
 

@@ -23,59 +23,59 @@ $(document).ready(function() {
 
 //Multnomah County Library Buttons//
 $('#zero').click(function(event) {
-	$('#MCLIntro').toggle().siblings().hide();
+	$('#MCLIntro').toggle('slow').siblings().hide();
 
 });
 
 $('#first').click(function(event) {
-	$('#lunchBunch').toggle().siblings().hide();
+	$('#lunchBunch').toggle('slow').siblings().hide();
 
 	});
 $('#second').click(function(event) {
-		$('#LibraryCards').toggle().siblings().hide();;
+		$('#LibraryCards').toggle('slow').siblings().hide();;
 	});
 $('#third').click(function(event) {
-		$('#BannedBooks').toggle().siblings().hide();;;
+		$('#BannedBooks').toggle('slow').siblings().hide();;;
 	});
 $('#fourth').click(function(event) {
-		$('#SummerReading').toggle().siblings().hide();;;
+		$('#SummerReading').toggle('slow').siblings().hide();;;
 	});
 
 
 //Library Catalog//
 $('#libDocs').click(function(event){
 	console.log('libraryDocs');
-	$('#moreDocs').toggle()
+	$('#moreDocs').toggle('slow')
 	$('#libCat').toggle();
 });
 
 $('#MCLBack').click(function(event){
-	$('#moreDocs').toggle();
-	$('#libCat').toggle();
+	$('#moreDocs').toggle('slow');
+	$('#libCat').toggle('slow');
 });
 
 
 //AWARD BOOKS //
 $('#moreBattle').click(function(event){
-	$('#bookBattleB').toggle();
-	$('#bookBattleA').toggle();
+	$('#bookBattleB').toggle('slow');
+	$('#bookBattleA').toggle('slow');
 
 	});
 
 $('#battleBack').click(function(event) {
 	// $('#bookBattle2').addClass('noShowLibText');
-	$('#bookBattleA').toggle();
-	$('#bookBattleB').toggle();
+	$('#bookBattleA').toggle('slow');
+	$('#bookBattleB').toggle('slow');
 	});
 
 $('#awardBookButton').click(function(){
 	$('#awardBooks2').addClass('showLibText');
-	$('#awardBooks1').toggle();
+	$('#awardBooks1').toggle('slow');
 	});
 
 $('#awardBookBack').click(function() {
 	$('#awardBooks2').removeClass('showLibText');
-	$('#awardBooks1').toggle();
+	$('#awardBooks1').toggle('slow');
 	});
 
 });
