@@ -80,6 +80,17 @@ body {
 	padding-bottom: 1em;
 }
 
+#mobileCal {
+	display: block;
+	margin-left: 2em;
+}
+
+#desktopCal {
+	display: block;
+	margin: 0 auto;
+}
+
+
 /***************************/
 /********media queries*****/
 /***************************/
