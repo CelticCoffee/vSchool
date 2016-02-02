@@ -6,58 +6,59 @@ $(document).ready(function() {
 
 
 		//Navigation on Academics Page//
+		$('#welcomeTab').click(function(){
+				$('.welcomeContainer').toggle('slow');
+				$('.welcomeTab').addClass('active').siblings().removeClass('active');
+			});
 
-	$('#welcomeTab').click(function(){
-		$('.welcomeContainer').toggle('slow');
-		$('.welcomeTab').addClass('active').siblings().removeClass('active');
-	});
+			$('#facultyTab').click(function(){
+				$('#facultyTab').addClass('active').siblings().removeClass('active');
+				$('#welcomeTab').removeClass('active');
+				$('.facultyContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#facultyTab').click(function(){
-		$('#facultyTab').addClass('active').siblings().removeClass('active');
-		$('#welcomeTab').removeClass('active');
-		$('.facultyContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#preKTab').click(function(){
+				$('#preKTab').addClass('active').siblings().removeClass('active');
+				$('#welcomTab').removeClass('active');
+				$('.preKContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#preKTab').click(function(){
-		$('#preKTab').addClass('active').siblings().removeClass('active');
-		$('#welcomTab').removeClass('active');
-		$('.preKContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#kinderTab').click(function(){
+				$('#kinderTab').addClass('active').siblings().removeClass('active');
+				$('#welcomeTab').removeClass('active');
+				$('.kinderContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#kinderTab').click(function(){
-		$('#kinderTab').addClass('active').siblings().removeClass('active');
-		$('.kinderContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#firstGradeTab').click(function(){
+				$('#firstGradeTab').addClass('active').siblings().removeClass('active');
+				$('.firstGradeContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#firstGradeTab').click(function(){
-		$('#firstGradeTab').addClass('active').siblings().removeClass('active');
-		$('.firstGradeContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#secondGradeTab').click(function(){
+				$('#secondGradeTab').addClass('active').siblings().removeClass('active');
+				$('.secondGradeContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#secondGradeTab').click(function(){
-		$('#secondGradeTab').addClass('active').siblings().removeClass('active');
-		$('.secondGradeContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#thirdGradeTab').click(function(){
+				$('#thirdGradeTab').addClass('active').siblings().removeClass('active');
+				$('.thirdGradeContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#thirdGradeTab').click(function(){
-		$('#thirdGradeTab').addClass('active').siblings().removeClass('active');
-		$('.thirdGradeContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#fourthGradeTab').click(function(){
+				$('#fourthGradeTab').addClass('active').siblings().removeClass('active');
+				$('.fourthGradeContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#fourthGradeTab').click(function(){
-		$('#fourthGradeTab').addClass('active').siblings().removeClass('active');
-		$('.fourthGradeContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#fifthGradeTab').click(function(){
+				$('#fifthGradeTab').addClass('active').siblings().removeClass('active');
+				$('.fifthGradeContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#fifthGradeTab').click(function(){
-		$('#fifthGradeTab').addClass('active').siblings().removeClass('active');
-		$('.fifthGradeContainer').show('slow').siblings('.academicText').hide();
-	})
+			$('#middleSchoolTab').click(function(){
+				$('#middleSchoolTab').addClass('active').siblings().removeClass('active');
+				$('.middleSchoolContainer').show('slow').siblings('.academicText').hide();
+			})
 
-	$('#middleSchoolTab').click(function(){
-		$('#middleSchoolTab').addClass('active').siblings().removeClass('active');
-		$('.middleSchoolContainer').show('slow').siblings('.academicText').hide();
-	})
 
 
 	//PreK Picture Button Bio Reveal//
