@@ -55,6 +55,9 @@ body {
 /***************************/
 /********panels*****/
 /***************************/
+
+
+
 #enrollButton {
 	width: 100%;
 	padding: 1em;
@@ -78,11 +81,6 @@ body {
 	margin: .25em;
 	padding-left: .25em;
 	padding-bottom: 1em;
-}
-
-#mobileCal {
-	display: block;
-	margin-left: 2em;
 }
 
 #desktopCal {
@@ -192,4 +190,11 @@ footer .copyright {
 		padding-left: 0em;
 		padding-right: 0em;
 	}
+}
+
+@media screen and (max-width: 415px) {
+.homePanelContent {
+	display: block;
+	margin-left: .5em;
+}
 }
