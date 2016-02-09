@@ -56,9 +56,6 @@ body {
 /***************************/
 /********panels*****/
 /***************************/
-
-
-
 #enrollButton {
 	width: 100%;
 	padding: 1em;
@@ -67,6 +64,24 @@ body {
 	margin-bottom: 1em;
 	background-color: #ba020e;
 }
+
+#auctionButton {
+	width: 100%;
+	padding: 1em;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+#auctionHomeClick {
+	width: 100%;
+	padding: 1em;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+
 
 #logoHome {
 	display: block;
