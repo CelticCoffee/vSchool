@@ -2,6 +2,7 @@
 margin-top: 10px;
 }
 
+
 .wrapper img {
 	width: 100%;
 }
@@ -42,7 +43,6 @@ margin-top: 10px;
 
 .page-header {
 	color: black;
-	padding: 1em;
 }
 
 .page-header small {
@@ -73,10 +73,10 @@ ul {
 	list-style: none;
 	padding: 0 1.5em 0 1.5em;
 }
-
+/*
 li {
-	margin: .5em;q
-}
+	margin: .5em;
+}*/
 
 
 

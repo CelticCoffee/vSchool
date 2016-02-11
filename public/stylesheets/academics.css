@@ -4,9 +4,7 @@
 	margin-top: 50px;
 }*/
 
-.navContainer {
-	margin-top: 90px;
-}
+
 
 /*******************/
 /*gray Box content**/
@@ -98,7 +96,11 @@
 	padding: 0;
 }
 
-
+@media only screen and (min-width: 1200px) {
+	.navContainer {
+		margin-top: 50px;
+	}
+}
 
 
 
