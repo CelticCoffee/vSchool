@@ -26,87 +26,116 @@
   <link href="stylesheets/ourProgram.css" media="screen" rel="stylesheet">
 </head>
 <body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top" id="topNavigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cathedralMenuToggle" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Cathedral School</a>
+  <span itemscope itemtype="http://schema.org/LocalBusiness"><nav class="navbar navbar-inverse navbar-fixed-top" id="topNavigation">
+    <div class="container-fluid" id="topMenuContainer">
+      <div class="row mobileTopRow">
+        <div class="col-xs-6">
+          <a class="navbar-brand" href="/"><span itemprop="name">Cathedral School</span></a>
+        </div>
+        <div class="col-xs-6 mobileButtonColumn">
+        <button type="button" class="btn btn-success btn-lg" id="mobileMenuStar">
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Explore
+        </button>
+      </div>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="cathedralMenuToggle">
+      <!--This is the DESKTOP version of the navigation bar>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class=" row collapse navbar-collapse" id="cathedralMenuToggle">
+        <div class="col-xs-12">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Program <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Academics">Academics</a></li>
+                <li class="active"><a href="/ourProgram">Our Program</a></li>
+                <li><a href="/library">Library</a></li>
+              </ul>
+            </li>
+            <!-- <li>
+              <a href="/academics">Academics</a>
+            </li> -->
+            <li>
+              <a href="/admissions">Admissions</a>
+            </li>
+            <!-- <li>
+                <a href="/ourProgram">Our Program</a>
+            </li>
+            <li>
+              <a href="/library">Library</a>
+            </li> -->
+            <li>
+              <a href="https://cathedralschoolpdx.wordpress.com" target="_blank">News</a>
+            </li>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="/about">About</a>
-          <!-- <a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/about#navImage">Our Mission</a></li>
-            <li><a href="/about#learningExpectations">Learning Expectations</a></li>
-            <li><a href="http://www.westwcea.org/" target=_blank>Accreditation</a></li>
-            <li><a href="/about#appleAnchor">Distinguished by Apple</a></li>
-            <li><a href="/about#frequentQuestions">Frequently Asked Questions</a></li>
-            <li><a href="/about#ourHistory">Our History</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="/academics">Academics</a>
-        </li>
-        <li>
-          <a href="/admissions">Admissions</a>
-        </li>
-        <li>
-            <a href="/ourProgram">Our Program</a>
-        </li>
-        <li>
-          <a href="/library">Library</a>
-        </li>
-
-        <li>
-          <a href="https://cathedralschoolpdx.wordpress.com">News</a>
-        </li>
-        <li>
-          <a href="/calendar">Calendar</a>
-        </li>
-        <li>
-          <a href="/parents">Parents</a>
-          <!-- <a aria-expanded="true" class="dropdown-toggle" data-toggle=
-          "dropdown" href="#">Parents <span class=
-          "caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/parents">Parent Main</a></li>
-            <li class="pull-left"><a href="documents/2015_2016Tuition.pdf" target="_blank">Parent Handbook</a></li>
-            <li><a href="#" target="_blank">Hot Lunch</a></li>
-            <li><a href="/documents/parents/extendedCare/afterCareReg.pdf" target="_blank">Extended Care Registration</a></li>
-            <li><a href="/documents/parents/instructionsForBackgroundCheck.pdf" target="_blank">Get Setup to Volunteer</a></li>
-            <li><a href="http://website.praesidiuminc.com/" target="_blank">Called To Protect Training</a></li>
-            <li><a href="https://online.factsmgt.com/signin/3GKRY" target="_blank">FACTS Login</a></li>
-            <li><a href="http://www.loyolapress.com/3-minute-retreats-daily-online-prayer.htm" target="_blank">3 Minute Retreat</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="/alumni">Alumni</a>
-        </li>
-        <li>
-          <a href="/support">Support</a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="tel:(503) 275 9370">Phone (503) 275-9370</a></li>
-            <li><a href="mailto:shatley@cathedral-or.org">email</a></li>
-            <li><a href="fax">Fax (503) 275-9378</a></li>
-            <li><a href="https://www.google.com/maps/place/Cathedral+School/@45.5249058,-122.6903293,17.66z/data=!4m2!3m1!1s0x54950a02a6419fe9:0xf5812e73081f01ea" target="_blank">Find Us</a></li>
+            <li>
+              <a href="/calendar">Calendar</a>
+            </li>
+            <li>
+              <a href="/parents">Parents</a>
+            </li>
+            <li>
+              <a href="/alumni">Alumni</a>
+            </li>
+            <li>
+              <a href="/support">Support</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="tel:(503) 275 9370">Phone (503) 275-9370</a></li>
+                <li><a href="mailto:shatley@cathedral-or.org">email</a></li>
+                <li><a href="fax">Fax (503) 275-9378</a></li>
+                <li><a href="https://www.google.com/maps/place/Cathedral+School/@45.5249058,-122.6903293,17.66z/data=!4m2!3m1!1s0x54950a02a6419fe9:0xf5812e73081f01ea" target="_blank">Find Us</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        </div>
+      </div>
+    </nav>
+      <div id="mobileGroup">
+        <ul class="nav nav-pills nav-stacked mobileNav">
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Program <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/Academics">Academics</a></li>
+              <li class="active"><a href="/ourProgram">Our Program</a></li>
+              <li><a href="/library">Library</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/admissions">Admissions</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="contactMobileDrop">
+              <li><a href="tel:(503) 275 9370">Phone (503) 275-9370</a></li>
+              <li><a href="mailto:shatley@cathedral-or.org">email</a></li>
+              <li><a href="fax">Fax (503) 275-9378</a></li>
+              <li><a href="https://www.google.com/maps/place/Cathedral+School/@45.5249058,-122.6903293,17.66z/data=!4m2!3m1!1s0x54950a02a6419fe9:0xf5812e73081f01ea" target="_blank">Find Us</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://cathedralschoolpdx.wordpress.com" target="_blank">News</a>
+          </li>
+          <li>
+            <a href="/parents">Parents</a>
+          </li>
+          <li>
+            <a href="/calendar">Calendar</a>
+          </li>
+          <li>
+            <a href="/alumni">Alumni</a>
+          </li>
+          <li>
+            <a href="/support">Support</a>
+          </li>
+        </ul>
   <div class="wrapper">
     <img src="images/img_ourProgram/ourProgram.jpg"  alt="about Cathedral Photo montage">
     <div class="container ourProgramTabNav">
@@ -479,7 +508,9 @@
         	<a href="http://www.apple.com/education/apple-distinguished-schools/"><img src ="images/appleLogo.jpg" alt="apple distinguished school icon"></a>
         </div>
         <div class="clear"></div>
-        <div class="copyright">&copy; 2015 All Rights Reserved</div>
+        <div class="copyright">
+          &copy; 2016 All Rights Reserved <br> site design and development by Wendy Goodwin Creative
+        </div>
         </div>
    <!--  </div>
    </div> -->
@@ -492,6 +523,7 @@
   "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
   </script>
   <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/home.js"></script>
   <script src="javascripts/ourProgram.js"></script>
   </body>
   </html>

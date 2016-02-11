@@ -2,56 +2,111 @@
 /********top navigation*****/
 /***************************/
 body {
-	padding-top: 70px;
+	padding-top: 45px;
 }
 
 #cathedralMenuToggle {
-	font-size: 1em;
-}
-
-#cathedralMenuToggle {
+	font-size: 1.20em;
 	padding: 1.05em;
 }
+
 
 #librarySwap img {
 	width: 100%:
 }
 
-
 /*Cathedral School Left */
-.navbar-brand {
+a.navbar-brand {
+	color: #fff;
 	font-size: 2em;
-	position: fixed;
-	padding: 1.15em;
+	position: absolute;
+	padding-top: 1.5em;
 }
 
-
-
+/***************************/
+/*******mobile side*****/
+/***************************/
 
 
 .navbar-right {
-	padding-left: 15em;
-	padding-right: 15em;
-	font-size: .8em;
-}
-
-/*spacing between the links*/
-.navbar-right li {
+	padding-top: 1em;
 	padding-right: .8em;
-
-}
-
-.dropdown-menu li  {
-	font-size: .9em;
+	display: block;
+	text-transform: uppercase;
 }
 
 
+.mobileNav {
+	background-color: black;
+	color: white;
+	/*text-decoration: none;*/
+	text-transform: uppercase;
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	padding: 0;
+	font-size: 1.15em;
+	font-weight: bold;
+	z-index: 1;
+	/*margin: 0 auto;*/
+	display: none;
+}
+
+.mobileNav a {
+	color: white;
+	/*position: fixed;*/
+	margin: 1em auto;
+	z-index: 1;
+	width: 100%:
+}
+
+.mobileButtonColumn {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+
+#mobileMenuStar {
+	/*z-index: 1;*/
+	display: none;
+	/*display: block;
+	margin: 0 auto;*/
+	padding: auto;
+	margin-top: .15em;
+	width: 100%;
+	text-transform: uppercase;
+	vertical-align: center;
+	background-color: #ba020e;
+	}
+
+#content {
+	postion: fixed;
+	z-index: 3;
+}
 
 /*/Top image for mobile*/
+.mobileTopRow {
+	padding: auto;
+}
+
 #mobileSwapImage {
 	width: 100%;
 	display: none;
 }
+
+#contactMobileDrop li  {
+	background-color: white;
+	padding-top: .5em;
+
+}
+
+#contactMobileDrop li a{
+	margin-bottom: .25em;
+	width: 100%;
+	text-color: orange;*/
+}
+
+
 
 /***************************/
 /********panels*****/
@@ -144,6 +199,7 @@ footer .social  {
 
 footer .copyright {
 	text-align: center;
+	font-size: .75em;
 
 }
 }
@@ -153,13 +209,18 @@ footer .copyright {
 		padding-left: 0em;
 		padding-right: 0em;
 	}
+	a.navbar-brand {
+		font-size: 1.5em;
+		padding-top: auto;
+		padding-left: 0;
+
 
 }
 
 
 @media screen and (max-width: 1024px) {
 	#cathedralCarousel {
-			padding: auto;
+			padding: 0;
 		}
 }
 @media screen and (max-width: 1440px) {
@@ -196,6 +257,27 @@ footer .copyright {
 	}
 }
 
+@media screen and (max-width: 1200px){
+
+	.jumbotron {
+		padding-top: 15px;
+	}
+
+	a.navbar-brand {
+		padding-top: .25em;
+	}
+
+	#mobileMenuStar {
+		display: block;
+	}
+
+	.navbar-right {
+		display: none;
+	}
+
+}
+
+
 
 @media screen and (max-width: 835px) {
 	footer ul li {
@@ -213,4 +295,12 @@ footer .copyright {
 	display: block;
 	margin-left: .5em;
 }
+
+@media screen and (max-width: 335px) {
+	a.navbar-brand {
+		font-size: 1.15em;
+	}
+
+
+
 }
