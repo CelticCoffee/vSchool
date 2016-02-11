@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
-  $('#auctionButton').click(function(){
+  $('#auctionSupportButton').click(function(){
     $('.auctionMore').toggle('slow');
+    console.log('auctionMore');
   });
   //
   $('#run4Small').click(function(){
