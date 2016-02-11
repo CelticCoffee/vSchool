@@ -301,6 +301,12 @@ footer .copyright {
 		font-size: 1.15em;
 	}
 
+@media screen and (max-width: 1199px) {
+	#mobileMenuStar {
+		display: block;
+	}
+}
+
 
 
 }

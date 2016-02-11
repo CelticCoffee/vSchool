@@ -15,20 +15,10 @@ $(document).ready(function() {
     $('#desktopCal').show();
     $('#mobileCal').remove();
   }
-  // $('#mobileMenuStar').click(function() {
-  //   $('.mobileNav').toggle('slow');
-  // })
+  $('#mobileMenuStar').click(function() {
+    $('.mobileNav').toggle('slow');
+  })
 
-  if(screen.width < 1200) {
-    console.log('banana');
-    $('#mobileMenuStar').show();
-    $('#mobileMenuStar').click(function(){
-      $('.mobileNav').toggle('slow');
-    })
-  }
-  else if(screen.width >=1200){
-    $('#mobileMenuStar').remove();
-  }
 
 
 
