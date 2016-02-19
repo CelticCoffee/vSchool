@@ -392,7 +392,8 @@
                 <li>Marketing and Development</li>
                 <li>Special Projects</li>
               </ul></p>
-              <p><a href="#" class="btn btn-lg btn-info" id="councilButton" role="button">Council Members</a></p>
+              <p><a href="#" class="btn btn-md btn-success" id ="advisMinButton" role="buton" data-toggle="modal" data-target="#advisoryModal">Advisory Minutes and Agendas</a>
+              <a href="#" class="btn btn-md btn-info" id="councilButton" role="button">Council Members</a></p>
               <ul id="councilMembers">
                 <h3>2015-2015 Council Members</h3>
                 <li><strong>Msgr. Pat Brennan</strong></li>
@@ -410,11 +411,36 @@
                 <li><strong>Mrs. Melissa Rawlinson, Assistant Chair</strong></li>
                 <li>Mr. Alan Sanchez</li>
               </ul>
+                <!-- advisory minutes modal -->
+                <div class="modal fade" id="advisoryModal" role="dialog">
+                 <div class="modal-dialog">
+                   <!-- Modal content-->
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                       <h4 class="modal-title">Advisory Council Documents</h4>
+                     </div>
+                     <div class="modal-body">
+                       <div class="list-group">
+                         <a href="documents/parents/minutes/adSepMin.pdf "target="_blank" class="list-group-item">Advisory Council September Minutes</a>
+                         <a href="documents/parents/minutes/adOctMin.pdf" target="_blank" class="list-group-item">Advisory Council October Minutes</a>
+                         <a href="documents/parents/minutes/adNovMin.pdf" target="_blank" class="list-group-item">Advisory Council November Minutes</a>
+                         <a href="documents/parents/minutes/adAgendaFeb16.pdf" target="_blank" class="list-group-item">Advisory Council February 16 Agenda</a>
+                       </div>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                   </div>
+
+
+                 </div>
+               </div>
+             </div>
             </div>
             <div class="caption midBox noShowText" id="parAssocBox">
               <h3 id="">Parents Association</h3>
               <p id="">The Parents' Association (PA) promotes and stimulates interest in activities that ultimately benefit the students and staff of Cathedral School. Our Mission is to create community through the events we sponsor as well as encourage and organize volunteerism through various volunteer programs. All parents and school staff are members of the PA.<br>All Cathedral School parents are members of the PA and invited to join the PA board at our meetings. Mettings take place at 8:15 a.m. in the school courtyard. Meetings during the 2015-2016 school year will be held September 17th, November 19th, January 21st, April 21st, and June 2nd.<br>The Parent&rsquo;s Association sponsors several events and supports school-sponsored events throughout the school year.  Click the Schedule button to explore.</p>
-              <p><a href="#" class="btn btn-md btn-success" id="parentAssocMore" role="button">Schedule</a><a href="#" class="btn btn-md btn-info" id="assocDocuments" role="button">Association Documents</a></p>
+              <p><a href="#pAssocMore" class="btn btn-md btn-success" id="parentAssocMore" role="button">Schedule</a><a href="#pAssocDoc" class="btn btn-md btn-info" id="assocDocuments" role="button">Association Documents</a></p>
               </div>
               <div class="pAssocMore noShowText">
                 <ul class="parDates">
@@ -444,14 +470,14 @@
               <div class="caption noShowText" id="extendBox">
                 <h3 id="">Extended Care</h3>
                 <p id="">The Cathedral School Extended Care Program provides quality and consistent care before and after school for enrolled students of Cathedral School. The Extended Day program follows all regulations set forth by the Child Care Division of the State of Oregon.<br><br>Cathedral School’s goal is to provide students with a positive atmosphere where they will have opportunities to continue their learning through activities and recreational fun. Additionally, for those students with homework, a designated staff member will supervise “Study Hall” and assist students with homework assignments.  Children will be supervised by adult caregivers at all times at the recommended ratio (K-8: one adult per 15 students, Pre-K: one adult per 10 students) under Children’s Care Division guidelines for daycare.</p>
-                <p><a href="#" class="btn btn-md btn-info" id="exCareButt" role="button">More</a><a href="#" class="btn btn-md btn-success" id="exCareStaff" role="button">Staff &#38; Rates</a><button type="button" class="btn btn-primary btn-md" id="exCareCal" data-toggle="modal" data-target="#careCalendars">
+                <p><a href="#extendedCareMore" class="btn btn-md btn-info" id="exCareButt" role="button">More</a><a href="#extendedStaff" class="btn btn-md btn-success" id="exCareStaff" role="button">Staff &#38; Rates</a><button type="button" class="btn btn-primary btn-md" id="exCareCal" data-toggle="modal" data-target="#careCalendars">
                   Register &#38; Download Calendars
                 </button></p>
                 </div>
                 <div class="extendedCareMore noShowText">
                   <p>The Extended Care Program is housed in the school cafeteria and begins after school on the first day of school, serving students in Pre-Kindergarten through 8 th grade.  Extended Care is also available on early release days and teacher in-service days. Extended care will be closed on National Holidays, Christmas, spring and summer breaks.<br><br>Morning Care is available before school Monday through Friday from 7:00 a.m. to 7:50  a.m. No morning care will be provided on inclement weather closings.  After Care is available from school dismissal time until 6:00 p.m.</p>
                 </div>
-                <div class="extendedStaff noShowText">
+                <div class="extendedStaff noShowText" id="extendedStaff">
                   <h3> Staff</h3>
                   <ul class="careStaff">
                     <li><strong>Ms. Stacy Murphy, Director</strong></li>
