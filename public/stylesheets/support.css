@@ -18,6 +18,14 @@ h4 {
   color: #4e5d74;
 }
 
+.ads {
+  list-style: none;
+}
+
+.ads img {
+  max-width: 100%;
+  padding-top: .5em;
+}
 
 
 .media-object img {
