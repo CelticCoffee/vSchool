@@ -136,6 +136,13 @@ a.navbar-brand {
 	margin-bottom: 1em;
 }
 
+#auctionCatalog {
+	width: 100%;
+	padding: 1em;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
 
 
 #logoHome {
