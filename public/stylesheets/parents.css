@@ -5,7 +5,16 @@
   margin-top: 50px;
 }
 
+body {
+position: relative;
+  z-index: 10;
+}
 
+#mobileGroup {
+  position: fixed;
+  z-index: 1;
+
+}
 /*******************/
 /****leftcolumn****/
 /********************/
@@ -33,6 +42,26 @@ h4 {
 /*******************/
 /****middleColumn****/
 /********************/
+
+.parentContentBackground {
+  z-index: 100;
+}
+
+#parentPill {
+  background-color: black;
+  font-size: 1em;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  top: 30;
+  overflow-y: scroll;
+}
+
+
+.affix {
+      top: 100;
+      width: 100%;
+  }
 
 .noShowText {
   display: none;
@@ -114,6 +143,30 @@ h4 {
 #councilButton {
   margin-left: 1em;
 }
+
+#assocDocs {
+  margin-left: 1em;
+}
+
+.mobileGroup {
+ margin: 0px;
+ z-index: 0;
+}
+/*
+
+.recipeMenuOpen {
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	position: fixed;
+	z-index: 0;
+	width: 25%;
+	margin-top: 2em;
+	height: 100%;
+	background-color: orange;
+	...
+}*/
+
 
 /*******************/
 /*Media Queries**/

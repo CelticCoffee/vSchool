@@ -14,12 +14,24 @@ $(document).ready(function() {
 
     $('#desktopCal').show();
     $('#mobileCal').remove();
+    $('#mobileMenu').hide();
   }
-  $('#mobileMenuStar').click(function() {
+
+  //
+  // $('#mobileMenuStar').click(function() {
+  //   $('.mobileNav').toggle('slow');
+
+
+  $('#mobileMenuStar' ).click(function() {
+      $('.mobileNav').toggle('slow');
+  });
+  $('#closeNav').click(function(){
     $('.mobileNav').toggle('slow');
   })
 
+  $("#mobileMenuStar").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
 
-
-
-})
+});
