@@ -5,6 +5,12 @@ body {
 	padding-top: 45px;
 }
 
+#mobileGroup {
+  position: fixed;
+  z-index: 1;
+
+}
+
 #cathedralMenuToggle {
 	font-size: 1.20em;
 	padding: 1.05em;
