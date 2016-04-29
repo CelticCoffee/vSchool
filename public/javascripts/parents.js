@@ -45,7 +45,7 @@ $('#auctionClick').click(function(){
 
 /*These are the additional text button sections on the central box*/
 $('#pReq').click(function() {
-	$('.parentRequirements').toggle();
+	$('.parentRequirements').toggle('slow');
   $('.parentIcon').toggle();
 });
 
@@ -54,7 +54,7 @@ $('#auctionButton').click(function() {
 });
 
 $('#councilButton').click(function(){
-  $('#councilMembers').toggle();
+  $('#councilMembers').toggle('slow');
 });
 
 $('#parentAssocMore').click(function(){
@@ -62,15 +62,20 @@ $('#parentAssocMore').click(function(){
 });
 
 $('#assocDocuments').click(function(){
-  $('.pAssocDoc').toggle();
+  $('#pAssocDocs').toggle('slow');
+})
+
+$('#assocDocuments').click(function(){
+  $('.pAssocDocs').toggle();
+  console.log('turkey');
 });
 
 $('#exCareButt').click(function(){
-  $('.extendedCareMore').toggle();
+  $('.extendedCareMore').toggle('slow');
 })
 
 $('#exCareStaff').click(function() {
-  $('.extendedStaff').toggle();
+  $('.extendedStaff').toggle('slow');
 })
 
 

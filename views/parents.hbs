@@ -35,7 +35,7 @@
 
   </script>
 </head>
-<body>
+  <body data-spy="scroll" data-target="#parentPill" data-offset="199">
   <span itemscope itemtype="http://schema.org/LocalBusiness"><nav class="navbar navbar-inverse navbar-fixed-top" id="topNavigation">
     <div class="container-fluid" id="topMenuContainer">
       <div class="row mobileTopRow">
@@ -45,7 +45,7 @@
         </div>
         <div class="col-xs-6 mobileButtonColumn">
         <button type="button" class="btn btn-success btn-lg" id="mobileMenuStar">
-          <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Explore
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Explore
         </button>
       </div>
     </div>
@@ -84,9 +84,26 @@
             <li>
               <a href="/calendar">Calendar</a>
             </li>
-            <li class="active">
-              <a href="/parents">Parents</a>
+<!--
+            <li role="presentation"><a href="#parentBox">Volunteer Requirements</a></li>
+             <li role="presentation"><a href="#advisoryBox">Advisory Council</a></li>
+             <li role="presentation"><a href="#parAssocBox">Parents Association</a></li>
+             <li role="presentation"><a href="#hotLunchMobileBox">Hot Lunch</a></li>
+             <li role="presentation"><a href="#extendBox">Extended Care</a></li>
+ -->
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parents<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/parents">Parents Main</a></li>
+                <li><a href="#parentBox">Volunteer Requirements</a></li>
+                <li><a href="#advisoryBox">Advisory Council</a></li>
+                <li><a href="#parAssocBox">Parents Association</a></li>
+                <li><a href="#hotLunchMobileBox">Hot Lunch</a></li>
+                <li><a href="#extendBox">Extended Care</a></li>
+              </ul>
             </li>
+
             <li>
               <a href="/alumni">Alumni</a>
             </li>
@@ -106,7 +123,7 @@
         </div>
       </div>
     </nav>
-      <div id="mobileGroup">
+      <div class="mobileGroup" id="mobileGroup">
         <ul class="nav nav-pills nav-stacked mobileNav">
           <li>
             <a href="/about">About</a>
@@ -134,8 +151,16 @@
           <li>
             <a href="https://cathedralschoolpdx.wordpress.com" target="_blank">News</a>
           </li>
-          <li class="active">
-            <a href="/parents">Parents</a>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parents <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/parents">Parents Main</a></li>
+              <li><a href="/parents#parentBox">Volunteer Requirements</a></li>
+              <li><a href="/parents#advisoryBox">Advisory Council</a></li>
+              <li><a href="/parents#parAssocBox">Parents Association</a></li>
+              <li><a href="/parents#hotLunchMobileBox">Hot Lunch</a></li>
+              <li><a href="/parents#extendBox">Extended Care</a></li>
+            </ul>
           </li>
           <li>
             <a href="/calendar">Calendar</a>
@@ -146,510 +171,536 @@
           <li>
             <a href="/support">Support</a>
           </li>
+          <li>
+            <h3 id="closeNav">x</h3>
+          </li>
         </ul>
       </div>
+
+
+
     <div class="container" id="parentContent">
-      <!-- Left Column -->
       <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div class="row">
-            <div class="col-sm-12">
-          <div class="thumbnail">
-            <img src="images/img_parents/smilingFamilyPic.jpg" alt="Cathedral Student smiling"
-            class="pictureBorder img-rounded">
-            <div class="caption" id="clickList">
-              <h4>Parent Committees &#38; Resources</h4>
-              <div class="list-group">
-                  <a href="#parentBox" class="list-group-item" id="parentClick">Volunteer Requirements</a>
-                  <a href="#advisoryBox"class="list-group-item" id="advisoryClick">Advisory Council</a>
-                  <a class="list-group-item"id="parAssocClick">Parents Association</a>
-                  <a class="list-group-item"id="extendedCareClick">Extended Care</a>
-                  <a class="list-group-item mobileShrink" id="hotLunchMobile">Lunch Program</a>
-                  <a class="list-group-item mobileShrink" id="documentMobile">Documents</a>
-                  <a class="list-group-item mobileShrink" id="linksMobile">Links</a>
+        <div class="col-xs-12 col-md-4">
+               <div class="col-sm-12">
+                 <div class="thumbnail">
+                   <img src="images/img_parents/check.png" alt="...">
+                   <div class="caption">
+                     <h4>Parent Documents</h4>
+                     <div class="list-group">
+                       <a href="documents/parents/parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Parent Handbook</a>
+                       <a href="documents/parents/student-parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Student Parent Handbook</a>
+                        <a href="documents/parents/uniformPolicy_2016-17.pdf" target="_blank" class="list-group-item">Cathedral Uniform Policy 2016-2017</a>
+                       <a href="documents/parents/volunteerRequirements_2016-2017.pdf" target="_blank" class="list-group-item">Parent Volunteer Guidelines 2016-2017</a>
+                       <a href="https://cathedralpdx.powerschool.com/public/" target="_blank" class="list-group-item">Power School Login</a>
 
-                </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12" id="hotLunchMobileBox">
-            <div class="thumbnail">
-              <img src="images/img_parents/toolbox.png" alt="...">
-              <div class="caption">
-                <h3>Hot Lunch Program</h3>
-                <p>Lunch is available for purchase directly from Cathedral School on Mondays and Fridays. Milk is included with the purchase of hot lunch and is also available five days a week with the purchase of a milk card. Use the button below to prepay or visit the school office.<br>
+                       <a href="documents/parents/studentSupplies2015-2016.pdf" target="_blank" class="list-group-item">Student Supplies</a>
+                       <a href="documents/parents/medicationForm.pdf" target="_blank" class="list-group-item">Medication Form</a>
+                       <a href="documents/parents/driver-insurance-form.pdf" target="_blank" class="list-group-item">Driver Information Form</a>
+                       <a href="documents/parents/volunteerTraining.pdf" target="_blank" class="list-group-item">Volunteer Training Requirements</a>
+                       <a href="documents/parents/instructionsForBackgroundCheck.pdf" target="_blank" class="list-group-item">Volunteer Background Check Instructions</a>
+                       <a href="documents/parents/extendedCare/afterCareReg.pdf" target="_blank" class="list-group-item">Extended Care Registration</a>
+                       <a href="documents/parents/advisoryCouncilBylaws.pdf" target="_blank" class="list-group-item">Advisory Council Bylaws &#38; Constitution</a>
+                       <!-- <a href="documents/parents/SLEk21.pdf" target="_blank" class="list-group-item">SLE Forms (PreK through 2nd Grade)</a>
+                       <a href="documents/parents/SLE345.pdf" target="_blank" class="list-group-item">SLE Forms (3rd through 5th Grade)</a> -->
 
-                Lunches are also available Tuesday, Wednesday, and Thursday through an outside vendor, My Lunchbox. The vendor sets the pricing and available menus. The Cathedral School menu is password protected. Contact the school office for the password.
-                <p><a href="https://squareup.com/store/cathedral-school/" target="_blank" class="btn btn-md btn-primary" id="lunchOrder" role="button">Cathedral Hot Lunch</a><a href="http://www.my-lunchbox.net/" target="_blank" class="btn btn-md btn-success" id="myLunchbox" role="button">My LunchBox Vendor Site</a></p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-5">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="thumbnail">
-            <img src="images/img_parents/neidermeyerWithKids.jpg" class= "img-rounded" alt="Cathedral Children Discussion">
-
-
-            <div class="caption" id="parentBox">
-              <h3>Volunteer Requirements</h3>
-              <p>Part of a commitment to and understanding of Cathedral School is the development of a partnership with the parents of all students. Parents at all levels are encouraged to be involved in the academic, social, and spiritual development of their children. Many volunteer opportunities exist to help parents be directly and indirectly involved with their children and their children&rsquo;s friends.  A parent may volunteer to be a room parent, library aid, and hot lunch--just to name a few opportunities.</p>
-              <p><a href="#" class="btn btn-md btn-success" id="pReq" role="button">Service Requirements</a><a href="#" class="btn btn-md btn-info" id="options" data-toggle="modal" data-target="#volunteerModal">Events by Class</a></p>
-              <div class="modal fade" id="volunteerModal" role="dialog">
-               <div class="modal-dialog">
-                 <!-- Modal content-->
-                 <div class="modal-content">
-                   <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                     <h4 class="modal-title">Volunteer Details</h4>
-                   </div>
-                   <div class="modal-body">
-                     <div class="row parentCategoryRow">
-                       <div class="col-xs-4">
-                         <h5>Responsible</h5>
-                       </div>
-                       <div class="col-xs-4">
-                         <h5>Events</h5>
                      </div>
-                       <div class="col-xs-4">
-                         <h5>Date</h5>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Pre-Kindergarten Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p>Art Show Set-Up Art Show &#38; Spaghetti Dinner </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> May 5, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Kindergarten Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p>Wreath Sale </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> November, 2015</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 1 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Spaghetti Dinner -Dining Art Show &#38; Spaghetti Dinner </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> May 5, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 2 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Special Friend&rsquo;s Breakfast </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> February, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 3 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Back to School BBQ <br> First Communion Reception </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> September 11, 2015 <br> May 1, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 4 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                        <p>Art Show Set-Up <br> Art Show &#38; Spaghetti Dinner </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> May 5, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 5 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                        <p>Art Show-Kitchen <br> Art Show &#38; Spaghetti Dinner </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> May 5, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 6 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Special Friend&rsquo;s Breakfast </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> February, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 7 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Back to School BBQ <br> 8th Grade Graduation Reception </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p>September 11, 2015 <br>June 13th, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 8 Parents </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Wreath Sale <br> 8th Grade Luncheon </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> November, 2015 <br>June 13th, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> All Families </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Work one 2-hour shift at Cathedral School Book Fair </p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> October, 2015</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> All Families </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Raise &#36;100 per student through pledges Run 4 Cathedral</p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> October 2nd, 2015</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> All Families </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> Procure or donate &#36;400 and complete 8 hours of service for Cathedral School Auction</p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> March 5th, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 7 Students </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> 7th grade students serve at the Spaghetti Dinner</p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> May 5th, 2016</p>
-                     </div>
-                     </div>
-                     <div class="row parentReqRow">
-                       <div class="col-xs-4">
-                         <p> Grade 8 Students </p>
-                       </div>
-                       <div class="col-xs-4">
-                       <p> 8th grade students serve at the Special Friends Breakfast</p>
-                     </div>
-                       <div class="col-xs-4">
-                       <p> February, 2016</p>
-                     </div>
-                     </div>
-                   </div>
-                   <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                    </div>
                  </div>
-
                </div>
-             </div>
-              <p class="parentRequirements noShowText">Cathedral School recognizes parents as the primary educators of their children. We are committed to work in partnership with parents to engage students, develop in faith, knowledge, service, and community. <br>There are many easy ways for parents to get involved at Cathedral. We train, no experience required.  We need your talents in both big and little ways. We ask parents to commit to serve throughout the year at specific events and in ways that work best for each family. We require each family to donate a minimum of 10 hours per student or 20 hours per family in service to the school. In addition we also require each family to perform 8 hours of service for the Cathedral School Auction.<br><br>Click the Options Button above to see a table with information about specific events and opportunities available for parents to serve. We assign classes to events to create community, continuity, and fun!  Volunteering at Cathedral School is an expression of commitment to your children, your school, and your Christian faith. When a parent donates time at school, our children see the image of an adult as a giver, and they see the demonstration of one of the most poignant lessons from the Bible – humbly serving others.</p>
-            </div>
-            <div class="caption midBox noShowText" id="advisoryBox">
-              <h3 id="advisoryTitle">Advisory Council</h3>
-              <p id="advisoryText">The Cathedral School Advisory Council is the chief consultative body to the principal on matters of administration and policy.  It fulfills an important role by recommending policy to the principal and supporting the mission of the school.<br> Council members can be either elected or appointed and serve a three-year term in which they are expected to attend all meetings and sit on one of the following committees:<br>
-              <ul class="advisoryList">
-                <li>Finance</li>
-                <li>Marketing and Development</li>
-                <li>Special Projects</li>
-              </ul></p>
-              <p><a href="#" class="btn btn-md btn-success" id ="advisMinButton" role="buton" data-toggle="modal" data-target="#advisoryModal">Advisory Minutes and Agendas</a>
-              <a href="#" class="btn btn-md btn-info" id="councilButton" role="button">Council Members</a></p>
-              <ul id="councilMembers">
-                <h3>2015-2015 Council Members</h3>
-                <li><strong>Msgr. Pat Brennan</strong></li>
-                <li><strong>Principal Amy Biggs</strong></li>
-                <li>Mrs. Kristine Bachand</li>
-                <li>Mrs. Nancy Bartow</li>
-                <li>Mrs. Annie Carnese</li>
-                <li>Ms. Shaunmarie Gutbezahl</li>
-                <li>Mrs. Erin Herrick, Secretary</li>
-                <li>Mrs. Susie Holman</li>
-                <li>Mrs. Janet Jacobs</li>
-                <li>Mr. David Jess</li>
-                <li><strong>Mr. Marcus Parker, Chair</strong></li>
-                <li>Mrs. Christy Ragan</li>
-                <li><strong>Mrs. Melissa Rawlinson, Assistant Chair</strong></li>
-                <li>Mr. Alan Sanchez</li>
-              </ul>
-                <!-- advisory minutes modal -->
-                <div class="modal fade" id="advisoryModal" role="dialog">
-                 <div class="modal-dialog">
-                   <!-- Modal content-->
+
+             <!-- modal with meeting documents -->
+               <!-- Modal -->
+               <div class="modal fade" id="minutesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                 <div class="modal-dialog" role="document">
                    <div class="modal-content">
                      <div class="modal-header">
-                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                       <h4 class="modal-title">Advisory Council Documents</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                       <h4 class="modal-title" id="myModalLabel">Meeting Minutes </h4>
                      </div>
                      <div class="modal-body">
                        <div class="list-group">
                          <a href="documents/parents/minutes/adSepMin.pdf "target="_blank" class="list-group-item">Advisory Council September Minutes</a>
                          <a href="documents/parents/minutes/adOctMin.pdf" target="_blank" class="list-group-item">Advisory Council October Minutes</a>
+                         <a href="documents/parents/minutes/paSepMtg.pdf" target="_blank" class="list-group-item">Parents Association September Minutes</a>
+                         <a href="documents/parents/minutes/paNovMtg.pdf" target="_blank" class="list-group-item">Parents Association November Minutes</a>
                          <a href="documents/parents/minutes/adNovMin.pdf" target="_blank" class="list-group-item">Advisory Council November Minutes</a>
-                         <a href="documents/parents/minutes/adAgendaFeb16.pdf" target="_blank" class="list-group-item">Advisory Council February 16 Agenda</a>
-                         <a href="documents/parents/minutes/sacAgendaApril19.pdf" target="_blank" class="list-group-item">Advisory Council April 19 Agenda</a>
+                         <a href="documents/parents/minutes/adAgendaFeb16.pdf" target="_blank" class="list-group-item">Advisory Council February 2016 Agenda</a>
+                          <a href="documents/parents/minutes/adAgendaMar16.pdf" target="_blank" class="list-group-item">Advisory Council March 2016 Agenda</a>
+                         <a href="documents/parents/minutes/sacAgendaApril19.pdf" target="_blank" class="list-group-item">Advisory Council April 2016 Agenda</a>
 
                        </div>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     </div>
                    </div>
-                   <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                   </div>
-
-
                  </div>
                </div>
+       <div class="row">
+         <div class="col-sm-12" id="linksMobileBox">
+           <div class="thumbnail">
+             <img src="images/img_parents/plugin.png" alt="connecting image">
+             <div class="caption">
+               <h4>Parent Links</h4>
+               <div class="list-group">
+                 <a href="http://website.praesidiuminc.com/" class="list-group-item" target="_blank">Called to Protect Online Training</a>
+                 <a href="http://www.my-lunchbox.net/" target="_blank" class="list-group-item">My Lunchbox Vendor Site</a>
+                 <a href="http://www.dennisuniform.com/ONLStore/d-store-home.asp?sc=25208&dis=17623379" target="_blank" class="list-group-item" id="dennisCode">Dennis Uniform</a>
+                 <a href="http://www.landsend.com/" target="_blank" class="list-group-item" id="landsEndCode">Land&rsquo;s End Uniform</a>
+                 <a href="http://www.loyolapress.com/3-minute-retreats-daily-online-prayer.htm" target="_blank" class="list-group-item" id="meditation">3 Minute Retreat</a>
+                 <a href="http://www.cdc.gov/flu/about/season/vaccine-selection.htm" target="_blank" class="list-group-item" id="flu">CDC Flu Information</a>
+                 <a href="http://www.cyocamphoward.org/" target="_blank" class="list-group-item" id="flu">CYO Website</a>
+               </div>
              </div>
-            </div>
-            <div class="caption midBox noShowText" id="parAssocBox">
-              <h3 id="">Parents Association</h3>
-              <p id="">The Parents' Association (PA) promotes and stimulates interest in activities that ultimately benefit the students and staff of Cathedral School. Our Mission is to create community through the events we sponsor as well as encourage and organize volunteerism through various volunteer programs. All parents and school staff are members of the PA.<br>All Cathedral School parents are members of the PA and invited to join the PA board at our meetings. Mettings take place at 8:15 a.m. in the school courtyard. Meetings during the 2015-2016 school year will be held September 17th, November 19th, January 21st, April 21st, and June 2nd.<br>The Parent&rsquo;s Association sponsors several events and supports school-sponsored events throughout the school year.  Click the Schedule button to explore.</p>
-              <p><a href="#pAssocMore" class="btn btn-md btn-success" id="parentAssocMore" role="button">Schedule</a><a href="#pAssocDoc" class="btn btn-md btn-info" id="assocDocuments" role="button">Association Documents</a></p>
-              </div>
-              <div class="pAssocMore noShowText">
-                <ul class="parDates">
-                  <li><strong>September</strong></li>
-                  <li>Back to School BBQ</li>
-                  <li>Run 4 Cathedral</li>
-                  <li>Staff Hospitality- Welcome Teachers and Staff</li>
-                  <li><strong>October</strong></li>
-                  <li>Book Fair</li>
-                  <li><strong>November</strong></li>
-                  <li>Wreath Sale</li>
-                  <li>Staff Hospitality-Conferences</li>
-                  <li><strong>February</strong></li>
-                  <li>Special Friend&rsquo;s Breakfast</li>
-                  <li><strong>May</strong></li>
-                  <li>First Thursday Art Show &#38; Spaghetti Dinner </li>
-                </ul>
-              </div>
-              <div class="list group pAssocDoc noShowText">
-                <a href="documents/parents/2015_2016PABoard.pdf" class="list-group-item" target="_blank">2015-2016 PA Board</a>
-                <a href="documents/parents/roomParents.pdf" class="list-group-item" target="_blank">2015-2016 Room Parents</a>
-                <a href="documents/parents/parentsAssociationBylaws.pdf" class="list-group-item" target="_blank">PA Constitution and Bylaws</a>
-                <a href="documents/parents/donationProcedures.pdf" class="list-group-item" target="_blank">PA Policy and Procedures for Request for Donations</a>
-                <a href="documents/parents/parentAssociationDonationForm.pdf" class="list-group-item" target="_blank">PA Donation Form</a>
+           </div>
+         </div>
+       </div>
+     </div>
 
-              </div>
-              <div class="caption noShowText" id="extendBox">
-                <h3 id="">Extended Care</h3>
-                <p id="">The Cathedral School Extended Care Program provides quality and consistent care before and after school for enrolled students of Cathedral School. The Extended Day program follows all regulations set forth by the Child Care Division of the State of Oregon.<br><br>Cathedral School’s goal is to provide students with a positive atmosphere where they will have opportunities to continue their learning through activities and recreational fun. Additionally, for those students with homework, a designated staff member will supervise “Study Hall” and assist students with homework assignments.  Children will be supervised by adult caregivers at all times at the recommended ratio (K-8: one adult per 15 students, Pre-K: one adult per 10 students) under Children’s Care Division guidelines for daycare.</p>
-                <p><a href="#extendedCareMore" class="btn btn-md btn-info" id="exCareButt" role="button">More</a><a href="#extendedStaff" class="btn btn-md btn-success" id="exCareStaff" role="button">Staff &#38; Rates</a><button type="button" class="btn btn-primary btn-md" id="exCareCal" data-toggle="modal" data-target="#careCalendars">
-                  Register &#38; Download Calendars
-                </button></p>
-                </div>
-                <div class="extendedCareMore noShowText">
-                  <p>The Extended Care Program is housed in the school cafeteria and begins after school on the first day of school, serving students in Pre-Kindergarten through 8 th grade.  Extended Care is also available on early release days and teacher in-service days. Extended care will be closed on National Holidays, Christmas, spring and summer breaks.<br><br>Morning Care is available before school Monday through Friday from 7:00 a.m. to 7:50  a.m. No morning care will be provided on inclement weather closings.  After Care is available from school dismissal time until 6:00 p.m.</p>
-                </div>
-                <div class="extendedStaff noShowText" id="extendedStaff">
-                  <h3> Staff</h3>
-                  <ul class="careStaff">
-                    <li><strong>Ms. Stacy Murphy, Director</strong></li>
-                    <li><br> </li>
-                    <li><strong>Morning Care</strong></li>
-                    <li>Ms. Sara Strong</li>
-                    <li>Mrs. Rosanne Petersen </li>
-                    <li><br> </li>
-                    <li><strong>After Care</strong></li>
-                    <li>Ms. Stacy Murphy</li>
-                    <li>Miss Mindy Fry </li>
-                    <li>Ms. Katie Odiorne</li>
-                  </ul>
-                  <ul class="careStaff">
-                    <li><strong>Rates and Fees</strong></li>
-                    <li>Children wishing to attend Cathedral School Extended Care must be registered in advance. Registration forms can be found outside the school office or on the Cathedral School website. </li>
-                    <br>
-                    <li><strong>Annual Registration Fee</strong></li>
-                    <li>First Child &#36;50</li>
-                    <li>Additional Child &#36;25</li>
-                    <li>Maximum &#36;100 per family</li>
-                  </ul>
-                  <ul class="careStaff">
-                    <li><strong>Pre-arranged Monthly Calendar Rates</strong></li>
-                    <li>Before Care &#36;5</li>
-                    <li>After Care &#36;12</li>
-                    <li>Full Day &#36;15 Before and After</li>
-                  </ul>
-                  <ul class="careStaff">
-                    <li><strong>Drop-in Rates with No Pre-arranged Calendar </strong></li>
-                    <li>Before Care &#36;5</li>
-                    <li>After Care &#36;20</li>
-                  </ul>
-                  <ul class="careStaff">
-                    <li><strong>11:30 a.m. Dismissal &#40;pre-registration required&#41;</strong></li>
-                    <li>Children In Care 3 Days Per Week or More&#58; no additional charge</li>
-                    <li>Children In Care Less Than 3 days Per Week&#58; &#36;25</li>
-                  </ul>
-                  <ul class="careStaff">
-                    <li><strong>Teacher In-Service Days &#40;pre-registration required&#41;</strong></li>
-                    <li>Children In Care 3 Days Per Week or More&#58; &#36;40</li>
-                    <li>Children In Care Less Than 3 days Per Week&#58; &#36;50</li>
-                  </ul>
-                  <ul class="careStaff">
-                    <li><strong>Late Fee</strong></li>
-                    <li>A &#36;1 per minute charge is applied starting at 6 PM.  A phone call is appreciated, but the late charge will still be applied to help defray the cost of staff overtime.</li>
-                  </ul>
-                    <h5 class="careStaff"id="careBold">Monthly Calendars</h5>
-                    <p class="careStaff">
-                    Monthly calendars are available on the Cathedral website. Families are expected to complete and submit the monthly calendar by the 20th of each month. The Facts Tuition Management System will be used to collect payments. Monthly charges will be calculated at the end of each month and charged via FACTS on the 5th business day of the following month.</p>
-                    <h5 class="careStaff" id="careBold">Dropoff and Pickup Procedure</h5>
-                    <p class="careStaff">Parents/guardians must walk students in and sign students in and out daily. Children will not be released to parties, meetings, sports or other activities without prior written authorization from a parent/guardian (signed and dated).</p>
-                </div>
-                    <!-- Monthly Calendar Modal -->
-                    <div class="modal fade" id="careCalendars" tabindex="-1" role="dialog" aria-labelledby="extended Care Calendar">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="careCalendarTitle">Download Calendars</h4>
-                          </div>
-                          <div class="modal-body">
-                            <div class="list-group">
-                              <a href="documents/parents/extendedCare/afterCareReg.pdf "target="_blank" class="list-group-item">Register</a>
-                              <a href="documents/parents/extendedCare/exCareFeb.pdf "target="_blank" class="list-group-item">February 2016</a>
-                              <a href="documents/parents/extendedCare/exCareMarch.pdf" target="_blank" class="list-group-item">March 2016</a>
-                              <a href="documents/parents/extendedCare/exCareApril.pdf" target="_blank" class="list-group-item">April 2016</a>
-                              <a href="documents/parents/extendedCare/exCareMay.pdf" target="_blank" class="list-group-item">May 2016</a>
-                              <a href="documents/parents/extendedCare/exCareJune.pdf" target="_blank" class="list-group-item">June 2016</a>
-                            </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="col-xs-12 col-md-8">
+             <div class="parentContentBackground" id="parentBox">
+                  <div class="thumbnail">
+                    <img src="images/img_parents/neidermeyerWithKids.jpg" class= "img-rounded" alt="Cathedral Children Discussion">
+                    <div class="caption">
+                      <h3>Volunteer Requirements</h3>
+                      <div id="advisoryBox"></div>
+                      <p>Part of a commitment to and understanding of Cathedral School is the development of a partnership with the parents of all students. Parents at all levels are encouraged to be involved in the academic, social, and spiritual development of their children. Many volunteer opportunities exist to help parents be directly and indirectly involved with their children and their children&rsquo;s friends.  A parent may volunteer to be a room parent, library aid, and hot lunch--just to name a few opportunities.<br><br>Cathedral School recognizes parents as the primary educators of their children. We are committed to work in partnership with parents to engage students, develop in faith, knowledge, service, and community.  There are many easy ways for parents to get involved at Cathedral. We train, no experience required.  We need your talents in both big and little ways. Volunteering at Cathedral School is an expression of commitment to your children, your school, and your Christian faith. When a parent donates time at school, our children see the image of an adult as a giver, and they see the demonstration of one of the most poignant lessons from the Bible – humbly serving others.
+                      </p>
+                      <p><a href="documents/parents/volunteerRequirements_2016-2017.pdf" target="_blank" class="btn btn-md btn-success" id="pReq" role="button">Service Requirements</a><a href="#" class="btn btn-md btn-info" id="options" data-toggle="modal" data-target="#volunteerModal">Events by Class</a></p>
+                      <div class="modal fade" id="volunteerModal" role="dialog">
+                       <div class="modal-dialog">
+                         <!-- Modal content-->
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h4 class="modal-title">Volunteer Details</h4>
+                           </div>
+                           <div class="modal-body">
+                             <div class="row parentCategoryRow">
+                               <div class="col-xs-4">
+                                 <h5>Responsible</h5>
+                               </div>
+                               <div class="col-xs-4">
+                                 <h5>Events</h5>
+                             </div>
+                               <div class="col-xs-4">
+                                 <h5>Date</h5>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Pre-Kindergarten Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p>Art Show Set-Up Art Show &#38; Spaghetti Dinner </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> May 5, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Kindergarten Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p>Wreath Sale </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> November, 2015</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 1 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Spaghetti Dinner -Dining Art Show &#38; Spaghetti Dinner </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> May 5, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 2 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Special Friend&rsquo;s Breakfast </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> February, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 3 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Back to School BBQ <br> First Communion Reception </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> September 11, 2015 <br> May 1, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 4 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                                <p>Art Show Set-Up <br> Art Show &#38; Spaghetti Dinner </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> May 5, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 5 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                                <p>Art Show-Kitchen <br> Art Show &#38; Spaghetti Dinner </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> May 5, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 6 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Special Friend&rsquo;s Breakfast </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> February, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 7 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Back to School BBQ <br> 8th Grade Graduation Reception </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p>September 11, 2015 <br>June 13th, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 8 Parents </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Wreath Sale <br> 8th Grade Luncheon </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> November, 2015 <br>June 13th, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> All Families </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Work one 2-hour shift at Cathedral School Book Fair </p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> October, 2015</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> All Families </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Raise &#36;100 per student through pledges Run 4 Cathedral</p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> October 2nd, 2015</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> All Families </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> Procure or donate &#36;400 and complete 8 hours of service for Cathedral School Auction</p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> March 5th, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 7 Students </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> 7th grade students serve at the Spaghetti Dinner</p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> May 5th, 2016</p>
+                             </div>
+                             </div>
+                             <div class="row parentReqRow">
+                               <div class="col-xs-4">
+                                 <p> Grade 8 Students </p>
+                               </div>
+                               <div class="col-xs-4">
+                               <p> 8th grade students serve at the Special Friends Breakfast</p>
+                             </div>
+                               <div class="col-xs-4">
+                               <p> February, 2016</p>
+                             </div>
+                             </div>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+
+                       </div>
+                     </div>
+
+                      <p class="parentRequirements noShowText" id="parentRequirements"></p>
+                    </div>
+
+                    <div class="caption">
+                      <h3 id="advisoryTitle">Advisory Council</h3>
+                      <p id="advisoryText">The Cathedral School Advisory Council is the chief consultative body to the principal on matters of administration and policy.  It fulfills an important role by recommending policy to the principal and supporting the mission of the school.<br> Council members can be either elected or appointed and serve a three-year term in which they are expected to attend all meetings and sit on one of the following committees:<br>
+                      <ul class="advisoryList"  id="parAssocBox">
+                        <li>Finance</li>
+                        <li>Marketing and Development</li>
+                        <li>Special Projects</li>
+                      </ul></p>
+                      <p><a href="#" class="btn btn-md btn-success" id ="advisMinButton" role="buton" data-toggle="modal" data-target="#advisoryModal">Advisory Minutes and Agendas</a>
+ <button type="button" class="btn btn-info" id="councilButton">Council Members</button></p>
+                      <ul id="councilMembers">
+                        <h3>2015-2016 Council Members</h3>
+                        <li>Msgr. Pat Brennan</li>
+                        <li>Principal Amy Biggs</li>
+                        <li>Mr. Marcus Parker, Chair</li>
+                        <li>Mrs. Melissa Rawlinson, Assistant Chair</li>
+                        <li>Mrs. Erin Herrick, Secretary</li>
+                        <li>Mrs. Kristine Bachand</li>
+                        <li>Mrs. Annie Carnese</li>
+                        <li>Ms. Shaunmarie Gutbezahl</li>
+                        <li>Mrs. Susie Holman</li>
+                        <li>Mrs. Janet Jacobs</li>
+                        <li>Mr. David Jess</li>
+                        <li>Mrs. Christy Ragan</li>
+                        <li>Mr. Alan Sanchez</li>
+                      </ul>
+                        <!-- advisory minutes modal -->
+                        <div class="modal fade" id="advisoryModal" role="dialog">
+                         <div class="modal-dialog">
+                           <!-- Modal content-->
+                           <div class="modal-content">
+                             <div class="modal-header">
+                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                               <h4 class="modal-title">Advisory Council Documents</h4>
+                             </div>
+                             <div class="modal-body">
+                               <div class="list-group">
+                                 <a href="documents/parents/minutes/adAgendaAug15.pdf "target="_blank" class="list-group-item">Advisory Council August 2015 Agenda</a>
+                                  <a href="documents/parents/minutes/adAugMin15.pdf "target="_blank" class="list-group-item">Advisory Council August 2015 Minutes</a>
+                                 <a href="documents/parents/minutes/adAgendaSep15.pdf "target="_blank" class="list-group-item">Advisory Council September 2015 Agenda</a>
+                                 <a href="documents/parents/minutes/adSepMin15.pdf "target="_blank" class="list-group-item">Advisory Council September 2015 Minutes</a>
+                                  <a href="documents/parents/minutes/adAgendaOct15.pdf "target="_blank" class="list-group-item">Advisory Council October 2015 Agenda</a>
+                                 <a href="documents/parents/minutes/adOctMin15.pdf" target="_blank" class="list-group-item">Advisory Council October 2015 Minutes</a>
+                                 <a href="documents/parents/minutes/adAgendaNov15.pdf "target="_blank" class="list-group-item">Advisory Council November 2015 Agenda</a>
+                                 <a href="documents/parents/minutes/adNovMin15.pdf" target="_blank" class="list-group-item">Advisory Council November 2015 Minutes</a>
+                                 <a href="documents/parents/minutes/adAgendaJan16.pdf" target="_blank" class="list-group-item">Advisory Council January 2016 Agenda</a>
+                                 <a
+                                 <a href="documents/parents/minutes/adAgendaFeb16.pdf" target="_blank" class="list-group-item">Advisory Council February 16 Agenda</a>
+                                 <a href="documents/parents/minutes/sacAgendaApril19.pdf" target="_blank" class="list-group-item">Advisory Council April 19 Agenda</a>
+
+                               </div>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+
+
+                         </div>
+                       </div>
+                     </div>
+                    </div>
+
+                    <div class="caption">
+                      <div class="thumbnail">
+                      <h3>Parents Association</h3>
+                      <p>The Parents' Association (PA) promotes and stimulates interest in activities that ultimately benefit the students and staff of Cathedral School. Our Mission is to create community through the events we sponsor as well as encourage and organize volunteerism through various volunteer programs. All parents and school staff are members of the PA.<br>All Cathedral School parents are members of the PA and invited to join the PA board at our meetings. Mettings take place at 8:15 a.m. in the school courtyard. Meetings during the 2015-2016 school year will be held September 17th, November 19th, January 21st, April 21st, and June 2nd.<br>The Parent&rsquo;s Association sponsors several events and supports school-sponsored events throughout the school year.  Click the Schedule button to explore.</p>
+                      <p><a href="#pAssocMore" class="btn btn-md btn-success" id="parentAssocMore" role="button">Schedule</a><a href="#" class="btn btn-md btn-info" id ="assocDocs" role="button" data-toggle="modal" data-target="#parentAssocModal">Parent Association Documents</a></p>
+
+                      <div class="pAssocMore noShowText">
+                        <ul class="parDates">
+                          <li><strong>September</strong></li>
+                          <li>Back to School BBQ</li>
+                          <li>Run 4 Cathedral</li>
+                          <li>Staff Hospitality- Welcome Teachers and Staff</li>
+                          <li><strong>October</strong></li>
+                          <li>Book Fair</li>
+                          <li><strong>November</strong></li>
+                          <li>Wreath Sale</li>
+                          <li>Staff Hospitality-Conferences</li>
+                          <li><strong>February</strong></li>
+                          <li>Special Friend&rsquo;s Breakfast</li>
+                          <li><strong>May</strong></li>
+                          <li>First Thursday Art Show &#38; Spaghetti Dinner </li>
+                        </ul>
+                      </div>
+
+                      <!-- advisory minutes modal -->
+                      <div class="modal fade" id="parentAssocModal" role="dialog">
+                       <div class="modal-dialog">
+                         <!-- Modal content-->
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h4 class="modal-title">Parent Association Documents</h4>
+                           </div>
+                           <div class="modal-body">
+                             <div class="list-group">
+                               <a href="documents/parents/2015_2016PABoard.pdf" class="list-group-item" target="_blank">2015-2016 Parent Association Board</a>
+                               <a href="documents/parents/parentsAssociationBylaws.pdf" class="list-group-item" target="_blank">Parent Association Constitution and Bylaws</a>
+                               <a href="documents/parents/donationProcedures.pdf" class="list-group-item" target="_blank">Parent Association Policy and Procedures for Request for Donations</a>
+                               <a href="documents/parents/parentAssociationDonationForm.pdf" class="list-group-item" target="_blank">Parent Association Donation Form</a>
+                               <a href="documents/parents/minutes/paSepMtg.pdf" class="list-group-item" target="_blank">Parent Association September 2015 Minutes</a>
+                               <a href="documents/parents/minutes/paNovMtg.pdf" class="list-group-item" target="_blank">Parent Association November 2015 Minutes</a>
+                               <a href="documents/parents/minutes/paJanMin16.pdf" class="list-group-item" target="_blank">Parent Association January 2016 Minutes</a>
+                               <a href="documents/parents/minutes/pa2016_PrincipalReprt.pdf" class="list-group-item" target="_blank">Parent Association 2016 Principal&rsquo;s Report</a>
+
+                             </div>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         </div>
+
+
+                       </div>
+                     </div>
+                   </div>
+
+                      <!-- //old version of parents assoc// -->
+                      <div class="list-group noShowText" id="#pAssocDocs">
+
+                      </div>
+                    </div>
+
+                    <div class="caption" id="hotLunchMobileBox">
+                        <div class="thumbnail">
+                          <img src="images/img_parents/toolbox.png" alt="...">
+                          <div class="caption">
+                                <h3>Hot Lunch Program</h3>
+                                <p>Lunch is available for purchase directly from Cathedral School on Mondays and Fridays. Milk is included with the purchase of hot lunch and is also available five days a week with the purchase of a milk card. Use the button below to prepay or visit the school office.<br>                          Lunches are also available Tuesday, Wednesday, and Thursday through an outside vendor, My Lunchbox. The vendor sets the pricing and available menus. The Cathedral School menu is password protected. Contact the school office for the password.
+                                <p><a href="https://squareup.com/store/cathedral-school/" target="_blank" class="btn btn-md btn-primary" id="lunchOrder" role="button">Cathedral Hot Lunch</a><a href="http://www.my-lunchbox.net/" target="_blank" class="btn btn-md btn-success" id="myLunchbox" role="button">My LunchBox Vendor Site</a></p>
                           </div>
                         </div>
+                    </div>
+                    <div class="caption" id="extendBox">
+                      <div class="thumbnail">
+                        <h3 id="">Extended Care</h3>
+                        <p id="">The Cathedral School Extended Care Program provides quality and consistent care before and after school for enrolled students of Cathedral School. The Extended Day program follows all regulations set forth by the Child Care Division of the State of Oregon.<br><br>Cathedral School’s goal is to provide students with a positive atmosphere where they will have opportunities to continue their learning through activities and recreational fun. Additionally, for those students with homework, a designated staff member will supervise “Study Hall” and assist students with homework assignments.  Children will be supervised by adult caregivers at all times at the recommended ratio (K-8: one adult per 15 students, Pre-K: one adult per 10 students) under Children’s Care Division guidelines for daycare.</p>
+
+                        <p><a href="#extendedCareMore" class="btn btn-md btn-info" id="exCareButt" role="button">More</a><button class="btn btn-md btn-success" id="exCareStaff" role="button">Staff &#38; Rates</button>
+<a href="#" class="btn btn-md btn-info" id="careCalendars" data-toggle="modal" data-target="#careCalModal">Register &#38; Download Calendars</a></p>
+
+
+
+                      <div class="extendedCareMore noShowText">
+                        <p>The Extended Care Program is housed in the school cafeteria and begins after school on the first day of school, serving students in Pre-Kindergarten through 8 th grade.  Extended Care is also available on early release days and teacher in-service days. Extended care will be closed on National Holidays, Christmas, spring and summer breaks.<br><br>Morning Care is available before school Monday through Friday from 7:00 a.m. to 7:50  a.m. No morning care will be provided on inclement weather closings.  After Care is available from school dismissal time until 6:00 p.m.</p>
+                      </div>
+                      <div class="extendedStaff noShowText" id="extendedStaff">
+                        <h3> Staff</h3>
+                        <ul class="careStaff">
+                          <li><strong>Ms. Stacy Murphy, Director</strong></li>
+                          <li><br> </li>
+                          <li><strong>Morning Care</strong></li>
+                          <li>Ms. Sara Strong</li>
+                          <li>Mrs. Rosanne Petersen </li>
+                          <li><br> </li>
+                          <li><strong>After Care</strong></li>
+                          <li>Ms. Stacy Murphy</li>
+                          <li>Miss Mindy Fry </li>
+                          <li>Ms. Katie Odiorne</li>
+                        </ul>
+                        <ul class="careStaff">
+                          <li><strong>Rates and Fees</strong></li>
+                          <li>Children wishing to attend Cathedral School Extended Care must be registered in advance. Registration forms can be found outside the school office or on the Cathedral School website. </li>
+                          <br>
+                          <li><strong>Annual Registration Fee</strong></li>
+                          <li>First Child &#36;50</li>
+                          <li>Additional Child &#36;25</li>
+                          <li>Maximum &#36;100 per family</li>
+                        </ul>
+                        <ul class="careStaff">
+                          <li><strong>Pre-arranged Monthly Calendar Rates</strong></li>
+                          <li>Before Care &#36;5</li>
+                          <li>After Care &#36;12</li>
+                          <li>Full Day &#36;15 Before and After</li>
+                        </ul>
+                        <ul class="careStaff">
+                          <li><strong>Drop-in Rates with No Pre-arranged Calendar </strong></li>
+                          <li>Before Care &#36;5</li>
+                          <li>After Care &#36;20</li>
+                        </ul>
+                        <ul class="careStaff">
+                          <li><strong>11:30 a.m. Dismissal &#40;pre-registration required&#41;</strong></li>
+                          <li>Children In Care 3 Days Per Week or More&#58; no additional charge</li>
+                          <li>Children In Care Less Than 3 days Per Week&#58; &#36;25</li>
+                        </ul>
+                        <ul class="careStaff">
+                          <li><strong>Teacher In-Service Days &#40;pre-registration required&#41;</strong></li>
+                          <li>Children In Care 3 Days Per Week or More&#58; &#36;40</li>
+                          <li>Children In Care Less Than 3 days Per Week&#58; &#36;50</li>
+                        </ul>
+                        <ul class="careStaff">
+                          <li><strong>Late Fee</strong></li>
+                          <li>A &#36;1 per minute charge is applied starting at 6 PM.  A phone call is appreciated, but the late charge will still be applied to help defray the cost of staff overtime.</li>
+                        </ul>
+                          <h5 class="careStaff"id="careBold">Monthly Calendars</h5>
+                          <p class="careStaff">
+                          Monthly calendars are available on the Cathedral website. Families are expected to complete and submit the monthly calendar by the 20th of each month. The Facts Tuition Management System will be used to collect payments. Monthly charges will be calculated at the end of each month and charged via FACTS on the 5th business day of the following month.</p>
+                          <h5 class="careStaff" id="careBold">Dropoff and Pickup Procedure</h5>
+                          <p class="careStaff">Parents/guardians must walk students in and sign students in and out daily. Children will not be released to parties, meetings, sports or other activities without prior written authorization from a parent/guardian (signed and dated).</p>
+                        </div>
+
+                          <!-- Monthly Calendar Modal -->
+                          <div class="modal fade" id="careCalModal" tabindex="-1" role="dialog" aria-labelledby="extended Care Calendar">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                  <h4 class="modal-title" id="careCalendarTitle">Download Calendars</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="list-group">
+                                    <a href="documents/parents/extendedCare/afterCareReg.pdf "target="_blank" class="list-group-item">Register</a>
+                                    <a href="documents/parents/extendedCare/exCareFeb.pdf "target="_blank" class="list-group-item">February 2016</a>
+                                    <a href="documents/parents/extendedCare/exCareMarch.pdf" target="_blank" class="list-group-item">March 2016</a>
+                                    <a href="documents/parents/extendedCare/exCareApril.pdf" target="_blank" class="list-group-item">April 2016</a>
+                                    <a href="documents/parents/extendedCare/exCareMay.pdf" target="_blank" class="list-group-item">May 2016</a>
+                                    <a href="documents/parents/extendedCare/exCareJune16.pdf" target="_blank" class="list-group-item">June 2016</a>
+                                  </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
-
-          </div>
-        </div>
-      </div>
-</div>
-        <div class="col-sm-6 col-md-3" id="documentsMobileBox">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="thumbnail">
-                <img src="images/img_parents/check.png" alt="...">
-                <div class="caption">
-                  <h4>Parent Documents</h4>
-                  <div class="list-group">
-                    <a href="documents/parents/parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Parent Handbook</a>
-                    <a href="documents/parents/student-parent-handbook-2015-2016.pdf" target="_blank" class="list-group-item">Student Parent Handbook</a>
-                    <a href="https://cathedralpdx.powerschool.com/public/" target="_blank" class="list-group-item">Power School Login</a>
-
-                    <a href="documents/parents/studentSupplies2015-2016.pdf" target="_blank" class="list-group-item">Student Supplies</a>
-                    <a href="documents/parents/medicationForm.pdf" target="_blank" class="list-group-item">Medication Form</a>
-                    <a href="documents/parents/driver-insurance-form.pdf" target="_blank" class="list-group-item">Driver Information Form</a>
-                    <a href="documents/parents/volunteerTraining.pdf" target="_blank" class="list-group-item">Volunteer Training Requirements</a>
-                    <a href="documents/parents/instructionsForBackgroundCheck.pdf" target="_blank" class="list-group-item">Volunteer Background Check Instructions</a>
-                    <a href="documents/parents/hotLunchServerSched.pdf" target="_blank" class="list-group-item">Hot Lunch Server Schedule</a>
-                    <a href="documents/parents/extendedCare/afterCareReg.pdf" target="_blank" class="list-group-item">Extended Care Registration</a>
-                    <a href="documents/parents/advisoryCouncilBylaws.pdf" target="_blank" class="list-group-item">Advisory Council Bylaws &#38; Constitution</a>
-                    <a href=data-toggle="modal" data-toggle="modal" data-target="#minutesModal" class="list-group-item" id="minutes">Meeting Minutes and Agendas</a>
-                    <a href="documents/parents/SLEk21.pdf" target="_blank" class="list-group-item">SLE Forms (PreK through 2nd Grade)</a>
-                    <a href="documents/parents/SLE345.pdf" target="_blank" class="list-group-item">SLE Forms (3rd through 5th Grade)</a>
-
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <!-- modal with meeting documents -->
-            <!-- Modal -->
-            <div class="modal fade" id="minutesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Meeting Minutes </h4>
-                  </div>
-                  <div class="modal-body">
-                    <div class="list-group">
-                      <a href="documents/parents/minutes/adSepMin.pdf "target="_blank" class="list-group-item">Advisory Council September Minutes</a>
-                      <a href="documents/parents/minutes/adOctMin.pdf" target="_blank" class="list-group-item">Advisory Council October Minutes</a>
-                      <a href="documents/parents/minutes/paSepMtg.pdf" target="_blank" class="list-group-item">Parents Association September Minutes</a>
-                      <a href="documents/parents/minutes/paNovMtg.pdf" target="_blank" class="list-group-item">Parents Association November Minutes</a>
-                      <a href="documents/parents/minutes/adNovMin.pdf" target="_blank" class="list-group-item">Advisory Council November Minutes</a>
-                      <a href="documents/parents/minutes/adAgendaFeb16.pdf" target="_blank" class="list-group-item">Advisory Council February 16 Agenda</a>
-                      <a href="documents/parents/minutes/sacAgendaApril19.pdf" target="_blank" class="list-group-item">Advisory Council April 19 Agenda</a>
 
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-        <div class="row">
-          <div class="col-sm-12" id="linksMobileBox">
-            <div class="thumbnail">
-              <img src="images/img_parents/plugin.png" alt="connecting image">
-              <div class="caption">
-                <h4>Parent Links</h4>
-                <div class="list-group">
-                  <a href="http://website.praesidiuminc.com/" class="list-group-item" target="_blank">Called to Protect Online Training</a>
-                  <a href="http://www.my-lunchbox.net/" target="_blank" class="list-group-item">My Lunchbox Vendor Site</a>
-                  <a href="http://www.dennisuniform.com/ONLStore/d-store-home.asp?sc=25208&dis=17623379" target="_blank" class="list-group-item" id="dennisCode">Dennis Uniform</a>
-                  <a href="http://www.landsend.com/" target="_blank" class="list-group-item" id="landsEndCode">Land&rsquo;s End Uniform</a>
-                  <a href="http://www.loyolapress.com/3-minute-retreats-daily-online-prayer.htm" target="_blank" class="list-group-item" id="meditation">3 Minute Retreat</a>
-                  <a href="http://www.cdc.gov/flu/about/season/vaccine-selection.htm" target="_blank" class="list-group-item" id="flu">CDC Flu Information</a>
-                  <a href="http://www.cyocamphoward.org/" target="_blank" class="list-group-item" id="flu">CYO Website</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-</div>
+  </div>
+      </div>
 <footer>
       <div class="social">
         <h4>Connect With Us </h4>
