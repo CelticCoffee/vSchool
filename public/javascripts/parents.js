@@ -78,6 +78,12 @@ $('#exCareStaff').click(function() {
   $('.extendedStaff').toggle('slow');
 })
 
+$('#freshLunch').click(function(){
+  alert('This link will go live soon, please check back');
+});
 
+$('.sideLunchLink').click(function() {
+  alert('This link will go live soon, please check back')
+});
 
 });

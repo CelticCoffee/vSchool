@@ -26,6 +26,11 @@ h3 {
   margin-right: 1em;
 }
 
+.parentLink {
+}
+
+
+
 /*******************/
 /****rightcolumn****/
 /********************/
@@ -167,6 +172,12 @@ h4 {
 	...
 }*/
 
+#hotLunchMobileBox .btn {
+  margin: 0, auto;
+  margin-right: .5em;
+  margin-bottom: 1em;
+
+}
 
 /*******************/
 /*Media Queries**/
