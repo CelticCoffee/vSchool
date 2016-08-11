@@ -6,10 +6,10 @@
 	margin-top: 70px;
 }
 
-.ourProgramTabNav {
+/*.ourProgramTabNav {
 	font-size: 1.05em;
 	text-transform: uppercase;
-}
+}*/
 
 .ourProgramTabNav li {
 	padding: .5em;
@@ -69,12 +69,6 @@
 	margin-top: 2em;
 }
 
-
-
-
-
-
-
 #artText {
 	display: none;
 }
@@ -99,6 +93,13 @@
 #afterCareText {
 	display: none;
 }
+#mobileGroup {
+	position: absolute;
+	z-index: 0;
+
+}
+
+
 
 @media only screen and (max-width: 1199px) {
 	.staffPics {
@@ -120,5 +121,3 @@
 	.staffPics {
 		max-width: 200px;
 	}
-
-	@media only screen and (max-width: 768px) {
