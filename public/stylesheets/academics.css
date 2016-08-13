@@ -1,11 +1,3 @@
-
-
-/*.academicText {
-	margin-top: 50px;
-}*/
-
-
-
 /*******************/
 /*gray Box content**/
 /*******************/
@@ -96,6 +88,11 @@
 	padding: 0;
 }
 
+/*******************/
+/*Media Queries*/
+/*******************/
+
+
 @media only screen and (min-width: 1200px) {
 	.navContainer {
 		margin-top: 50px;
@@ -133,16 +130,10 @@
 		margin-left: auto;
 		margin-right: 1em;
 		margin-top: 1em;
-
-
-
 	}
 
 	#openMenuLook {
 	margin-top: 1em;
 	padding-top: 1em;
 	}
-	/*.facultyPortraits {
-		width: 200px;
-	}*/
 }
