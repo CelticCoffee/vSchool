@@ -129,11 +129,11 @@ a.navbar-brand {
 }
 
 #runButton {
-	width: 100%;
 	padding: 1em;
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 1em;
+	text-align: center;
 }
 
 #auctionHomeClick {
@@ -142,6 +142,23 @@ a.navbar-brand {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 1em;
+}
+
+.techButton {
+	background-color: gray;
+	width: 100%;
+	padding: 1em;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	text-align: center;
+	color: white;
+
+}
+
+
+
+
 }
 
 
@@ -179,6 +196,11 @@ a.navbar-brand {
 #desktopCal {
 	display: block;
 	margin: 0 auto;
+}
+
+.runText {
+	margin-left: .25em;
+	margin-right: 0;
 }
 
 
@@ -235,7 +257,11 @@ footer .copyright {
 		font-size: 1.5em;
 		padding-top: auto;
 		padding-left: 0;
+	}
 
+	.calendar-container {
+		margin-right: 5em;
+	}
 
 }
 
@@ -297,6 +323,8 @@ footer .copyright {
 		display: none;
 	}
 
+
+
 }
 
 
@@ -316,13 +344,20 @@ footer .copyright {
 .homePanelContent {
 	display: block;
 	margin-left: .5em;
+	margin-top: 12em;
+}
+.copyright {
+	margin: 1em;
+}
+
+
 }
 
 @media screen and (max-width: 335px) {
 	a.navbar-brand {
 		font-size: 1.15em;
 	}
-
+}
 @media screen and (max-width: 1199px) {
 	#mobileMenuStar {
 		display: block;
