@@ -23,7 +23,6 @@ h3 {
 }
 
 #lunchOrder {
-  margin-right: 1em;
 }
 
 .parentLink {
@@ -185,6 +184,16 @@ h4 {
   margin-bottom: 1em;
 
 }
+
+#volgButton {
+  margin-right: 1em;
+}
+
+#freshLunch {
+  background-color: green;
+  color: white;
+}
+
 
 /*******************/
 /*Media Queries**/
