@@ -86,8 +86,8 @@ $(document).ready(function() {
 		$('#gobelBio').toggle('slow');
 	})
 
-	$('#strongButton').click(function(){
-		$('#strongBio').toggle('slow');
+	$('#montgomeryButton').click(function(){
+		$('#montgomeryBio').toggle('slow');
 	})
 
 	//kindergarten Text Reveal//
@@ -143,8 +143,8 @@ $(document).ready(function() {
 		$('#kilkennyBio').toggle('slow');
 	})
 
-	$('#petersenButton').click(function(){
-		$('#petersenBio').toggle('slow');
+	$('#manningButton').click(function(){
+		$('#manningBio').toggle('slow');
 	})
 
 	//2nd Grade Button Text Reveal
@@ -168,8 +168,8 @@ $(document).ready(function() {
 			$('#mcMahonBio').toggle('slow');
 		})
 
-		$('#odiorneButton').click(function(){
-			$('#odiorneBio').toggle('slow');
+		$('#mechamButton').click(function(){
+			$('#mechamBio').toggle('slow');
 		})
 
 		//3rd Grade Button Text Reveal
@@ -194,8 +194,8 @@ $(document).ready(function() {
 				$('#trachtenbargBio').toggle('slow');
 			})
 
-			$('#fryButton').click(function(){
-				$('#fryBio').toggle('slow');
+			$('#joyceButton').click(function(){
+				$('#joyceBio').toggle('slow');
 			})
 
 			//4th Grade Button Text Reveal
@@ -284,8 +284,8 @@ $(document).ready(function() {
 							$('#aguonBio').toggle('slow');
 						})
 
-						$('#exleyButton').click(function(){
-							$('#exleyBio').toggle('slow');
+						$('#overleyButton').click(function(){
+							$('#overleyBio').toggle('slow');
 						})
 
 						$('#raeButton').click(function(){
