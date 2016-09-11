@@ -203,6 +203,18 @@ a.navbar-brand {
 	margin-right: 0;
 }
 
+#bottomColor {
+	/*background-color:  #404040;*/
+	/*color: white;*/
+	padding: 2em;
+	margin-top: 3em;
+	margin-bottom: -1em;
+}
+
+#address {
+	font-size: .75em;
+	color: black;
+}
 
 /***************************/
 /********media queries*****/

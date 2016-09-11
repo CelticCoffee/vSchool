@@ -70,6 +70,12 @@
 
 }
 
+.facultyEmails a{
+  text-decoration: none;
+  color: #404040;
+  font-size: 1em;
+}
+
 /*******************/
 /*faculty Box styles**/
 /*******************/
@@ -136,4 +142,11 @@
 	margin-top: 1em;
 	padding-top: 1em;
 	}
+
+  .academicTextBox {
+    width: 140%;
+    background-color: lightGray;
+  }
+
+
 }
