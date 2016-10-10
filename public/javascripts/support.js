@@ -1,47 +1,42 @@
 $(document).ready(function() {
 
-  $('#auctionSupportButton').click(function(){
-    $('.auctionMore').toggle('slow');
-    console.log('auctionMore');
-  });
-  //
-  $('#run4Small').click(function(){
-    $('#run4CathedralHero').show().siblings().addClass('noShowText');
-  });
+var buttonDOM = document.querySelectorAll('.auctionBox');
+var titleDOM = document.querySelectorAll('.boxTitle');
 
-  $('#auctionSmall').click(function(){
-    $('.cathedralAuctionHero').show().siblings().addClass('noShowText');
-  });
+for (var i = 0; i < buttonDOM.length; i ++){
+  buttonDOM[i].dataID = i;
+  titleDOM[i].dataID = i;
+  buttonDOM[i].addEventListener('click', openTextBox, false);
+  titleDOM[i].addEventListener('click', openTextBox, false);
+}
 
-  $('#leaveLegacySm').click(function(){
-    $('.leaveALegacyHero').show().siblings().addClass('noShowText');
-  })
+var textArray = document.querySelectorAll('.auctionText');
 
-  $('#run4Sponsors').click(function() {
-    $('.run4More').show('slow');
-  });
+for (var j = 0; j < textArray.length; j++){
+  textArray[j].dataID = j;
+  console.log(textArray[j]);
+}
 
 
-  if(screen.width < 415) {
-    $('#iconMenu').remove();
-    $('#supportTabs').show();
-    console.log('bacon');
-    $('#legacyTab').click(function() {
-      $('.leaveALegacyHero').show('slow').siblings().addClass('noShowText');
-    });
+function openTextBox(){
+  var activeButton = (event.target);
 
-    $('#aucTab').click(function() {
-      $('.cathedralAuctionHero').show('slow').siblings().addClass('noShowText');
-    });
+  for(var k = 0; k < textArray.length; k++) {
+    if (activeButton.dataID == textArray[k].dataID) {
+      var textContainer = document.getElementById('textBoxOpen');
+      textContainer.style.display = 'block';
+      textArray[k].style.display = 'block';
+      }
 
-    $('#run4Tab').click(function() {
-      $('#run4CathedralHero').show('slow').siblings().addClass('noShowText');
-    });
+    else {
+      textArray[k].style.display = 'none';
+
+    }
   }
-  else if (screen.width >=415) {
-    console.log('baconToast');
-    $('#supportTabs').remove();
-  };
+}
+
+
+
 
 
 

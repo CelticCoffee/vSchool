@@ -1,90 +1,126 @@
-.supportContent {
-  margin-top: 50px;
+.auctionBox {
+  margin: 1em;
+  background-color: red;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 50px 10px 50px 10px;
 }
 
+.auctionContainer {
+  margin-top: 5em;
+}
 
-
-.supportMenuLarge {
+#auctionImageHero {
+  display: flex;
+  flex-shrink: 3;
   list-style: none;
-
+  padding: 1em;
 }
 
-.supportMenuLarge li {
-  margin-bottom: 1em;
-}
-
-h4 {
-  text-transform: uppercase;
-  color: #4e5d74;
-}
-
-.ads {
-  list-style: none;
-}
-
-.ads img {
-  max-width: 100%;
-  padding-top: .5em;
-}
-
-
-.media-object img {
-    border-style: solid;
-    border-color: #C0C0C0;
-    border-width: thin;
-}
-
-.leftImage {
-  max-width: 100%;
-  border-style: solid;
-  border-color: #C0C0C0;
-  border-width: thin;
-}
-
-.noShowText {
-  display: none;
-}
-
-.auctionActions {
-  list-style: none;
-}
-
-.auctionActions li {
+.auctionMastRow {
   display: inline-block;
 }
 
-#auctionSupportButton {
-  background: #999933;
-  margin-right: 1em;
+.auctionMastRow img {
 }
 
-#donateNowButton {
-  background: #663333;
+.auctionMastRow h3  {
+font-family: 'Cinzel', serif;
+text-align: center;
+}
+
+.auctionNav {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+
+.auctionSmButtons {
+  margin-left: 1em;
+  text-align: center;
+  padding: 1em;
+  background-color: green;
   color: white;
-  margin-right: 1em;
 }
 
-#auctionForms {
-  background: #666666;
+
+#auctionNews {
+  background-color: #535353;
+}
+
+#auctionProcurement {
+  background-color: #50988c;
+}
+
+#auctionHelp {
+  background-color: #b3d88e;
+}
+
+#auctionLeadership {
+  background-color: #5994a3;
+}
+
+.boxTitle {
+  font-family: 'Cinzel', serif;
+  text-align: center;
   color: white;
-  margin-left: 0;
-}
-
-#mailAuction {
-  margin-left: .5em;
-}
-
-#run4Donation {
-  margin-right: 1em;
-}
-#run4Forms {
-  margin-right: 1em;
 }
 
 
-@media only screen and (min-width: 1200px) {
-	.supportContent {
-    padding-top: 60px;
-		margin-top: 60px;
-	}
+.emphasisTitle {
+  line-height: 1.25em;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+#textBoxOpen {
+  margin: 1.5em;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 1em;
+  display: none;
+}
+
+.auctionText {
+  display: none;
+}
+
+
+.newsEmbedImage {
+  display: block;
+  margin: 0 auto;
+}
+
+.newsTitles {
+  font-weight: bold;
+  color: red;
+}
+
+.newsList {
+  list-style: none;
+  /*text-align: center;*/
+}
+
+.newsList li {
+  padding-top: 1em;
+}
+
+.procureIntro {
+  padding-left: 1em;
+}
+
+#welcomeText {
+  display: none;
+}
+
+#leadershipText h4 {
+  color: red;
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
 }
