@@ -14,12 +14,13 @@ var textArray = document.querySelectorAll('.auctionText');
 
 for (var j = 0; j < textArray.length; j++){
   textArray[j].dataID = j;
-  console.log(textArray[j]);
+  // console.log(textArray[j]);
 }
 
 
-function openTextBox(){
+function openTextBox(event){
   var activeButton = (event.target);
+
 
   for(var k = 0; k < textArray.length; k++) {
     if (activeButton.dataID == textArray[k].dataID) {
@@ -33,6 +34,7 @@ function openTextBox(){
 
     }
   }
+
 }
 
 
