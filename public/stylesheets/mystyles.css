@@ -128,10 +128,11 @@ a.navbar-brand {
 	background-color: #ba020e;
 }
 
-#runButton {
+#wineButton {
 	padding: .4em;
 	display: block;
 	margin: 0 auto;
+	padding-top: 1em;
 	margin-bottom: 1em;
 	text-align: center;
 }
@@ -142,6 +143,10 @@ a.navbar-brand {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 1em;
+}
+
+.wineInfo {
+	padding-top: 1em;
 }
 
 .techButton {
