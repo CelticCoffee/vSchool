@@ -250,8 +250,8 @@ $(document).ready(function() {
 					})
 
 					//Fifth Grade Picture Button Bio Reveal//
-					$('#hartButton').click(function(){
-						$('#hartBio').toggle('slow');
+					$('#fryButton').click(function(){
+						$('#fryBio').toggle('slow');
 					})
 
 					$('#niedermeyerButton2').click(function(){
