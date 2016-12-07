@@ -10,6 +10,20 @@
   margin-top: 5em;
 }
 
+.leadership li {
+  text-align: center;
+  color: #5994a3;
+  list-style: none;
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+.procurementForm {
+  color: red;
+  font-size: 1.25em;
+  text-decoration: none
+}
+
 #auctionImageHero {
   display: flex;
   flex-shrink: 3;

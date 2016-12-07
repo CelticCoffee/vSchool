@@ -10,6 +10,14 @@ for (var i = 0; i < buttonDOM.length; i ++){
   titleDOM[i].addEventListener('click', openTextBox, false);
 }
 
+document.addEventListener("click", findCoords, false);
+
+function findCoords(event){
+  var x = event.clientX;
+  var y = event.clientY;
+  console.log(x, y)
+}
+
 var textArray = document.querySelectorAll('.auctionText');
 
 for (var j = 0; j < textArray.length; j++){
@@ -20,6 +28,8 @@ for (var j = 0; j < textArray.length; j++){
 
 function openTextBox(event){
   var activeButton = (event.target);
+  console.log(event.clientX);
+  console.log(event.clientY);
 
 
   for(var k = 0; k < textArray.length; k++) {
@@ -27,6 +37,9 @@ function openTextBox(event){
       var textContainer = document.getElementById('textBoxOpen');
       textContainer.style.display = 'block';
       textArray[k].style.display = 'block';
+      // window.scroll(476, 251);
+      window.scroll(901, 357);
+
       }
 
     else {
