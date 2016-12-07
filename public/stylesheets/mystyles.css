@@ -161,9 +161,29 @@ a.navbar-brand {
 
 }
 
+.open-house {
+	background-color: #DCDCDC;
+	border: 1px solid gray;
+}
 
+.open-house-flyer {
+	padding-top: 1em;
+	display: block;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 
+.open-house-flyer a {
+	text-decoration: none;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: .5em;
+}
 
+.open-house-text {
+	text-align: center;
+	margin-top: .25em;
 }
 
 
