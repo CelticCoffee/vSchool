@@ -10,6 +10,11 @@
   margin-top: 5em;
 }
 
+.adLink {
+  font-size: 1.25em;
+  color: red;
+  text-decoration: none;
+}
 
 .leadership li {
   text-align: center;
