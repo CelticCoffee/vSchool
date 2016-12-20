@@ -10,6 +10,7 @@
   margin-top: 5em;
 }
 
+
 .leadership li {
   text-align: center;
   color: #5994a3;
@@ -22,6 +23,12 @@
   color: red;
   font-size: 1.25em;
   text-decoration: none
+}
+
+#inProcurement {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #auctionImageHero {
