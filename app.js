@@ -9,10 +9,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // var $ = require('jQuery');
 // global.jQuery = $;
-// var Bootstrap = require('bootstrap');
 var routes = require('./routes/index');
-// var users = require('./routes/users');
-var joi = require('joi');
 var app = express();
 
 

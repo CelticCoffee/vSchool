@@ -1,429 +1,1179 @@
 /***************************/
-/********top navigation*****/
+/********global styles*******/
 /***************************/
-body {
-	padding-top: 45px;
+* {
+	font-family: "Helvetica", "sans-serif";
+	font-size: 14px;
+	line-height: 1.528;
+	text-decoration: none;
+	list-style: none;
 }
 
-#mobileGroup {
-  position: fixed;
-  z-index: 1;
-
+h1 {
+	font-size: 28px;
 }
 
-#cathedralMenuToggle {
-	font-size: 1.20em;
-	padding: 1.05em;
-}
-
-
-#librarySwap img {
-	width: 100%:
-}
-
-/*Cathedral School Left */
-a.navbar-brand {
-	color: #fff;
-	font-size: 2em;
-	position: absolute;
-	padding-top: 1.5em;
-}
-
-}
-
-/***************************/
-/*******mobile side*****/
-/***************************/
-
-
-.navbar-right {
-	padding-top: 1em;
-	padding-right: .8em;
-	display: block;
-	text-transform: uppercase;
-}
-
-
-.mobileNav {
-	background-color: black;
-	color: white;
-	/*text-decoration: none;*/
-	text-transform: uppercase;
-	width: 100%;
-	border-radius: 5px;
+h2 {
 	text-align: center;
-	padding: 0;
-	font-size: 1.15em;
-	font-weight: bold;
-	z-index: 1;
-	/*margin: 0 auto;*/
-	display: none;
-}
-
-.mobileNav a {
-	color: white;
-	/*position: fixed;*/
-	margin: 1em auto;
-	z-index: 1;
-	width: 100%:
-}
-
-.mobileButtonColumn {
-	padding-right: 0;
-	margin-right: 0;
-}
-
-
-#mobileMenuStar {
-	/*z-index: 1;*/
-	display: none;
-	/*display: block;
-	margin: 0 auto;*/
-	padding: auto;
-	margin-top: .15em;
-	width: 100%;
+	font-size: 20px;
 	text-transform: uppercase;
-	vertical-align: center;
-	background-color: #ba020e;
-	}
+	font-family: "Syncopate", "serif";
+}
+
+h3 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
+h5 {
+	text-align: center;
+}
 
 #content {
-	postion: fixed;
-	z-index: 3;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+
 }
 
-/*/Top image for mobile*/
-.mobileTopRow {
-	padding: auto;
+.centered {
+	text-align: center;
 }
 
-#mobileSwapImage {
-	width: 100%;
+
+/***************************/
+/********navs*******/
+/***************************/
+.mainNav {
+	background-color: black;
+	color: white;
+	font-family: "Helvetica", "serif";
+	display: none;
+
+}
+
+.mainNavShow {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.75;
+
+}
+
+.mainNav li {
+	margin-left: 0;
+	font-size: 1.25em;
+	display: block;
+	padding: 1em;
+}
+
+.mainNav li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+}
+
+.mainNav li a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.mainNav li:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.homing-nav {
 	display: none;
 }
 
-#contactMobileDrop li  {
-	background-color: white;
-	padding-top: .5em;
-
+.mobile-home{
+width: 100px;
+height: 20px;
+border-radius: 5px;
+background-color: red;
+display: block;
+text-align: center;
+border-color: orange;
+padding: 20px;
+/*background-color: #ba020e;*/
+background-color: #e3ddd1;
+text-decoration: none;
+color: black;
+display: block;
+font-size: 1em;
+margin: 5px auto;
+font-family: "syncopate", serif;
 }
 
-#contactMobileDrop li a{
-	margin-bottom: .25em;
-	width: 100%;
-	text-color: orange;*/
+.hidden {
+	display: none;
 }
 
 
-
-/***************************/
-/********panels*****/
-/***************************/
-#enrollButton {
-	width: 100%;
-	padding: 1em;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 1em;
-	background-color: #ba020e;
+.showing {
+	display: flex;
 }
 
-#wineButton {
-	padding: .4em;
-	display: block;
-	margin: 0 auto;
-	padding-top: 1em;
-	margin-bottom: 1em;
-	text-align: center;
-}
-
-#auctionHomeClick {
-	width: 100%;
-	padding: 1em;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 1em;
-}
-
-#businessButton {
-	width: 100%;
-	padding: 1em;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: .5em;
-	background-color:#50988c;
-}
-
-#procureButton {
-	width: 100%;
-	padding: 1em;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 1em;
-	background-color:#5994a3;
-}
-
-.wineInfo {
-	padding-top: 1em;
-}
-
-.techButton {
-	background-color: gray;
-	width: 100%;
-	padding: 1em;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 1em;
-	text-align: center;
+.feature-list li {
+	font-family: "Syncopate", "serif";
+	text-transform: uppercase;
 	color: white;
 
+
 }
 
-.open-house {
-	background-color: #DCDCDC;
-	border: 1px solid gray;
+.feature-list li a {
+	color: gray;
+	font-size: 16px;
+
+
 }
 
-.open-house-flyer {
-	padding-top: 1em;
+.fa-chevron-circle-up{
+	font-size: 1.5em;
+}
+
+/*styling for the star*/
+.star-button {
+	margin-top: 20px;
+	width: 35%;
+	background-color: red;
+	border-radius: 5px;
+	border-color: red;
 	display: block;
+	color: white;
+	font-size: 1.25em;
+}
+
+.star-button:hover {
+	color: black;
+}
+
+.showStarButton {
+	display: none;
+}
+
+.iconHide {
+	display: inline-block;
+}
+
+.testColor {
+	background-color: purple;
+}
+
+.showLink a {
+	display: block;
+}
+
+.showLink {
+	 cursor: pointer;
+	 cursor: hand;
+}
+
+.mainNav .fax:hover {
+	color: white;
+}
+
+.mainNav .navBrand {
+	font-size: 1.5em;
+}
+
+.mainNav .smallLink {
+	font-size: 1em;
+}
+
+
+.topic {
+	font-size: 1.25em;
+}
+
+.topic-title {
+	font-size: 15px;
+}
+
+
+.topic:hover .topic-title{
+	cursor: pointer;
+	cursor: hand;
+	color: red;
+
+}
+
+.centered-list {
 	text-align: center;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-.open-house-flyer a {
-	text-decoration: none;
-	margin-top: 0;
-	padding-top: 0;
-	margin-bottom: .5em;
-}
-
-.open-house-text {
-	text-align: center;
-	margin-top: .25em;
-}
-
-
-#auctionCatalog {
-	width: 100%;
-	padding: 1em;
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 1em;
 }
 
-.auctionTechVideo {
+.centered-list li {
+	padding-top: 1em;
+}
+
+.buttonMenu {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.buttonMenu li {
+		display: inline-block;
+		text-align: center;
+}
+
+/***************************/
+/********Title**************/
+/***************************/
+.page-title {
 	width: 100%;
-	padding: 1em;
+	text-align: center;
+	font-family: 'Syncopate', sans-serif;
+	text-transform: uppercase;
+}
+
+
+/***************************/
+/********FlexBox 3 Columns**/
+/***************************/
+
+.myContainer {
+	margin: 0;
+	/*text-align: center;*/
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.column {
+	border: .25px solid gray;
+	border-radius: 5px;
+	margin: 10px auto;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+.column-even {
+	width: 100%;
+}
+
+.narrow-column {
+	background-color: #e3ddd1;
+	border-color: #e3ddd1;
+}
+
+.plain-column {
+	background-color: #e3ddd1;
+	margin: 0 auto;
+	border-color: transparent;
+}
+
+.column3 {
+	margin: 10px auto;
+}
+
+.inner-column {
+	border-color: #fff;
+	text-align: center;
+}
+
+.full-column {
+	border: none;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.small-column {
+	border: none;
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+}
+
+.nocolor-column {
+	border-color: transparent;
+}
+
+.dark-column {
+	background-color: #2D2D6C;
+}
+
+.dark-column li a{
+	color: #e3ddd1;
+}
+
+.dark-column h2 {
+	color: #e3ddd1;
+}
+
+.dark-column li a:hover {
+	color: black;
+}
+.dark-column li:hover {
+	color: black;
+}
+
+.sub-title {
+	text-align: center;
+}
+
+
+/***************************/
+/********buttons************/
+/***************************/
+.standard-button {
+	text-align: center;
+	width: 225px;
+	border-radius: 5px;
+	border-color: orange;
+	padding: 20px;
+	background-color: #ba020e;
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 1.25em;
+	margin: 5px auto;
+}
+
+.standard-button:hover {
+	color: gray;
+
+}
+
+.desktopCal {
+	display: none;
+	text-align: center;
+}
+
+.mobileCal {
+	display: block;
+	text-align: center;
+}
+
+.auction-button{
+	background-color: #50988c;
+}
+
+.auction-button:hover{
+	color: gray;
+}
+
+.second-button {
+	background-color: #2D2D6C;
+}
+
+.stacked-button {
+	background-color: white;
+	color: gray;
+	border-color: none;
+	display: block;
+	margin: 1px auto;
+}
+
+.light-button {
+	background-color: #e3ddd1;
+	color: gray;
+}
+
+.light-button:hover{
+	color: red;
+}
+
+.buttonNav {
+	width: 225px;
+	height: 40px;
+	border-width: .25px;
+	background-color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1.25em;
+	margin: 5px auto;
+}
+
+.buttonNav:hover {
+	background-color: gray;
+	color: white;
+}
+
+.active {
+	background-color: #2D2D6C;
+	color: white;
+}
+
+.active:hover{
+	background-color: #2D2D6C;
+}
+
+.advisory-more {
+	margin-top: 1em;
+}
+/***************************/
+/********hero images*****/
+/***************************/
+.heroPic {
+	margin-right: -3em;
+}
+
+.mobileHero {
+	display: inline-block;
+	width: 100%;
+}
+
+.fadePics {
+	list-style: none;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.hiddenHero {
+	display: none;
+}
+
+.desktopHero {
+	margin: 0;
+	width: 100%;
+}
+
+.subSection-hero{
+	display: none;
+}
+
+/***************************/
+/********Other Images**/
+/***************************/
+
+.featureStoryImage {
+	width: 225px;
+	display: block;
+	margin: 0 auto;
+}
+
+.mediumImage {
+	width: 80%;
+	padding: 5px;
+}
+
+.featurePic {
+	max-width: 100%;
+	margin-bottom: 10px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.picStyle {
+	border: 2px solid #e3ddd1;
+	border-radius: 20px;
+	max-width: 100%;
+
+}
+
+.bioPic {
+	width: 65%;
+	padding: 5px;
+}
+
+.stackPics {
+	width: 100%;
+}
+
+
+
+.singlePic {
+	display: block;
+	width: 65%;
+	margin: 0 auto;
+}
+
+.specialistPic {
+	width: 250px;
+}
+
+.auctionImageHero {
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	flex-shrink: 3;
+	list-style: none;
+	padding: 0;
+}
+
+.image-flex {
+	width: 100%;
+}
+/***************************/
+/********otherpages*****/
+/***************************/
+.show-container {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.page-subtitle {
+	font-family: 'Syncopate', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.25em;
+}
+
+.story {
+	text-align: left;
+}
+
+.apple-list {
+	margin-top: 2em;
+	margin: 1em;
+}
+
+.apple-list li {
+	list-style: circle;
+	padding-bottom: 1em;
+	text-align: left;
+	margin-left: 2em;
+}
+
+#academics {
+	background-color: #e3ddd1;
+	margin: 0;
+	padding-top: 1em;
+}
+
+.featureStory {
+	padding: 2em;
+	text-align: left;
+	line-height: 1.85;
+}
+
+.featureStoryList {
+	display: block;
+	margin-left: 2em;
+	text-align: center;
+}
+
+.featureStoryList li{
+	list-style: disc;
+	font-weight: 500;
+	text-align: left;
+}
+
+.small-story {
+	text-align: left;
+	padding-left: 1em;
+}
+
+.newsletters {
+	padding-left: 2em;
+	text-align: left;
+}
+.newsletters li {
+	font-size: 18px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
 	border-radius: 5px;
 }
 
+.newsletters li:hover {
+	background-color: #fff;
+}
 
-#logoHome {
+.darkLinks {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.darkLinks li {
+	background-color: #e3ddd1;
+	text-align: center;
+	border-color: #fff;
+}
+
+.darkLinks li a{
+	color: #2D2D6C;
+}
+
+.fa-user-circle-o {
 	display: block;
 	margin: 0 auto;
-	}
-
-.cathCenterHome {
-	padding-top: 1em;
+	font-size: 1.6em;
 	text-align: center;
+	margin-bottom: 1em;
 }
-.missionText {
-	text-align: left;
-	margin: .25em;
-	padding-top: .5em;
-	padding-left: .25em;
+
+.fa-user-circle-o:hover{
+	color: red;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.page-nav-down {
+	margin-bottom: 2em;
+}
+
+.page-nav-down h3{
 	padding-bottom: 1em;
 }
 
-#desktopCal {
+.fa-chevron-circle-down {
+	font-size: 3em;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color: #2D2D6C;
+	margin-top: -.5em;
+	margin-bottom: 0;
+}
+
+.fa-chevron-circle-down:hover{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.content-subtitle{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.teacher-contact{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.teacher-contact h5 {
+	margin-bottom: 0;
+}
+
+.teacher-contact a{
+	margin-bottom: 1em;
+}
+
+.specialist-bio{
+	margin-left: 1em;
+}
+
+.programStory {
+	padding: .5em;
+}
+
+.specialLink {
+	text-transform: uppercase;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.library {
+	margin: 1em;
+}
+
+.map {
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 }
 
-.runText {
-	margin-left: .25em;
-	margin-right: 0;
+
+
+.parent-header {
+	font-size: 40px;
+	text-align: center;
+	display: block;
+	margin: 4px;
+	color: #e3ddd1;
 }
 
-#bottomColor {
-	/*background-color:  #404040;*/
-	/*color: white;*/
+.fa-link {
+	font-size: 40px;
+	text-align: center;
+	display: block;
+	margin: 4px;
+	color: #2D2D6C;
+}
+
+.centered-links {
+	text-align: center;
+	font-size: 18px;
+}
+
+.centered-links li a{
+	color: #2D2D6C;
+
+}
+
+
+
+/***************************/
+/********auction*****/
+/***************************/
+
+.auction-content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.auctionBox{
+	display: block;
+	width: 100%;
+	margin: 1em auto;
+	background-color: red;
+	border: 1px solid gray;
+	border-radius: 2px;
+	padding: 25px 5px 25px 5px;
+	background-color: #ba020e;
+}
+
+.auctionBox:hover{
+	cursor: pointer;
+	cursor: hand;
+	background-color: gray;
+}
+
+.boxTitle{
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.5em;
+}
+
+.auctionNews{
+	background-color: #535353;
+}
+
+.auctionProcurement{
+	background-color: #50988c;
+}
+
+.auctionHelp {
+	background-color: #b3d88e;
+}
+
+.auctionLeadership {
+	background-color: #5994a3;
+}
+
+.auctionContact{
+	background-color: #ba020e;
+}
+.auctionHeadline{
+	font-family: "Cinzel", serif;
+	font-size: 28px;
+}
+
+.emphasisTitle{
+	font-size: 20px;
+  font-family: 'Cinzel', serif;
+  color: #ba020e;
+  font-weight: bold;
+}
+
+.auctionText {
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+}
+
+.hideAuction {
+	display: none;
+}
+
+.blogStyle {
+	margin-top: 1.25em;
+	border: 1px solid #e3ddd1;
 	padding: 2em;
-	margin-top: 3em;
-	margin-bottom: -1em;
+	background-color: #e3ddd1;
+	box-shadow: 3px 3px 5px 6px #ccc;
 }
 
-#address {
-	font-size: .75em;
-	color: black;
+.blogStyle p {
+	font-size: 1.15em;
+}
+
+.blogStyle h4 {
+	font-family: "Cinzel", serif;
+	font-size: 1.25em;
+}
+
+/***************************/
+/********table*****/
+/***************************/
+.cathedral-table tr{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tableCol1 {
+	width: 100%;
+	text-align: center;
+}
+
+.tableCol1 h5 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.tableCol2 {
+	text-align: center;
+	width: 100%;
+}
+
+.tableCol3 {
+	text-align: center;
+	width: 100%;
+}
+
+.facultyEmails a{
+  text-decoration: none;
+  color: #404040;
+  font-size: 1em;
+}
+
+.facultyEmails a:hover{
+	color: red;
+}
+
+
+
+/***************************/
+/********footer*****/
+/***************************/
+.bottomNav {
+	text-align: center;
+	width: 100%;
+	margin: 0em -3em 0em -3em;
+	overflow: hidden;
+}
+
+.bottomNav li {
+	display: inline-block;
+}
+
+.bottomLink a{
+	color: white;
+}
+
+.footer {
+	width: 100%;
+	margin: 0em;
+	height: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-color: black;
+	color: white;
+
+}
+
+.footer .fa {
+	color: white;
+	font-size: 3em;
+	padding-right: .25em;
+	padding-left: .25em;
+}
+
+.fa-facebook-official {
+	padding-left: 0;
+}
+
+.siteCredit {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.siteCredit a {
+	color: white;
+	font-size: 12px;
+
 }
 
 /***************************/
 /********media queries*****/
 /***************************/
-
-@media only screen
-and (min-width: 1000px) {
-
-footer ul {
-	display: inline-block;
-	padding: 1em;
-	list-style: none;
-
-}
-
-footer ul li {
-	display: inline-block;
-	padding: 2em;
-}
-
-footer .container ul {
-	list-style: none;
-	text-align: center;
-}
-
-footer h4 {
-	text-align: center;
-}
-
-footer .row {
-	text-align: center;
-}
-
-footer .social  {
-	padding: 0 2em;
-	text-align: center;
-}
-
-footer .copyright {
-	text-align: center;
-	font-size: .75em;
-
-}
-}
-
-@media screen and (max-width: 1199px) {
-	.navbar-right {
-		padding-left: 0em;
-		padding-right: 0em;
-	}
-	a.navbar-brand {
-		font-size: 1.5em;
-		padding-top: auto;
-		padding-left: 0;
+@media screen and (min-width: 410px) {
+	.desktopNav{
+		width: 100%;
+		padding: 0px 20px 0px 25px;
+		margin: 0em;
+		display: inline-block;
 	}
 
-	.calendar-container {
-		margin-right: 5em;
-	}
-
-}
-
-
-@media screen and (max-width: 1024px) {
-	#cathedralCarousel {
-			padding: 0;
-		}
-}
-@media screen and (max-width: 1440px) {
-	.navbar-right {
-		font-size: 1em;
-	}
-	.navbar-brand {
-		font-size: 1.5em;
-	}
-
-
-@media screen and (max-width: 1280px) {
-	.navbar-brand {
-		padding: 15px 15px;
-	}
-
-	.links, .social, .copyright {
-		float: none;
+	.desktopNav li {
+		margin: 0 auto;
+		display: inline-block;
+		padding: 10px;
 		text-align: center;
 	}
-	.social {
-		position: relative;
-		margin: 10px 0;
-	}
-	.links li {
-		display: inline-block;
-		float: none;
-	}
-	.bar {
-		position: relative;
-	}
-	.bar-wrap {
-		margin-bottom: 0;
-	}
-}
 
-@media screen and (max-width: 1200px){
-
-	.jumbotron {
-		padding-top: 15px;
-	}
-
-	a.navbar-brand {
-		padding-top: .25em;
-	}
-
-	#mobileMenuStar {
-		display: block;
-	}
-
-	.navbar-right {
+	.mobile-home {
 		display: none;
 	}
 
-
-
-}
-
-
-
-@media screen and (max-width: 835px) {
-	footer ul li {
-		float; none;
-		width: auto;
+	.homing-nav {
+		width: 100px;
+		height: 20px;
+		border-radius: 5px;
+		background-color: red;
+		display: block;
+		text-align: center;
+		border-color: orange;
+		padding: 20px;
+		/*background-color: #ba020e;*/
+		background-color: #e3ddd1;
+		text-decoration: none;
+		color: black;
+		display: block;
+		font-size: 1em;
+		margin: 5px auto;
+		font-family: "syncopate", serif;
 	}
-	.navbar-right {
-		padding-left: 0em;
-		padding-right: 0em;
+
+
+
+
+}
+@media screen and (min-width: 768px) {
+	.column {
+		width: 40%;
 	}
-}
 
-@media screen and (max-width: 415px) {
-.homePanelContent {
-	display: block;
-	margin-left: .5em;
-	margin-top: 12em;
-}
-.copyright {
-	margin: 1em;
-}
-
-.techButton {
-	font-size: 1em;
-}
-
-
-}
-
-@media screen and (max-width: 335px) {
-	a.navbar-brand {
-		font-size: 1.15em;
+	.full-column {
+		border: none;
+		width: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
-}
-@media screen and (max-width: 1199px) {
-	#mobileMenuStar {
+
+
+	.column2 {
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-right: 10px;
+		padding-left: 10px;
+
+	}
+
+	.auctionBox {
+		width: 45%;
+	}
+
+	.equal-column {
+		width: 100%;
+	}
+
+	.narrow-column {
+		width: 30%;
+	}
+
+	.wide-column {
+		width: 60%;
+		text-align: center;
+	}
+
+	.inner-column {
+		width: 100%;
+	}
+
+	.centered-column {
+		width: 100%;
+		margin: 0 auto;
+		border: none;
+	}
+
+	.close-column {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.buttonNav {
+		height: auto;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.stackPics {
+		width: 100%;
+		text-align: center;
+	}
+
+	.side-by-side {
+		display: inline-block;
+	}
+
+	.singlePic{
+		display: inline-block;
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	.threePic {
+		display: inline-block;
+		width: 30%;
+	}
+
+	.profiles {
+		display: inline-block;
+		/*width: 45%;*/
+
+	}
+	.subSection-hero{
 		display: block;
 	}
+
+	.wide-profile{
+		width: 100%;
+	}
+
+	.auctionText {
+		width: 100%;
+		display: block;
+		margin: 1em auto;
+	}
+
+	.hideAuction {
+		display: none;
+	}
+
+	/*.auction-content {
+		width: 75%;
+	}*/
+
+
+
+	.newsTitles {
+	  font-weight: bold;
+	  color: red;
+	}
+
+
 }
 
+@media screen and (min-width: 1000px) {
 
 
+	.column {
+		width: 28%;
+	}
+
+	.auctionBox {
+		width: 30%;
+	}
+
+	.equal-column {
+		width: 45%;
+	}
+
+	.inner-column {
+		width: 45%;
+	}
+
+	.narrow-column {
+		width: 32%
+	}
+
+	.wide-column {
+		width: 58%;
+		margin-left: 2em;
+	}
+
+	.cathedral-table tr {
+		margin-bottom: 1.5em;
+		padding-bottom: 1em;
+		height: 1.75em;
+	}
+
+	.cathedral-table .admin-line {
+		margin-bottom: 2em;
+		padding-bottom: 3em;
+	}
+
+	.tableCol1{
+		width: 28%;
+		text-align: left;
+	}
+
+	.tableCol1 h5{
+		text-align: left;
+	}
+
+	.tableCol2 h5{
+		text-align: left;
+	}
+
+	.tableCol2{
+		width: 32%;
+		text-align: left;
+	}
+
+
+	.tableCol3{
+		width: 28%;
+		text-align: left;
+		margin-left: 50px;
+		padding-top: 0;
+
+	}
+	.facultyEmails {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.facultyEmails a{
+		margin-top: 0;
+	}
+
+	.bold-col {
+		padding-top: 2em;
+	}
+
+	.stackPics {
+		width: 32%;
+		display: block;
+	}
+
+	.singlePic {
+		display: block;
+		width: 65%;
+	}
+
+	.profiles {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+
+
+
+}
+
+@media screen and (min-width: 1380px){
+	.mobileCal{
+		display: none;
+	}
+	.desktopCal {
+		display: block;
+	}
+	.bio-wide-container{
+		display: inline-block;
+		width: 48%;
+	}
+
+}
+
+@media screen and (min-width: 1515px){
+	.desktopNav {
+		padding: 10px 15px;
+		text-align: center;
+	}
 }
