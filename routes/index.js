@@ -7,4 +7,8 @@ router.get('/', function(req, res){
   res.render('index');
 });
 
+router.get('/support', function(req, res){
+  res.render('index');
+});
+
 module.exports = router;
