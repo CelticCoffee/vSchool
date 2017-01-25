@@ -224,6 +224,13 @@ font-family: "syncopate", serif;
 		text-align: center;
 }
 
+.important-link {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	font-size: 1.25em;
+}
+
 /***************************/
 /********Title**************/
 /***************************/
