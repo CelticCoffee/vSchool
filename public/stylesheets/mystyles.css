@@ -86,6 +86,12 @@ h5 {
 	color: red;
 }
 
+.activeLink {
+	background-color: gray;
+	
+
+}
+
 .homing-nav {
 	display: none;
 }
@@ -153,7 +159,7 @@ font-family: "syncopate", serif;
 	color: black;
 }
 
-.showStarButton {
+.hideStarButton {
 	display: none;
 }
 
@@ -873,10 +879,11 @@ font-family: "syncopate", serif;
 .footer {
 	width: 100%;
 	margin: 0em;
-	height: auto;
+	height: 315px;
 	padding-top: 2em;
 	padding-bottom: 2em;
 	background-color: black;
+	position: absolute;
 	color: white;
 
 }
@@ -1164,6 +1171,12 @@ font-family: "syncopate", serif;
 
 }
 
+@media screen and (min-width: 768px){
+	.footer {
+		height: 200px;
+	}
+}
+
 @media screen and (min-width: 1380px){
 	.mobileCal{
 		display: none;
@@ -1175,7 +1188,6 @@ font-family: "syncopate", serif;
 		display: inline-block;
 		width: 48%;
 	}
-
 }
 
 @media screen and (min-width: 1515px){

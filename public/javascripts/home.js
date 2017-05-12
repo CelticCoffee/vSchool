@@ -4,21 +4,13 @@
 $(document).ready(function() {
 
   function Home(){
-    this.content = document.getElementById("content");
+    this.content = document.getElementsByClassName("content");
     this.mainNav = document.querySelector(".mainNav");
     this.starButton = document.querySelector(".star-button");
     this.desktopPicDiv = document.querySelector(".fadePics");
 
     //The content sections//
     this.main = document.getElementById("cathedralMain");
-    this.aboutSection = document.getElementById("about");
-    this.academicsSection = document.getElementById("academics");
-    this.ourProgramSection = document.getElementById("ourprogram");
-    this.librarySection = document.getElementById("library");
-    this.admissionsSection = document.getElementById("admissions");
-    this.parentsSection = document.getElementById("parents");
-    this.supportSection = document.getElementById("support");
-    this.alumniSection = document.getElementById("alumni");
 
 
     this.buttonMenu = document.querySelector(".buttonMenu");
@@ -37,19 +29,18 @@ $(document).ready(function() {
     this.heroSwap();
     this.carousel();
     this.bioButton();
-    this.auctionId();
-    this.auctionText();
+
   };
 
 
   //Checks the screen width and shows either mobile or desktop navigation//
   Home.prototype.navStyle = function(){
     if (window.innerWidth > 415){
-      this.starButton.classList.add("showStarButton");
+      this.starButton.classList.add("hideStarButton");
       this.mainNav.classList.add("desktopNav");
     }
     if(window.innerWidth <= 415){
-      this.starButton.classList.remove("showStarButton");
+      this.starButton.classList.remove("hideStarButton");
       this.mainNav.classList.remove("desktopNav");
 
     }
@@ -60,12 +51,12 @@ $(document).ready(function() {
     var mobileHero = document.querySelector(".mobileHero");
     var hiddenHero = document.querySelector(".desktopHero");
     // var desktopPicDiv = document.querySelector(".fadePics");
-      if(window.innerWidth >= 415){
+      if(window.innerWidth >= 415 && mobileHero){
         mobileHero.classList.add("hiddenHero");
         hiddenHero.classList.remove("hiddenHero");
         this.desktopPicDiv.classList.remove("hidden");
       }
-      else {
+      else if (window.innerWidth <=415 && mobileHero){
         this.desktopPicDiv.classList.add("hidden");
         mobileHero.classList.remove("hiddenHero");
         hiddenHero.classList.add("hiddenHero");
@@ -111,17 +102,29 @@ $(document).ready(function() {
     }
   };
 
+  function listenersForArrayItems(array, clickEventFunction){
+    for(var i = 0; i < array.length; i++){
+      array[i].addEventListener("click", clickEventFunction, false);
+    }
+  }
 
 
   Home.prototype.bindEvents = function(){
     this.starButton.addEventListener("click", this.openNav.bind(this), false);
-    this.mainNav.addEventListener("click", this.sectionReveal.bind(this), false);
-    this.content.addEventListener("click", this.navClose.bind(this), false);
-    this.buttonMenu.addEventListener("click", this.subSectionReveal.bind(this), false);
-    this.moreContent.addEventListener("click", this.showMore.bind(this), false);
-    this.parentMore.addEventListener("click", this.showMoreParent.bind(this), false);
-    this.advisoryMore.addEventListener("click", this.showMoreAdvisory.bind(this), false);
-
+    listenersForArrayItems(this.content, this.navClose.bind(this));
+    // this.content.addEventListener("click", this.navClose.bind(this), false);
+    if(this.buttonMenu){
+      this.buttonMenu.addEventListener("click", this.subSectionReveal.bind(this), false);
+    }
+    if(this.moreContent){
+      this.moreContent.addEventListener("click", this.showMore.bind(this), false);
+    }
+    if(this.parentMore){
+      this.parentMore.addEventListener("click", this.showMoreParent.bind(this), false);
+    }
+    if(this.advisoryMore){
+      this.advisoryMore.addEventListener("click", this.showMoreAdvisory.bind(this), false);
+    }
     var that = this;
     window.addEventListener("resize", function() {
       that.heroSwap();
@@ -147,36 +150,6 @@ $(document).ready(function() {
       return;
     }
   };
-
-  //open and go to the different sections of site//
-  //takes the innerhtml of the nav-- removes the spaces and all lowercase then uses the helper function (matchTextandShow)to check and navigate to the section if it is the activeLink//
-  //helper function for sectionReavel that gets where the window should scroll to//
-  function matchTextandShow(array, active){
-    array.forEach(function(el){
-      if(el.id == active){
-        el.classList.add("show-container");
-        var boxSpecs= el.getBoundingClientRect();
-        var topSpecs = boxSpecs.top;
-        var leftSpecs = boxSpecs.left;
-        window.scrollTo(leftSpecs, topSpecs);
-      }
-      else {
-        el.classList.remove("show-container");
-      }
-    });
-  };
-
-
-  Home.prototype.sectionReveal = function(event){
-    var activeLink = event.target;
-    var activeLinkText = activeLink.innerHTML.toLowerCase();
-    var linkRemoveSpaces = activeLinkText.replace(/\s+/g, "");
-    var domSectionArray = [];
-    domSectionArray.push(this.aboutSection, this.academicsSection, this.ourProgramSection, this.librarySection, this.admissionsSection, this.parentsSection, this.supportSection, this.alumniSection);
-    matchTextandShow(domSectionArray, linkRemoveSpaces);
-
-  };
-
 
 
   Home.prototype.subSectionReveal = function(event){
@@ -219,9 +192,6 @@ $(document).ready(function() {
     var children = parent.childNodes;
 
     children.forEach(function(el){
-      // if(el.nodeName == "P"){
-      //   $(el).toggle("hidden");
-      // }
       if((bioActive.classList.contains("in-use"))&&(el.nodeName == "P")){
         el.classList.add("hidden");
         bioActive.classList.remove("in-use");
@@ -242,51 +212,17 @@ $(document).ready(function() {
   Home.prototype.showMoreParent = function(event){
     var moreStory = document.querySelector(".parentOpen");
     expandText(moreStory);
-    console.log("parentMore opening");
   };
 
   Home.prototype.showMoreAdvisory = function(event){
     var moreStory = document.querySelector(".advisoryOpen");
     expandText(moreStory)
-    console.log("advisory more opening");
   };
 
   function expandText(div){
     div.classList.toggle("hidden");
   }
-
-  Home.prototype.auctionId = function(){
-    for (var i = 0; i < this.buttonDOM.length; i ++){
-      this.buttonDOM[i].dataID = i;
-      this.titleDOM[i].dataID = i;
-      this.buttonDOM[i].addEventListener("click", this.openTextBox.bind(this), false);
-      this.titleDOM[i].addEventListener("click", this.openTextBox.bind(this), false);
-    }
-  };
-
-  Home.prototype.auctionText = function(){
-    for(var i = 0; i < this.textArray.length; i++){
-      this.textArray[i].dataID = i;
-    }
-  };
-
-  Home.prototype.openTextBox = function(event){
-    var activeButton = event.target;
-
-    this.textArray.forEach(function(el){
-      if(el.dataID == activeButton.dataID){
-        var textContainer = document.getElementById("textBoxOpen");
-        textContainer.classList.remove("hideAuction");
-        el.classList.remove("hideAuction");
-
-
-      }
-      else{
-        el.classList.add("hideAuction");
-      }
-    });
-  };
-
+  
   var indexPage = new Home();
   indexPage.init();
 
