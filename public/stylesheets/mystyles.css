@@ -88,7 +88,7 @@ h5 {
 
 .activeLink {
 	background-color: gray;
-	
+
 
 }
 
@@ -137,6 +137,12 @@ font-family: "syncopate", serif;
 	font-size: 16px;
 
 
+}
+
+.support-list li{
+	text-align: center;
+	margin-top: 1em;
+	font-weight: bolder;
 }
 
 .fa-chevron-circle-up{
